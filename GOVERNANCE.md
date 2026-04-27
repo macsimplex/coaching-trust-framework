@@ -118,9 +118,11 @@ This rule is borrowed from the practice of technical standards bodies (W3C, IETF
 A promotion RFC must include:
 
 - **Identification** of the at least two declinations in which the requirement is present, with explicit citation of the relevant sections.
-- **Comparative analysis** showing that the requirement is substantively similar across those declinations (typically produced with the help of CTF Converger).
+- **CTF Converger analysis** (mandatory) — a comparative analysis produced by CTF Converger showing that the requirement is substantively similar across those declinations. The Converger output is the canonical input for promotion RFCs; a promotion RFC without a Converger analysis is incomplete.
 - **Implementation evidence** — observations from the public evidence log showing how adopters have implemented the requirement in practice.
 - **Edge case analysis** — situations where the requirement might apply differently across federations, and how the proposed common-core formulation accommodates that.
+
+Note: if a third or subsequent declination *omits* a requirement that two others share, this does not block promotion. The multiple implementations rule requires presence in at least two; absence from others is noted in the edge case analysis but is not a veto.
 
 ### 4.3 Decision
 

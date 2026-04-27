@@ -61,13 +61,14 @@ In other cases, the federation may instead engage through the [community pathway
 
 A federation has full editorial authority over its declination. It may:
 
-- Reformulate any common-core principle to better align with its tradition.
+- Reformulate any common-core principle to better align with its tradition, provided the intent and strength of the principle are preserved.
 - Add requirements specific to its professional sphere.
-- Reject or qualify any common-core requirement, with public motivation.
+- Strengthen any common-core requirement beyond the minimum specified.
 - Choose its own decision-making process for declination evolution.
 
 What a federation may not do (per the founding principle):
 
+- Weaken, remove, or contradict any principle from the common core. A declination builds on top of the core; it cannot subtract from it.
 - Restrict the openness of its declination beyond the CC BY-SA 4.0 license.
 - Withdraw the declination from the public domain once published.
 - Claim the CTF brand or trademark for its exclusive use.
