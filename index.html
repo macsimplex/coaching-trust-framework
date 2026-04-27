@@ -206,5 +206,16 @@ function setLang(lang) {
 try { const saved = localStorage.getItem('ctf_lang'); if (saved) setLang(saved); } catch(_) {}
 </script>
 
+<script>
+  window.MagifaiWidgetConfig = {
+    apiUrl: 'https://www.magif.ai',
+    apiKey: 'magif_eba9b4e40456f5d18d60c75954823513f21e38472007e71d260a07627a7c007f',
+    agentId: '69ef2a895fdc5fd53b463993'
+  };
+</script>
+<script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked@17.0.1/lib/marked.umd.js"></script>
+<script src="https://www.magif.ai/magifai-chat-widget.js?v=2" defer></script>
+
 </body>
 </html>
