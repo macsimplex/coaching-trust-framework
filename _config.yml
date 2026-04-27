@@ -1,0 +1,50 @@
+# Jekyll configuration for GitHub Pages
+# Site: https://coaching-trust-framework.org
+
+title: Coaching Trust Framework
+description: An open framework for trustworthy AI coaching agents — published as a common good under CC BY-SA 4.0.
+url: https://coaching-trust-framework.org
+
+# Theme — clean, minimal, GitHub Pages built-in
+theme: jekyll-theme-cayman
+
+# Plugins supported by GitHub Pages
+plugins:
+  - jekyll-relative-links
+  - jekyll-default-layout
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+
+# Rewrite .md links to clean URLs on the rendered site
+relative_links:
+  enabled: true
+  collections: true
+
+# Treat .md files without front matter as Markdown pages
+optional_front_matter:
+  remove_originals: true
+
+readme_index:
+  enabled: true
+  remove_originals: false
+  with_frontmatter: true
+
+# Files and directories to exclude from the published site
+exclude:
+  - CLAUDE.md
+  - HANDOFF.md
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
+
+# Repository-level metadata
+repository: macsimplex/coaching-trust-framework
+
+# Markdown processor (default for GitHub Pages)
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false

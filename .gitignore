@@ -1,1 +1,49 @@
+# OS-specific
 .DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.directory
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+
+# Jekyll / GitHub Pages local builds
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+vendor/
+Gemfile.lock
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (in case any tooling is added later)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Local working files
+*.bak
+*.tmp
+.draft/
+scratch/
+
+# Secret / credentials (never commit)
+.env.local
+*.pem
+*.key
+secrets/

@@ -1,24 +1,44 @@
-# CHANGELOG — Coaching Trust Framework
+# Changelog
 
----
+All notable changes to the Coaching Trust Framework are documented in this file.
 
-## CTF v1.0 — Draft de travail
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to a semantic versioning approach adapted to a normative document. The full versioning rules are described in [`GOVERNANCE.md`](./GOVERNANCE.md), section 5.
 
-**Référentiel :** ICF AI Coaching Framework and Standards V1.01 — 2024
-**Date :** 2026
+## [1.0.0] — 2026-04
 
-### Contenu initial
+### Initial public release
 
-- Architecture en trois couches : CTF / Core / Configuration
-- Layers comportementaux : KB-A à KB-F · KB-safety · KB-supervision · entrypoint
-- Chaîne de certification : CTF-Design · CTF-Test-Plan · CTF-Robustness · CTF-Audit · CTF-Config
-- CONTRACT.md — contrat d'interface pour les méthodes Core
-- Templates de compliance
+This is the foundational release of CTF. It establishes the structure, the helper toolkit, the governance model, the validation methodology, and the founding principle that frames all subsequent evolutions.
 
-### Origine
+**Core deliverables**
+- Common core normative document, version 1.0 (deliberately minimal — see `document/ctf-v1.0.md`)
+- Seven helper agents (specifications and READMEs):
+  - CTF Translator
+  - CTF Converger
+  - CTF Designer
+  - CTF Test Plan
+  - CTF Robustness
+  - CTF Config
+  - CTF Audit
+- Certification scheme:
+  - Self-declaration (any platform, any version)
+  - Federation pathway (federation-led declination)
+  - Community pathway (community-led declination, validated by federation)
+- Governance model:
+  - Founder as initial caretaker (custodian)
+  - Public RFC process
+  - Multiple implementations rule for upstream promotions
+  - Trajectory toward consultative council and scientific panel
+- Validation infrastructure:
+  - Methodology document
+  - Standardized feedback template
+  - Public evidence log
 
-Le CTF est issu de l'expérimentation GROW IO — premier agent de coaching IA développé selon ce framework, atteignant 87% de conformité ICF sur la partie agentique avant certification formelle. L'architecture CTF a été extraite de GROW IO pour en isoler la couche de conformité et la rendre réutilisable indépendamment de la méthode GROW.
+**Plain-language entry points**
+- `EXPLAINER.md` (English) and `EXPLAINER.fr.md` (French) — full project explained for a mixed audience, with integrated glossary
 
----
+**Founding principle**
 
-*Les versions suivantes seront publiées lors de révisions de l'ICF AI Coaching Framework and Standards ou de corrections significatives des layers.*
+> *The common good prevails over any organization, including any organization that might one day emerge to steward this standard.*
+
+Inscribed at the head of the README and of GOVERNANCE.md, this principle frames every subsequent decision regarding the evolution of CTF. It is not amendable through the ordinary RFC process.
