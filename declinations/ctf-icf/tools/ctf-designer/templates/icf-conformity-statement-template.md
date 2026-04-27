@@ -1,125 +1,125 @@
-# Déclaration de conformité ICF
-## [NOM-AGENT] — Document de conformité agentique
+# ICF Conformity Statement
+## [NOM-AGENT] — Agentic compliance document
 
-Agent : [NOM-AGENT]
-Éditeur : [NOM-EDITEUR]
-Méthode : [NOM-METHODE]
-Version CTF : 1.0
-Référentiel ICF : AI Coaching Framework and Standards V1.01 — 2024
-Date : [DATE]
-Produit par : CTF-Design
-
----
-
-## Présentation
-
-Ce document déclare la conformité de l'agent [NOM-AGENT] avec le référentiel ICF AI Coaching Framework and Standards V1.01 (2024), dans le périmètre de sa couche agentique — les règles de comportement, les protocoles de sécurité, le traitement des données en session et les droits des utilisateurs.
-
-Il est destiné à être transmis à un auditeur ICF externe. Il est autonome — sa lecture ne nécessite pas de connaissance du Coaching Trust Framework.
+Agent: [NOM-AGENT]
+Publisher: [NOM-EDITEUR]
+Method: [NOM-METHODE]
+CTF Version: 1.0
+ICF Reference: AI Coaching Framework and Standards V1.01 — 2024
+Date: [DATE]
+Produced by: CTF-Design
 
 ---
 
-## Architecture de conformité
+## Overview
 
-L'agent [NOM-AGENT] est construit sur le Coaching Trust Framework (CTF) v1.0 — un socle de conformité ICF. Il est composé de trois couches :
+This document declares the conformity of agent [NOM-AGENT] with the ICF AI Coaching Framework and Standards V1.01 (2024), within the scope of its agentic layer — behavioral rules, safety protocols, in-session data handling, and user rights.
 
-**Couche 1 — Layers CTF (conformité ICF)**
-Huit fichiers de règles comportementales couvrant les sections A à F du référentiel ICF. Ces fichiers sont invariants — identiques pour tous les agents CTF-compliant.
-
-**Couche 2 — Méthode [NOM-METHODE]**
-La logique de coaching propre à cet agent : accueil, phases, transitions, clôture, contexte de session.
-
-**Couche 3 — Configuration**
-Les variables de déploiement : éditeur, plateforme, ressources de crise locales, URLs.
+It is intended to be submitted to an external ICF auditor. It is self-contained — reading it does not require knowledge of the Coaching Trust Framework.
 
 ---
 
-## Couverture par section ICF
+## Compliance architecture
 
-### Section A — Éthique & Identification
+Agent [NOM-AGENT] is built on the Coaching Trust Framework (CTF) v1.0 — an ICF compliance foundation. It is composed of three layers:
 
-| Exigence | Couverture | Fichier |
-|----------|------------|---------|
-| A.1.1 — Identification IA (Basic + Advanced) | ✅ Couverte | layers/KB-A-ethics.md §A.1.1 |
-| A.1.2 — Limites contextuelles (5 contextes) | ✅ Couverte | layers/KB-A-ethics.md §A.1.2 |
-| A.1.5 — Biais | ✅ Couverte | layers/KB-A-ethics.md §A.1.5 |
-| A.1.6 — Transparence des données | ✅ Couverte | layers/KB-A-ethics.md §A.1.6 |
-| A.1.7 — Consentement & droit de retrait | ✅ Couverte | layers/KB-A-ethics.md §A.1.7 |
-| A.2.1 — Posture non-directive | ✅ Couverte | layers/KB-C-presence.md |
+**Layer 1 — CTF Layers (ICF compliance)**
+Eight behavioral rule files covering ICF reference sections A through F. These files are invariant — identical for all CTF-compliant agents.
 
-### Section B — Relation de coaching
+**Layer 2 — Method [NOM-METHODE]**
+The coaching logic specific to this agent: welcome, phases, transitions, closure, session context.
 
-| Exigence | Couverture | Fichier |
-|----------|------------|---------|
-| B.3.1/B.3.2 — Accord d'intention | ✅ Couverte | layers/KB-B-agreements.md + methodology/ |
-| B.3.3 — Accord de transition | ✅ Couverte | layers/KB-B-agreements.md + methodology/ |
-| B.3.5 — Droit de retrait | ✅ Couverte | layers/KB-A-ethics.md §A.1.7 |
-| B.4.1–B.4.4 — Confiance et sécurité | ✅ Couverte | layers/KB-B-agreements.md |
-| B.4.5 — Protocole de dérivation sécurité | ✅ Couverte | layers/KB-safety.md |
-| B.5.2–B.5.3 — Présence et dépendance | ✅ Couverte | layers/KB-B-agreements.md + KB-safety.md |
-
-### Section C — Compétences
-
-| Exigence | Couverture | Fichier |
-|----------|------------|---------|
-| C.6.1–C.6.3 — Écoute active | ✅ Couverte | layers/KB-C-presence.md |
-| C.7.1–C.7.4 — Questions puissantes | ✅ Couverte | layers/KB-C-presence.md |
-
-### Section D — Processus
-
-| Exigence | Couverture | Fichier |
-|----------|------------|---------|
-| D.8.1–D.8.2 — Objectif de session | ✅ Couverte | methodology/ |
-| D.8.3–D.8.6 — Réalité, obstacles, options, perspectives | ✅ Couverte | methodology/ |
-| D.8.7 — Focus agenda utilisateur | ✅ Couverte | layers/KB-C-presence.md |
-| D.9.1–D.9.3 — Engagement, rappel, pratique | ✅ Couverte | layers/KB-D-growth.md |
-| D.9.4 — Clôture intentionnelle | ✅ Couverte | layers/KB-D-growth.md + methodology/ |
-| D.9.5 — Bilan périodique | ✅ Couverte | layers/KB-D-growth.md |
-
-### Section E — Évaluation
-
-| Exigence | Couverture | Fichier |
-|----------|------------|---------|
-| E.10.1 — Rapport de tests | ✅ Couverte | compliance/test-plan.md (scénarios) + transcripts/TX-*.md (séances jouées) + compliance/robustness-report.md (analyse) |
-| E.10.2 — Mesure de satisfaction | ✅ Couverte | layers/KB-D-growth.md §Clôture |
-| E.10.4 — Validation experts ICF PCC/MCC | ⚠️ Hors périmètre | Validation humaine — à planifier par l'éditeur |
-| E.11.2 — Document pré-session | ✅ Produit | docs/pre-session.md |
-| E.11.3 — Accessibilité WCAG 2.1 AA | 🔲 Intégrateur | Responsabilité intégrateur |
-
-### Section F — Données
-
-| Exigence | Couverture | Fichier |
-|----------|------------|---------|
-| F.12.1–F.12.3 — Architecture et accès | ✅ Couverte | layers/KB-F-data.md + config/ |
-| F.12.4 — Politique de confidentialité | ✅ Produite | docs/privacy-policy.md |
-| F.12.6 — Droit à l'effacement | ✅ Couverte | layers/KB-F-data.md + config/ |
-| F.12.7 — Contact éditeur | ✅ Couverte | config/editorial.md |
-| F.13.1–F.13.2 — Accessibilité | 🔲 Intégrateur | Responsabilité intégrateur |
+**Layer 3 — Configuration**
+Deployment variables: publisher, platform, local crisis resources, URLs.
 
 ---
 
-## Limitations documentées
+## Coverage by ICF section
 
-Ces limitations sont connues et documentées. Elles ne remettent pas en cause la conformité comportementale de l'agent — elles identifient les étapes restantes.
+### Section A — Ethics & Identification
 
-| Limitation | Nature | Responsabilité |
+| Requirement | Coverage | File |
+|-------------|----------|------|
+| A.1.1 — AI Identification (Basic + Advanced) | ✅ Covered | layers/KB-A-ethics.md §A.1.1 |
+| A.1.2 — Contextual limitations (5 contexts) | ✅ Covered | layers/KB-A-ethics.md §A.1.2 |
+| A.1.5 — Bias | ✅ Covered | layers/KB-A-ethics.md §A.1.5 |
+| A.1.6 — Data transparency | ✅ Covered | layers/KB-A-ethics.md §A.1.6 |
+| A.1.7 — Consent & right to withdraw | ✅ Covered | layers/KB-A-ethics.md §A.1.7 |
+| A.2.1 — Non-directive stance | ✅ Covered | layers/KB-C-presence.md |
+
+### Section B — Coaching relationship
+
+| Requirement | Coverage | File |
+|-------------|----------|------|
+| B.3.1/B.3.2 — Intention agreement | ✅ Covered | layers/KB-B-agreements.md + methodology/ |
+| B.3.3 — Transition agreement | ✅ Covered | layers/KB-B-agreements.md + methodology/ |
+| B.3.5 — Right to withdraw | ✅ Covered | layers/KB-A-ethics.md §A.1.7 |
+| B.4.1–B.4.4 — Trust and safety | ✅ Covered | layers/KB-B-agreements.md |
+| B.4.5 — Safety referral protocol | ✅ Covered | layers/KB-safety.md |
+| B.5.2–B.5.3 — Presence and dependency | ✅ Covered | layers/KB-B-agreements.md + KB-safety.md |
+
+### Section C — Competencies
+
+| Requirement | Coverage | File |
+|-------------|----------|------|
+| C.6.1–C.6.3 — Active listening | ✅ Covered | layers/KB-C-presence.md |
+| C.7.1–C.7.4 — Powerful questions | ✅ Covered | layers/KB-C-presence.md |
+
+### Section D — Process
+
+| Requirement | Coverage | File |
+|-------------|----------|------|
+| D.8.1–D.8.2 — Session goal | ✅ Covered | methodology/ |
+| D.8.3–D.8.6 — Reality, obstacles, options, perspectives | ✅ Covered | methodology/ |
+| D.8.7 — User agenda focus | ✅ Covered | layers/KB-C-presence.md |
+| D.9.1–D.9.3 — Commitment, reminder, practice | ✅ Covered | layers/KB-D-growth.md |
+| D.9.4 — Intentional closure | ✅ Covered | layers/KB-D-growth.md + methodology/ |
+| D.9.5 — Periodic review | ✅ Covered | layers/KB-D-growth.md |
+
+### Section E — Evaluation
+
+| Requirement | Coverage | File |
+|-------------|----------|------|
+| E.10.1 — Test report | ✅ Covered | compliance/test-plan.md (scenarios) + transcripts/TX-*.md (conducted sessions) + compliance/robustness-report.md (analysis) |
+| E.10.2 — Satisfaction measure | ✅ Covered | layers/KB-D-growth.md §Closure |
+| E.10.4 — ICF PCC/MCC expert validation | ⚠️ Out of scope | Human validation — to be scheduled by the publisher |
+| E.11.2 — Pre-session document | ✅ Produced | docs/pre-session.md |
+| E.11.3 — WCAG 2.1 AA accessibility | 🔲 Integrator | Integrator responsibility |
+
+### Section F — Data
+
+| Requirement | Coverage | File |
+|-------------|----------|------|
+| F.12.1–F.12.3 — Architecture and access | ✅ Covered | layers/KB-F-data.md + config/ |
+| F.12.4 — Privacy policy | ✅ Produced | docs/privacy-policy.md |
+| F.12.6 — Right to erasure | ✅ Covered | layers/KB-F-data.md + config/ |
+| F.12.7 — Publisher contact | ✅ Covered | config/editorial.md |
+| F.13.1–F.13.2 — Accessibility | 🔲 Integrator | Integrator responsibility |
+
+---
+
+## Documented limitations
+
+These limitations are known and documented. They do not call into question the agent's behavioral compliance — they identify the remaining steps.
+
+| Limitation | Nature | Responsibility |
 |------------|--------|---------------|
-| E.10.4 — Validation par experts ICF PCC/MCC | Validation humaine irremplaçable | Éditeur |
-| E.11.3 — Audit WCAG 2.1 AA | Audit d'interface | Intégrateur |
-| F.13.1 — Technologies adaptatives | Documentation d'interface | Intégrateur |
+| E.10.4 — Validation by ICF PCC/MCC experts | Irreplaceable human validation | Publisher |
+| E.11.3 — WCAG 2.1 AA audit | Interface audit | Integrator |
+| F.13.1 — Adaptive technologies | Interface documentation | Integrator |
 
 ---
 
-## Étapes de certification restantes
+## Remaining certification steps
 
-1. Remplir `config/` et déployer l'agent
-2. Utiliser CTF-Test-Plan pour produire le plan de tests
-3. Conduire les tests utilisateurs selon le plan
-4. Utiliser CTF-Robustness pour analyser les résultats
-5. Utiliser CTF-Audit pour produire le rapport d'audit final
-6. Planifier la validation par des experts ICF PCC/MCC (E.10.4)
+1. Fill `config/` and deploy the agent
+2. Use CTF-Test-Plan to produce the test plan
+3. Conduct user tests according to the plan
+4. Use CTF-Robustness to analyze the results
+5. Use CTF-Audit to produce the final audit report
+6. Schedule validation by ICF PCC/MCC experts (E.10.4)
 
 ---
 
-*Déclaration de conformité produite par CTF-Design v1.0 · Coaching Trust Framework*
-*Ce document est le point de départ de la certification — il est complété par le rapport CTF-Audit.*
+*Conformity statement produced by CTF-Design v1.0 · Coaching Trust Framework*
+*This document is the starting point of certification — it is completed by the CTF-Audit report.*

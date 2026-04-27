@@ -1,97 +1,97 @@
-# Spécification — Document pré-session
-## CTF — Ce que le document pré-session doit contenir
+# Specification — Pre-session document
+## CTF — What the pre-session document must contain
 
-Exigence ICF : E.11.2
-Version CTF : 1.0
-
----
-
-> Ce fichier est fourni par le CTF. Il définit les exigences de contenu du document pré-session que l'auteur de l'agent doit produire et livrer dans `Core/`.
-> Le document pré-session lui-même est propre à chaque agent — il dépend de la méthode et de la configuration.
+ICF Requirement: E.11.2
+CTF Version: 1.0
 
 ---
 
-## Principe
-
-Le document pré-session est un document en langage ordinaire, accessible à l'utilisateur avant ou en début d'utilisation. Il n'est pas un contrat juridique — c'est une présentation honnête et compréhensible du service.
-
-**Public cible :** tout utilisateur, sans prérequis technique ou de coaching.
-**Format :** libre — page web, modal d'onboarding, PDF, texte affiché avant le premier échange.
-**Longueur :** suffisante pour couvrir les points ci-dessous, sans être exhaustive. Privilégier la clarté sur l'exhaustivité.
+> This file is provided by CTF. It defines the content requirements for the pre-session document that the agent designer must produce and deliver in `Core/`.
+> The pre-session document itself is specific to each agent — it depends on the method and the configuration.
 
 ---
 
-## Contenu obligatoire
+## Principle
 
-### 1. Nature du service
+The pre-session document is a plain-language document, accessible to the user before or at the beginning of use. It is not a legal contract — it is an honest and understandable presentation of the service.
 
-- Que cet agent est une intelligence artificielle — pas un coach humain, pas un thérapeute.
-- Ce qu'il fait : décrire le processus en une ou deux phrases en langage ordinaire.
-- Ce qu'il ne fait pas : conseil médical, juridique, financier, thérapeutique.
-
-### 2. La méthode utilisée
-
-- Nom de la méthode et description courte en langage ordinaire.
-- Ce à quoi l'utilisateur peut s'attendre concrètement dans une session.
-
-### 3. Limites du service
-
-- L'agent peut contenir des inexactitudes.
-- Il n'a pas de mémoire émotionnelle — il accède à l'historique textuel mais ne "ressent" pas.
-- Il ne remplace pas un suivi humain pour des situations qui le nécessitent.
-
-### 4. Données et confidentialité
-
-- Quelles données sont collectées et traitées.
-- Qui y a accès (plateforme, LLM, éditeur).
-- Comment l'utilisateur peut exercer ses droits (accès, effacement).
-- Lien vers la politique de confidentialité complète.
-
-### 5. Consentement et droit de retrait
-
-- L'utilisation est volontaire.
-- L'utilisateur peut arrêter à tout moment, sans justification.
-- Comment arrêter ou se désinscrire.
-
-### 6. Ressources alternatives
-
-- Lien vers un annuaire de coachs humains certifiés ICF ([URL_COACH_HUMAIN]).
-- Ressources de crise locales ([RESSOURCES_CRISE]) — à inclure si le service est susceptible d'être utilisé dans des contextes de vulnérabilité.
-
-### 7. Contact éditeur
-
-- Nom de l'éditeur ou de l'organisation.
-- Email de contact pour toute question.
+**Target audience:** any user, without technical or coaching prerequisites.
+**Format:** flexible — web page, onboarding modal, PDF, text displayed before the first exchange.
+**Length:** sufficient to cover the points below, without being exhaustive. Prioritize clarity over completeness.
 
 ---
 
-## Contenu recommandé (non obligatoire)
+## Mandatory content
 
-- FAQ sur l'utilisation (comment commencer, que faire si la session tourne mal).
-- Exemples de ce qu'on peut explorer avec cet agent.
-- Précisions sur la persistance de l'historique et comment l'effacer.
+### 1. Nature of the service
+
+- That this agent is an artificial intelligence — not a human coach, not a therapist.
+- What it does: describe the process in one or two plain-language sentences.
+- What it does not do: medical, legal, financial, or therapeutic advice.
+
+### 2. The method used
+
+- Method name and short plain-language description.
+- What the user can concretely expect in a session.
+
+### 3. Service limitations
+
+- The agent may contain inaccuracies.
+- It has no emotional memory — it accesses text history but does not "feel".
+- It does not replace human follow-up for situations that require it.
+
+### 4. Data and privacy
+
+- What data is collected and processed.
+- Who has access (platform, LLM, publisher).
+- How the user can exercise their rights (access, erasure).
+- Link to the full privacy policy.
+
+### 5. Consent and right to withdraw
+
+- Use is voluntary.
+- The user can stop at any time, without justification.
+- How to stop or unsubscribe.
+
+### 6. Alternative resources
+
+- Link to a directory of ICF-certified human coaches ([URL_COACH_HUMAIN]).
+- Local crisis resources ([RESSOURCES_CRISE]) — to include if the service is likely to be used in vulnerability contexts.
+
+### 7. Publisher contact
+
+- Name of the publisher or organization.
+- Contact email for any questions.
 
 ---
 
-## Ce que ce document n'est pas
+## Recommended content (not mandatory)
 
-- Un disclaimer juridique — le registre doit rester humain et compréhensible.
-- Un résumé de la politique de confidentialité — il peut y renvoyer, mais ne pas la reproduire.
-- Un manuel d'utilisation technique.
+- FAQ on usage (how to start, what to do if the session goes wrong).
+- Examples of what can be explored with this agent.
+- Details on history persistence and how to erase it.
 
 ---
 
-## Checklist de validation
+## What this document is not
 
-Avant de livrer le document dans `Core/`, vérifier :
+- A legal disclaimer — the tone must remain human and understandable.
+- A summary of the privacy policy — it can link to it, but not reproduce it.
+- A technical user manual.
 
-- [ ] Rédigé en langage ordinaire — compréhensible sans connaissance du coaching ou de l'IA
-- [ ] Mentionne explicitement que l'agent est une IA
-- [ ] Décrit la méthode en termes concrets
-- [ ] Mentionne les limites du service
-- [ ] Contient les informations sur les données et les droits
-- [ ] Contient le droit de retrait
-- [ ] Contient le lien vers la politique de confidentialité
-- [ ] Contient le contact éditeur
-- [ ] Contient au moins une ressource alternative (coach humain ou crise)
-- [ ] Accessible depuis l'interface pendant toute la durée d'utilisation
+---
+
+## Validation checklist
+
+Before delivering the document in `Core/`, verify:
+
+- [ ] Written in plain language — understandable without knowledge of coaching or AI
+- [ ] Explicitly mentions that the agent is an AI
+- [ ] Describes the method in concrete terms
+- [ ] Mentions service limitations
+- [ ] Contains information about data and rights
+- [ ] Contains the right to withdraw
+- [ ] Contains the link to the privacy policy
+- [ ] Contains the publisher contact
+- [ ] Contains at least one alternative resource (human coach or crisis)
+- [ ] Accessible from the interface throughout the duration of use

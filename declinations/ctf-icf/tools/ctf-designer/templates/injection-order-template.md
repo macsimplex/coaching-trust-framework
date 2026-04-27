@@ -1,84 +1,84 @@
-# Ordre d'injection — [NOM-AGENT]
-## Guide d'intégration plateforme
+# Injection order — [NOM-AGENT]
+## Platform integration guide
 
-Agent : [NOM-AGENT]
-Version : [VERSION]
-Version CTF référencée : 1.0
-Produit par : CTF-Design
+Agent: [NOM-AGENT]
+Version: [VERSION]
+Referenced CTF version: 1.0
+Produced by: CTF-Design
 
 ---
 
-> **À l'intégrateur**
+> **To the integrator**
 >
-> Ce fichier liste dans l'ordre exact les fichiers à injecter dans le contexte de l'agent sur votre plateforme.
-> Injectez-les dans cet ordre — l'ordre est fonctionnel, pas arbitraire.
-> Ne modifiez pas les fichiers `layers/` — ils sont invariants.
-> Les fichiers `config/` doivent être remplis avant déploiement (voir `config/editorial.md`).
+> This file lists in exact order the files to inject into the agent's context on your platform.
+> Inject them in this order — the order is functional, not arbitrary.
+> Do not modify the `layers/` files — they are invariant.
+> The `config/` files must be filled in before deployment (see `config/editorial.md`).
 
 ---
 
-## Ordre d'injection
+## Injection order
 
-### 1. Couches de conformité ICF (layers/)
+### 1. ICF compliance layers (layers/)
 
-Ces fichiers définissent le comportement éthique, la posture, la sécurité et la gestion des données de l'agent. Ils sont fournis par le CTF et ne doivent pas être modifiés.
+These files define the agent's ethical behavior, stance, safety, and data handling. They are provided by CTF and must not be modified.
 
-| Ordre | Fichier | Rôle |
-|-------|---------|------|
-| 1 | `layers/KB-A-ethics.md` | Identification IA · limites · consentement · biais |
-| 2 | `layers/KB-B-agreements.md` | Accords · confiance · sécurité relationnelle |
-| 3 | `layers/KB-C-presence.md` | Posture · écoute · questions · trajectoire |
-| 4 | `layers/KB-D-growth.md` | Engagement · suivi · bilan · clôture |
-| 5 | `layers/KB-E-evaluation.md` | Satisfaction · efficacité · documentation |
-| 6 | `layers/KB-F-data.md` | Données · RGPD · droits utilisateurs |
-| 7 | `layers/KB-safety.md` | Sécurité · gates · obligations inconditionnelles |
-| 8 | `layers/KB-supervision.md` | Mode supervision · auto-réflexivité |
+| Order | File | Role |
+|-------|------|------|
+| 1 | `layers/KB-A-ethics.md` | AI identification · limitations · consent · bias |
+| 2 | `layers/KB-B-agreements.md` | Agreements · trust · relational safety |
+| 3 | `layers/KB-C-presence.md` | Stance · listening · questions · trajectory |
+| 4 | `layers/KB-D-growth.md` | Commitment · follow-up · review · closure |
+| 5 | `layers/KB-E-evaluation.md` | Satisfaction · effectiveness · documentation |
+| 6 | `layers/KB-F-data.md` | Data · GDPR · user rights |
+| 7 | `layers/KB-safety.md` | Safety · gates · unconditional obligations |
+| 8 | `layers/KB-supervision.md` | Supervision mode · self-reflectivity |
 
-### 2. Méthode de coaching (methodology/)
+### 2. Coaching methodology (methodology/)
 
-Ces fichiers définissent la logique de coaching propre à cet agent.
+These files define the coaching logic specific to this agent.
 
-| Ordre | Fichier | Rôle |
-|-------|---------|------|
-| 9 | `methodology/[FICHIER-ACCUEIL]` | Phase d'accueil |
-| 10 | `methodology/[FICHIER-PROCESSUS]` | Phases et transitions |
-| 11 | `methodology/[FICHIER-CLOTURE]` | Protocole de clôture méthode |
-| 12 | `methodology/[FICHIER-CONTEXTE]` | Éléments de contexte de session |
+| Order | File | Role |
+|-------|------|------|
+| 9 | `methodology/[WELCOME-FILE]` | Welcome phase |
+| 10 | `methodology/[PROCESS-FILE]` | Phases and transitions |
+| 11 | `methodology/[CLOSURE-FILE]` | Method closure protocol |
+| 12 | `methodology/[CONTEXT-FILE]` | Session context elements |
 
 ### 3. Configuration (config/)
 
-Ces fichiers fournissent les variables de déploiement — éditeur, plateforme, ressources.
+These files provide deployment variables — publisher, platform, resources.
 
-| Ordre | Fichier | Rôle |
-|-------|---------|------|
-| 13 | `config/editorial.md` | Éditeur · contact · URLs |
-| 14 | `config/platform.md` | Plateforme · LLM · historique |
-| 15 | `config/localization.md` | Langue · ressources de crise |
+| Order | File | Role |
+|-------|------|------|
+| 13 | `config/editorial.md` | Publisher · contact · URLs |
+| 14 | `config/platform.md` | Platform · LLM · history |
+| 15 | `config/localization.md` | Language · crisis resources |
 
-### 4. Point d'entrée (en dernier — obligatoire)
+### 4. Entry point (last — mandatory)
 
-| Ordre | Fichier | Rôle |
-|-------|---------|------|
-| 16 | `layers/entrypoint.md` | Orchestration CTF + appel du slot méthode |
-
----
-
-## Avant de déployer
-
-- [ ] Tous les fichiers `config/` sont remplis (aucun placeholder `[...]` restant)
-- [ ] `config/localization.md` — `RESSOURCES_CRISE` correspond au pays de déploiement
-- [ ] `docs/pre-session.md` est accessible depuis l'interface utilisateur
-- [ ] `docs/privacy-policy.md` est accessible depuis l'interface utilisateur
-- [ ] L'ordre d'injection ci-dessus est respecté sur la plateforme
+| Order | File | Role |
+|-------|------|------|
+| 16 | `layers/entrypoint.md` | CTF orchestration + method slot invocation |
 
 ---
 
-## Documents publics à publier
+## Before deploying
 
-Ces fichiers sont dans `docs/` — ils doivent être accessibles aux utilisateurs :
+- [ ] All `config/` files are filled in (no remaining `[...]` placeholder)
+- [ ] `config/localization.md` — `RESSOURCES_CRISE` matches the deployment country
+- [ ] `docs/pre-session.md` is accessible from the user interface
+- [ ] `docs/privacy-policy.md` is accessible from the user interface
+- [ ] The injection order above is respected on the platform
 
-| Fichier | Où le publier |
-|---------|--------------|
-| `docs/pre-session.md` | Page d'accueil ou modal d'onboarding |
-| `docs/privacy-policy.md` | Lien permanent depuis l'interface |
-| `docs/agent-presentation.md` | Page de présentation du service |
+---
+
+## Public documents to publish
+
+These files are in `docs/` — they must be accessible to users:
+
+| File | Where to publish |
+|------|-----------------|
+| `docs/pre-session.md` | Landing page or onboarding modal |
+| `docs/privacy-policy.md` | Permanent link from the interface |
+| `docs/agent-presentation.md` | Service presentation page |

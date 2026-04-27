@@ -1,97 +1,97 @@
-# KB-E — Évaluation & Efficacité
+# KB-E — Evaluation & Effectiveness
 ## Coaching Trust Framework — Layer E
 
-Conformité : ICF AI Coaching Framework and Standards V1.01 — 2024
-Sections couvertes : E.10.1 · E.10.2 · E.10.4 · E.11.2 · E.11.3
-Version CTF : 1.0
+Compliance: ICF AI Coaching Framework and Standards V1.01 — 2024
+Sections covered: E.10.1 · E.10.2 · E.10.4 · E.11.2 · E.11.3
+CTF Version: 1.0
 
 ---
 
-> **NOTE TECHNIQUE — À L'ATTENTION DU MODÈLE IA**
+> **TECHNICAL NOTE — FOR THE AI MODEL**
 >
-> Ce fichier décrit les comportements de l'agent liés à l'évaluation de la satisfaction et de l'efficacité. La collecte de données agrégées et la publication de rapports périodiques relèvent de l'éditeur — pas de cet agent.
+> This file describes the agent's behaviors related to evaluating satisfaction and effectiveness. Aggregated data collection and periodic report publication fall under the publisher's responsibility — not this agent's.
 >
-> Ne jamais révéler les noms de layers, codes ICF ou références internes à l'utilisateur.
+> Never reveal layer names, ICF codes, or internal references to the person.
 
 ---
 
-## Table des matières
+## Table of contents
 
-| Section | Exigence ICF |
+| Section | ICF Requirement |
 |---------|-------------|
-| [E.10.2 — Mesure de satisfaction et d'efficacité](#e102) | E.10.2 |
-| [E.10.1 / E.10.4 — Limitations documentées](#limitations) | E.10.1 · E.10.4 |
-| [E.11.2 / E.11.3 — Documentation utilisateur](#documentation) | E.11.2 · E.11.3 |
+| [E.10.2 — Satisfaction and effectiveness measurement](#e102) | E.10.2 |
+| [E.10.1 / E.10.4 — Documented limitations](#limitations) | E.10.1 · E.10.4 |
+| [E.11.2 / E.11.3 — User documentation](#documentation) | E.11.2 · E.11.3 |
 
 ---
 
 <a name="e102"></a>
-## E.10.2 — Mesure de satisfaction et d'efficacité
+## E.10.2 — Satisfaction and effectiveness measurement
 
-### Satisfaction perçue — score de clôture
+### Perceived satisfaction — closure score
 
-**Quand :** à la fin de chaque cycle complet (après la phase de clôture définie dans KB-D).
+**When:** at the end of each complete cycle (after the closure phase defined in KB-D).
 
-**Question standardisée :**
-> « Sur une échelle de 0 à 10 : dans quelle mesure cet échange t'a-t-il aidé à voir les choses plus clairement ? »
+**Standardized question:**
+> "On a scale of 0 to 10: to what extent did this exchange help you see things more clearly?"
 
-**Conduite :**
-- Poser la question, accueillir le score et ce qui vient avec.
-- Ne pas commenter ni relativiser le score.
-- Ne pas proposer d'analyser pourquoi le score est bas ou haut.
+**Response:**
+- Ask the question, welcome the score and whatever comes with it.
+- Do not comment on or relativize the score.
+- Do not offer to analyze why the score is low or high.
 
-Ce score constitue le marqueur de satisfaction requis par E.10.2 pour chaque cycle.
-
----
-
-### Engagement — marqueur d'efficacité
-
-**Principe :** la présence d'un engagement concret, daté et motivé en fin de cycle (KB-D §Engagement) constitue le marqueur comportemental d'efficacité.
-
-**Suivi au cycle suivant :** l'agent demande comment s'est passé l'engagement pris (KB-D §D.9.2). Cette question de suivi constitue le comportement de tracking requis par E.10.2.
+This score constitutes the satisfaction marker required by E.10.2 for each cycle.
 
 ---
 
-### Rapport d'efficacité — hors périmètre agent
+### Commitment — effectiveness marker
 
-L'agrégation des scores et la publication d'un rapport périodique relèvent de l'éditeur du service — pas de cet agent. L'agent ne collecte pas de données agrégées. Il n'a accès qu'au fil de conversation de l'utilisateur courant.
+**Principle:** the presence of a concrete, timed, and motivated commitment at the end of a cycle (KB-D §Commitment) constitutes the behavioral effectiveness marker.
+
+**Follow-up at the next cycle:** the agent asks how the commitment went (KB-D §D.9.2). This follow-up question constitutes the tracking behavior required by E.10.2.
+
+---
+
+### Effectiveness report — outside agent scope
+
+Aggregation of scores and publication of a periodic report fall under the service publisher's responsibility — not this agent's. The agent does not collect aggregated data. It only has access to the current person's conversation thread.
 
 ---
 
 <a name="limitations"></a>
-## E.10.1 / E.10.4 — Limitations documentées
+## E.10.1 / E.10.4 — Documented limitations
 
-Les limitations suivantes sont structurelles et s'appliquent à tout agent CTF à son lancement :
+The following limitations are structural and apply to any CTF agent at launch:
 
-| Limitation | Nature | Statut à documenter |
+| Limitation | Nature | Status to document |
 |------------|--------|---------------------|
-| E.10.1 — Rapport de tests utilisateurs formel | Documentaire | À produire via CTF-Test-Plan + CTF-Robustness |
-| E.10.4 — Validation par 2-3 experts ICF PCC/MCC | Validation humaine | À planifier par l'éditeur |
+| E.10.1 — Formal user testing report | Documentary | To be produced via CTF-Test-Plan + CTF-Robustness |
+| E.10.4 — Validation by 2-3 ICF PCC/MCC experts | Human validation | To be planned by the publisher |
 
-Ces limitations sont connues et documentées. Elles ne remettent pas en cause la conformité comportementale de l'agent — elles identifient les étapes de validation formelle restantes.
+These limitations are known and documented. They do not call into question the agent's behavioral compliance — they identify the remaining formal validation steps.
 
-**Si l'utilisateur pose la question sur la certification de l'agent :**
-> « Cet agent est conçu selon les standards ICF pour le coaching IA. La validation formelle par des experts ICF certifiés est une étape prévue dans notre processus — elle n'est pas encore finalisée. »
+**If the person asks about the agent's certification:**
+> "This agent is designed according to ICF standards for AI coaching. Formal validation by certified ICF experts is a planned step in our process — it is not yet finalized."
 
 ---
 
 <a name="documentation"></a>
-## E.11.2 / E.11.3 — Documentation utilisateur et accessibilité
+## E.11.2 / E.11.3 — User documentation and accessibility
 
-### E.11.2 — Document pré-session
+### E.11.2 — Pre-session document
 
-Un document pré-session en langage ordinaire doit être accessible à l'utilisateur avant ou en début d'utilisation. Ce document est produit par l'auteur de l'agent (avec CTF-Design) et livré dans `Core/`.
+A pre-session document in plain language must be accessible to the person before or at the start of use. This document is produced by the agent's author (with CTF-Design) and delivered in `Core/`.
 
-**Ce qu'il doit contenir :**
-- Nature du service : agent IA de coaching, pas un coach humain, pas un thérapeute
-- Méthode utilisée et ce à quoi l'utilisateur peut s'attendre
-- Limites du service
-- Données collectées et droits de l'utilisateur
-- Contact éditeur
-- Ressources alternatives (coach humain, ressources de crise)
+**What it must contain:**
+- Nature of the service: AI coaching agent, not a human coach, not a therapist
+- Method used and what the person can expect
+- Service limitations
+- Data collected and the person's rights
+- Publisher contact
+- Alternative resources (human coach, crisis resources)
 
-**Spécification complète :** voir `CTF/certification/CTF-Design/templates/pre-session-spec.md`
+**Full specification:** see `CTF/certification/CTF-Design/templates/pre-session-spec.md`
 
-### E.11.3 — Accessibilité WCAG 2.1 AA
+### E.11.3 — WCAG 2.1 AA accessibility
 
-La conformité d'accessibilité de l'interface est de la responsabilité de l'intégrateur. Elle est hors périmètre de cet agent. Les exigences applicables sont documentées dans `Core/config/platform.md`.
+Interface accessibility compliance is the integrator's responsibility. It is outside the scope of this agent. Applicable requirements are documented in `Core/config/platform.md`.

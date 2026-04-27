@@ -1,169 +1,169 @@
-# KB — Le CONTRACT.md expliqué
+# KB — The CONTRACT.md explained
 ## CTF-Design — Knowledge Base
 
-Version CTF : 1.0
+CTF Version: 1.0
 
 ---
 
-> Ce fichier explique chaque exigence du CONTRACT.md — pourquoi elle existe, ce qu'elle doit produire,
-> et comment évaluer si elle est satisfaite.
-> Il est utilisé par CTF-Design pour guider l'auteur d'une méthode Core.
+> This file explains each requirement in CONTRACT.md — why it exists, what it must produce,
+> and how to assess whether it is satisfied.
+> It is used by CTF-Design to guide the designer of a Core method.
 
 ---
 
-## Exigence 1 — Phase d'accueil
+## Requirement 1 — Welcome phase
 
-**Pourquoi :** les layers CTF gèrent le consentement et l'accord d'intention génériques. Mais chaque méthode a sa propre façon d'explorer ce qui amène la personne — son moteur de venue, son état du moment, son intention. Cette exploration est spécifique à la méthode.
+**Why:** the CTF layers handle consent and the generic intention agreement. But each method has its own way of exploring what brings the person — their reason for coming, their current state, their intention. This exploration is specific to the method.
 
-**Ce que la méthode doit définir :**
-- Quand intervient la phase d'accueil (après le consentement CTF, avant le travail sur le contenu)
-- Quelles questions ou conduites la composent
-- Ses marqueurs de fin : comment sait-on que l'accueil est terminé et qu'on peut avancer ?
+**What the method must define:**
+- When the welcome phase occurs (after CTF consent, before working on content)
+- What questions or behaviors comprise it
+- Its completion markers: how do we know the welcome is done and we can move forward?
 
-**Exemples de marqueurs valides :**
-- L'utilisateur a nommé ce qui l'amène
-- L'intention de session est formulée
-- Le profil d'engagement a été identifié (si la méthode l'utilise)
+**Examples of valid markers:**
+- The person has named what brought them
+- The session intention has been formulated
+- The engagement profile has been identified (if the method uses one)
 
-**Signal d'insuffisance :** "l'accueil est terminé quand l'atmosphère est bonne" n'est pas un marqueur observable.
-
----
-
-## Exigence 2 — Structure de session
-
-**Pourquoi :** pour qu'un agent puisse progresser de façon cohérente, il doit savoir où il est, où il va, et quand il peut avancer. Sans structure définie, il improvise — et l'improvisation dans un contexte clinique ou émotionnel est un risque de conformité.
-
-**Ce que la méthode doit définir :**
-- Les phases ou étapes qui composent une session
-- Les marqueurs de fin de chaque phase — observables et précis
-- Le protocole de transition : comment l'accord est demandé, sous quelle forme
-- Les conditions de retour à une phase antérieure et comment le nommer
-
-**Exemples de marqueurs valides (observables) :**
-- « L'utilisateur a énoncé son objectif en termes mesurables et temporels »
-- « Au moins trois options distinctes ont été nommées »
-- « L'utilisateur a choisi explicitement une option parmi celles identifiées »
-- « L'utilisateur a répondu oui à la question de transition »
-
-**Signaux d'insuffisance :**
-- « Quand l'exploration est suffisante » → trop flou, non testable
-- « Quand le client se sent prêt » → interprétation, pas observation
-- « Quand l'énergie de la session est bonne » → non mesurable
-
-**Ce que le Core ne définit pas :**
-- Le format de l'accord de transition (géré par KB-B §B.3.3)
-- La posture lors des transitions (géré par KB-C)
+**Insufficiency signal:** "the welcome is done when the atmosphere is good" is not an observable marker.
 
 ---
 
-## Exigence 3 — Protocole de clôture
+## Requirement 2 — Session structure
 
-**Pourquoi :** KB-D définit la clôture CTF (question de satisfaction, rappel coach humain). Mais avant cette clôture, la méthode a son propre moment de fermeture — récapitulatif, engagement, synthèse. Ce moment doit être défini pour ne pas créer de chevauchement avec la clôture CTF.
+**Why:** for an agent to progress coherently, it must know where it is, where it is going, and when it can move forward. Without a defined structure, it improvises — and improvisation in a clinical or emotional context is a compliance risk.
 
-**Ce que la méthode doit définir :**
-- Ce qui constitue la fin du processus de la méthode (ex : engagement pris, synthèse recueillie)
-- La formulation de validation finale de l'engagement
-- Ce que la clôture méthode produit comme signal pour que la clôture CTF puisse s'enchaîner
+**What the method must define:**
+- The phases or steps that comprise a session
+- The completion markers for each phase — observable and precise
+- The transition protocol: how agreement is requested, in what form
+- The conditions for returning to a previous phase and how to name it
 
-**Exemples de signaux de fin valides :**
-- « Un engagement concret, daté et motivé a été formalisé par l'utilisateur »
-- « Une synthèse en 3 points a été validée par l'utilisateur »
-- « L'utilisateur a confirmé qu'il emporte [élément précis] »
+**Examples of valid markers (observable):**
+- "The person has stated their goal in measurable and time-bound terms"
+- "At least three distinct options have been named"
+- "The person has explicitly chosen one option among those identified"
+- "The person answered yes to the transition question"
 
-**Signaux d'insuffisance :**
-- « Quand la session atteint son but » → circulaire
-- « Quand le coach considère que c'est terminé » → il n'y a pas de coach humain, c'est l'agent
+**Insufficiency signals:**
+- "When the exploration is sufficient" → too vague, not testable
+- "When the client feels ready" → interpretation, not observation
+- "When the session energy is good" → not measurable
 
-**Ce que le Core ne définit pas :**
-- La question de satisfaction 0-10 (KB-D)
-- Le rappel du coach humain (KB-D + Configuration)
+**What the Core does not define:**
+- The format of the transition agreement (handled by KB-B §B.3.3)
+- The stance during transitions (handled by KB-C)
 
 ---
 
-## Exigence 4 — Contexte de session
+## Requirement 3 — Closure protocol
 
-**Pourquoi :** un agent sans mémoire active du contexte produit des sessions incohérentes — il pose des questions déjà posées, oublie ce qui a été dit, perd le fil. Le contexte de session est ce qui garantit la continuité interne d'une session.
+**Why:** KB-D defines the CTF closure (satisfaction question, human coach reminder). But before that closure, the method has its own closing moment — summary, commitment, synthesis. This moment must be defined to avoid overlap with the CTF closure.
 
-**Ce que la méthode doit définir :**
-- Les éléments de contexte qu'elle maintient (ex : intention formulée, objectif, réalité explorée, options identifiées, engagement pris)
-- Les règles d'utilisation de ces éléments (quand y faire référence, comment les mettre à jour si de nouveaux signaux apparaissent)
-- Ce qui est conservé entre les sessions (si la plateforme le permet)
+**What the method must define:**
+- What constitutes the end of the method's process (e.g., commitment made, synthesis gathered)
+- The formulation for final validation of the commitment
+- What signal the method closure produces so the CTF closure can follow
 
-**Signal d'insuffisance :** "l'agent se souvient de la session" n'est pas suffisant. La liste des éléments doit être explicite.
+**Examples of valid completion signals:**
+- "A concrete, dated, and motivated commitment has been formalized by the person"
+- "A 3-point summary has been validated by the person"
+- "The person has confirmed that they are taking away [specific element]"
 
-**Exemple valide (méthode GROW) :**
-| Élément | Phase d'origine | Règle de mise à jour |
+**Insufficiency signals:**
+- "When the session reaches its goal" → circular
+- "When the coach considers it is done" → there is no human coach, it is the agent
+
+**What the Core does not define:**
+- The 0-10 satisfaction question (KB-D)
+- The human coach reminder (KB-D + Configuration)
+
+---
+
+## Requirement 4 — Session context
+
+**Why:** an agent without active context memory produces incoherent sessions — it asks questions already asked, forgets what was said, loses the thread. Session context is what guarantees the internal continuity of a session.
+
+**What the method must define:**
+- The context elements it maintains (e.g., formulated intention, goal, reality explored, options identified, commitment made)
+- The rules for using these elements (when to reference them, how to update them if new signals appear)
+- What is retained between sessions (if the platform supports it)
+
+**Insufficiency signal:** "the agent remembers the session" is not sufficient. The list of elements must be explicit.
+
+**Valid example (GROW method):**
+| Element | Phase of origin | Update rule |
 |---|---|---|
-| `goal` (objectif formulé) | Goal | Révisable si la Reality révèle une contradiction |
-| `reality_points` (liste des éléments de réalité explorés) | Reality | Append-only |
-| `options` (liste des options identifiées) | Options | Append-only |
-| `commitment` (engagement pris) | Will | Unique — finalisé à la clôture |
+| `goal` (formulated goal) | Goal | Revisable if Reality reveals a contradiction |
+| `reality_points` (list of reality elements explored) | Reality | Append-only |
+| `options` (list of identified options) | Options | Append-only |
+| `commitment` (commitment made) | Will | Unique — finalized at closure |
 
 ---
 
-## Exigence 5 — Compatibilité gates CTF
+## Requirement 5 — CTF gates compatibility
 
-**Pourquoi :** les gates CTF (gate de périmètre continu, obligations inconditionnelles) s'appliquent sur le contenu, indépendamment de l'avancement dans la méthode. Une méthode qui contournerait ces gates — même involontairement — crée un risque de sécurité.
+**Why:** the CTF gates (continuous scope gate, unconditional obligations) apply to content, regardless of progress within the method. A method that would bypass these gates — even unintentionally — creates a safety risk.
 
-**Ce que la méthode doit vérifier :**
-- Aucune phase de la méthode ne se poursuit si le gate de périmètre est actif
-- Aucune formulation de la méthode ne contourne l'obligation inconditionnelle de la ressource de crise
-- La méthode ne définit pas de posture qui contredit KB-A, KB-B ou KB-C
+**What the method must verify:**
+- No phase of the method continues if the scope gate is active
+- No formulation of the method bypasses the unconditional obligation of the crisis resource
+- The method does not define a stance that contradicts KB-A, KB-B, or KB-C
 
-**Comment vérifier :**
-- Lire chaque phase de la méthode en se demandant : "si un signal de niveau 3 apparaît ici, le gate peut-il s'activer sans friction ?"
-- Vérifier qu'il n'y a pas de formulation du type "continuer à explorer en toutes circonstances"
+**How to verify:**
+- Read each phase of the method asking: "if a level 3 signal appears here, can the gate activate without friction?"
+- Verify there is no formulation of the type "continue exploring under all circumstances"
 
-**Si une tension existe :** la documenter dans la déclaration de conformité. CTF-Audit la prendra en compte.
+**If a tension exists:** document it in the conformity statement. CTF-Audit will take it into account.
 
-**Exemples de tensions à résoudre ou documenter :**
-- Une méthode qui demanderait à l'agent de « rester sur l'objectif même si l'utilisateur exprime une détresse » → viole le gate de périmètre. **À reformuler.**
-- Une méthode qui prescrit un feedback direct (ex : « dire ce qui ne va pas dans son projet ») → risque de contradiction avec la posture non-directive. **À ajuster en reformulation sans jugement.**
-- Une méthode avec un lexique propre (« la vibration du client ») → OK tant que l'observation reste testable. **Demander des marqueurs objectifs.**
-
----
-
-## Exigence 6 — Variables de configuration
-
-**Pourquoi :** les variables de Configuration sont les seuls éléments personnalisables du service. La méthode doit déclarer celles qu'elle utilise pour que CTF-Config sache quoi demander à l'intégrateur, et que CTF-Audit puisse vérifier qu'elles sont renseignées.
-
-**Variables standard disponibles :**
-- `NOM_AGENT` — nom de l'agent affiché à l'utilisateur
-- `NOM_METHODE` — nom de la méthode (utilisé dans B.4.1)
-- `URL_COACH_HUMAIN` — lien vers un annuaire de coachs
-- `URL_CONFIDENTIALITE` — politique de confidentialité
-- `CONTACT_EDITEUR` — email de contact
-- `RESSOURCES_CRISE` — ressources de crise locales
-- `PLATEFORME` et `LLM` — sous-traitants (utilisés dans KB-F)
-- `MILESTONE_INTERVAL` — fréquence du bilan périodique
-
-**Variables spécifiques :** si la méthode en a besoin, les déclarer explicitement dans la déclaration de conformité.
-
-**Exemple valide :** une méthode orientée cycles hebdomadaires déclare `MILESTONE_INTERVAL=7` et une variable spécifique `WEEK_REVIEW_QUESTIONS` qui contient les 3 questions de review hebdomadaire.
-
-**Signal d'insuffisance :** une méthode qui utilise des paramètres implicites sans les déclarer (« le coach définit ses objectifs avec le client ») — s'il s'agit d'un paramètre, il doit être nommé et documenté.
+**Examples of tensions to resolve or document:**
+- A method that would ask the agent to "stay on the goal even if the person expresses distress" → violates the scope gate. **Must be rephrased.**
+- A method that prescribes direct feedback (e.g., "say what is wrong with their project") → risk of contradiction with the non-directive stance. **Must be adjusted as non-judgmental reformulation.**
+- A method with its own lexicon ("the client's vibration") → OK as long as the observation remains testable. **Request objective markers.**
 
 ---
 
-## Déclaration de conformité — comment la remplir
+## Requirement 6 — Configuration variables
+
+**Why:** Configuration variables are the only customizable elements of the service. The method must declare those it uses so that CTF-Config knows what to ask the integrator, and so that CTF-Audit can verify they are filled in.
+
+**Standard available variables:**
+- `NOM_AGENT` — agent name displayed to the person
+- `NOM_METHODE` — method name (used in B.4.1)
+- `URL_COACH_HUMAIN` — link to a coach directory
+- `URL_CONFIDENTIALITE` — privacy policy
+- `CONTACT_EDITEUR` — contact email
+- `RESSOURCES_CRISE` — local crisis resources
+- `PLATEFORME` and `LLM` — subprocessors (used in KB-F)
+- `MILESTONE_INTERVAL` — periodic review frequency
+
+**Specific variables:** if the method needs them, declare them explicitly in the conformity statement.
+
+**Valid example:** a method focused on weekly cycles declares `MILESTONE_INTERVAL=7` and a specific variable `WEEK_REVIEW_QUESTIONS` containing the 3 weekly review questions.
+
+**Insufficiency signal:** a method that uses implicit parameters without declaring them ("the coach defines their goals with the client") — if it is a parameter, it must be named and documented.
+
+---
+
+## Conformity statement — how to fill it in
 
 ```markdown
-## Déclaration de conformité
+## Conformity statement
 
-Méthode : [nom]
-Auteur : [nom / organisation]
-Date : [date]
-Version CTF référencée : 1.0
+Method: [name]
+Author: [name / organization]
+Date: [date]
+Referenced CTF version: 1.0
 
-Exigences satisfaites :
-[x] 1. Phase d'accueil — voir [fichier, section]
-[x] 2. Structure de session — voir [fichier, section]
-[x] 3. Protocole de clôture — voir [fichier, section]
-[x] 4. Contexte de session — voir [fichier, section]
-[x] 5. Compatibilité gates CTF — voir [fichier, section]
-[x] 6. Variables de configuration déclarées — [liste]
+Requirements satisfied:
+[x] 1. Welcome phase — see [file, section]
+[x] 2. Session structure — see [file, section]
+[x] 3. Closure protocol — see [file, section]
+[x] 4. Session context — see [file, section]
+[x] 5. CTF gates compatibility — see [file, section]
+[x] 6. Configuration variables declared — [list]
 
-Écarts documentés : [oui / non — si oui, voir Core/compliance/]
+Documented deviations: [yes / no — if yes, see Core/compliance/]
 ```
 
-**Un écart documenté n'est pas un échec.** Il est transmis à CTF-Audit qui l'évalue. Un écart non documenté est une non-conformité.
+**A documented deviation is not a failure.** It is transmitted to CTF-Audit which evaluates it. An undocumented deviation is a non-conformity.

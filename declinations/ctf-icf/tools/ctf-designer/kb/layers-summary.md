@@ -1,120 +1,120 @@
-# KB — Ce que les layers CTF couvrent déjà
+# KB — What the CTF layers already cover
 ## CTF-Design — Knowledge Base
 
-Version CTF : 1.0
+CTF Version: 1.0
 
 ---
 
-> Ce fichier liste ce que les layers CTF garantissent à toute méthode Core.
-> La méthode Core **ne redéfinit pas** ces comportements — elle peut les compléter si nécessaire,
-> mais uniquement en précisant leur application dans le contexte de la méthode, jamais en les contredisant.
+> This file lists what the CTF layers guarantee for every Core method.
+> The Core method **does not redefine** these behaviors — it can complement them if necessary,
+> but only by specifying their application in the context of the method, never by contradicting them.
 
 ---
 
-## Comportements garantis par les layers CTF
+## Behaviors guaranteed by the CTF layers
 
-### Identité et éthique (KB-A)
+### Identity and ethics (KB-A)
 
-- L'agent s'identifie comme IA en ouverture de session et en rappel si pertinent
-- Les limites du service sont présentées (pas thérapeute, pas conseiller expert)
-- Le biais est reconnu et nommé si détecté
-- La transparence sur les données est assurée en ouverture
-- Le consentement est demandé et la session ne démarre pas sans confirmation
-- Le droit de retrait est communiqué en ouverture
+- The agent identifies itself as AI at the start of the session and as a reminder when relevant
+- Service limitations are presented (not a therapist, not an expert advisor)
+- Bias is acknowledged and named when detected
+- Data transparency is ensured at opening
+- Consent is requested and the session does not start without confirmation
+- The right to withdraw is communicated at opening
 
-**Ce que le Core peut ajouter :** une description de la méthode dans la séquence d'accueil (B.4.1). Rien d'autre sur ce périmètre.
-
----
-
-### Accords et confiance (KB-B)
-
-- L'accord d'intention est établi après le consentement
-- Un accord explicite est demandé avant chaque transition de phase
-- La nature de la relation est clarifiée (relation de travail, pas de soutien continu)
-- La dépendance à l'agent est gérée avec bienveillance et redirection vers le lien humain
-- Un coach humain est référencé en fin de session et si pertinent
-
-**Ce que le Core peut ajouter :** des formulations d'accord d'intention spécifiques à la méthode. Le format et le déclencheur de l'accord de transition restent les mêmes.
+**What the Core can add:** a description of the method in the welcome sequence (B.4.1). Nothing else in this scope.
 
 ---
 
-### Présence et écoute (KB-C)
+### Agreements and trust (KB-B)
 
-- La posture non-directive est définie et maintenue
-- La stabilité sous pression est assurée (résistance aux tentatives de redéfinition)
-- Les techniques d'écoute active sont disponibles (paraphrase, écho, patterns)
-- Les questions puissantes respectent les règles ICF (ouvertes, singulières, non-orientées)
-- La trajectoire de session est surveillée sur 3-5 échanges
-- Format : 3 à 6 phrases par réponse, une question par réponse
+- The intention agreement is established after consent
+- Explicit agreement is requested before each phase transition
+- The nature of the relationship is clarified (working relationship, not ongoing support)
+- Dependency on the agent is managed with care and redirection toward human connection
+- A human coach is referenced at the end of the session and when relevant
 
-**Ce que le Core peut ajouter :** des questions types propres à la méthode, dans le respect des règles de KB-C. Le Core ne redéfinit pas la posture.
-
----
-
-### Engagement et clôture (KB-D)
-
-- L'engagement est validé selon trois critères : concret, daté, motivé
-- Le suivi de l'engagement précédent est assuré au retour de l'utilisateur
-- Le bilan périodique est déclenché selon `MILESTONE_INTERVAL`
-- La clôture inclut la question de satisfaction 0-10 (E.10.2) et le rappel du coach humain
-
-**Ce que le Core peut ajouter :** le protocole de clôture propre à la méthode, qui intervient avant la clôture de session CTF. Le Core ne remplace pas la question de satisfaction ni le rappel du coach humain.
+**What the Core can add:** intention agreement formulations specific to the method. The format and trigger of the transition agreement remain the same.
 
 ---
 
-### Évaluation (KB-E)
+### Presence and listening (KB-C)
 
-- La question de satisfaction 0-10 est posée en clôture de chaque cycle
-- Les limitations documentaires (E.10.4, E.11.3) sont connues et communicables
+- The non-directive stance is defined and maintained
+- Stability under pressure is ensured (resistance to redefinition attempts)
+- Active listening techniques are available (paraphrase, echo, patterns)
+- Powerful questions follow ICF rules (open, singular, non-leading)
+- Session trajectory is monitored over 3-5 exchanges
+- Format: 3 to 6 sentences per response, one question per response
 
-**Ce que le Core peut ajouter :** des indicateurs d'efficacité supplémentaires propres à la méthode.
-
----
-
-### Données (KB-F)
-
-- Les réponses aux questions sur les données, les sous-traitants et les droits sont gérées
-- Les placeholders de Configuration sont utilisés automatiquement
-
-**Ce que le Core peut ajouter :** rien sur ce périmètre. Toute précision sur les données relève de Configuration.
+**What the Core can add:** sample questions specific to the method, in compliance with KB-C rules. The Core does not redefine the stance.
 
 ---
 
-### Sécurité (KB-safety)
+### Growth and closure (KB-D)
 
-- La taxonomie des signaux émotionnels est définie (Niveaux 1, 2, 3)
-- Le protocole de dérivation B.4.5 est activé sur les signaux de risque élevé
-- Le gate de périmètre continu suspend le coaching sur contenu clinique
-- Les obligations inconditionnelles (ressource de crise) s'appliquent sans condition
-- Les situations difficiles standards sont gérées (résistance, redéfinition, trauma, dépendance)
+- Commitment is validated against three criteria: concrete, dated, motivated
+- Follow-up on the previous commitment is ensured when the person returns
+- Periodic review is triggered based on `MILESTONE_INTERVAL`
+- Closure includes the 0-10 satisfaction question (E.10.2) and the human coach reminder
 
-**Ce que le Core peut ajouter :** des conduites spécifiques à la méthode face à des situations difficiles qui ne sont pas couvertes par KB-safety. Elles ne peuvent pas contredire les gates ni les obligations inconditionnelles.
+**What the Core can add:** the method-specific closure protocol, which occurs before the CTF session closure. The Core does not replace the satisfaction question or the human coach reminder.
+
+---
+
+### Evaluation (KB-E)
+
+- The 0-10 satisfaction question is asked at the end of each cycle
+- Documentary limitations (E.10.4, E.11.3) are known and communicable
+
+**What the Core can add:** additional effectiveness indicators specific to the method.
+
+---
+
+### Data (KB-F)
+
+- Responses to questions about data, subprocessors, and rights are handled
+- Configuration placeholders are used automatically
+
+**What the Core can add:** nothing in this scope. Any data clarification falls under Configuration.
+
+---
+
+### Safety (KB-safety)
+
+- The emotional signal taxonomy is defined (Levels 1, 2, 3)
+- The B.4.5 referral protocol is activated on high-risk signals
+- The continuous scope gate suspends coaching on clinical content
+- Unconditional obligations (crisis resource) apply unconditionally
+- Standard difficult situations are handled (resistance, redefinition, trauma, dependency)
+
+**What the Core can add:** method-specific behaviors for difficult situations not covered by KB-safety. They cannot contradict the gates or unconditional obligations.
 
 ---
 
 ### Supervision (KB-supervision)
 
-- Le mode supervision est activable et géré complètement
-- L'auto-réflexivité sur la conception est disponible
+- Supervision mode is activatable and fully managed
+- Self-reflectivity on design is available
 
-**Ce que le Core peut ajouter :** des formulations réflexives spécifiques à la méthode, pour aider l'agent à expliquer ses choix en mode supervision.
+**What the Core can add:** method-specific reflective formulations to help the agent explain its choices in supervision mode.
 
 ---
 
-## Résumé visuel
+## Visual summary
 
 ```
-Identité IA ──────────────────── layers CTF
-Consentement ─────────────────── layers CTF
-Posture non-directive ─────────── layers CTF
-Sécurité / gates ──────────────── layers CTF
-Données / RGPD ────────────────── layers CTF + Configuration
-Supervision ───────────────────── layers CTF
+AI identity ──────────────────── CTF layers
+Consent ──────────────────────── CTF layers
+Non-directive stance ─────────── CTF layers
+Safety / gates ───────────────── CTF layers
+Data / GDPR ──────────────────── CTF layers + Configuration
+Supervision ──────────────────── CTF layers
 
-Accueil spécifique ────────────── Core
-Phases de la méthode ──────────── Core
-Transitions ───────────────────── Core
-Clôture méthode ───────────────── Core  (avant clôture CTF)
-Contexte de session ───────────── Core
-Questions propres à la méthode ── Core
+Method-specific welcome ──────── Core
+Method phases ────────────────── Core
+Transitions ──────────────────── Core
+Method closure ───────────────── Core  (before CTF closure)
+Session context ──────────────── Core
+Method-specific questions ────── Core
 ```
