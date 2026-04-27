@@ -32,7 +32,35 @@ If no declination exists for your federation, you can use CTF Translator to crea
 
 ## Step 2 — Add CTF to your project
 
-### Option A — Git submodule (recommended)
+### Option A — npm package (recommended for Node.js platforms)
+
+```bash
+npm install macsimplex/coaching-trust-framework
+```
+
+Then in your code:
+
+```javascript
+const ctf = require('coaching-trust-framework');
+
+// List available declinations
+ctf.listDeclinations();  // ['ctf-icf']
+
+// Load layers for injection into a coaching agent's system prompt
+const layers = ctf.loadLayersText('ctf-icf');
+
+// Load a pipeline agent's prompt
+const designerPrompt = ctf.loadToolPrompt('ctf-icf', 'designer');
+
+// Load the CTF Core normative document
+const core = ctf.loadCore();
+```
+
+Update anytime with `npm update coaching-trust-framework`.
+
+Full API reference: see [`index.js`](./index.js).
+
+### Option B — Git submodule
 
 ```bash
 git submodule add https://github.com/macsimplex/coaching-trust-framework.git ctf
@@ -45,7 +73,7 @@ cd ctf && git pull origin main && cd ..
 git add ctf && git commit -m "Update CTF submodule"
 ```
 
-### Option B — Copy files
+### Option C — Copy files
 
 Copy the declination directory you need into your project:
 
@@ -68,6 +96,13 @@ Your platform needs to run 4 helper agents in sequence. Each agent receives inpu
 **Output:** Design package (methodology files, contract, public documents).
 
 **Implementation:** Run the Designer prompt as the system prompt of a chat-based LLM interaction. The designer (your user) chats with the agent to produce the design.
+
+```javascript
+const ctf = require('coaching-trust-framework');
+const prompt = ctf.loadToolPrompt('ctf-icf', 'designer');
+const kb = ctf.loadDesignerKB('ctf-icf');
+// Use prompt as system message, kb files as context
+```
 
 ### 3.2 — CTF Test Plan
 
@@ -110,10 +145,10 @@ The behavioral layers encode the ethical requirements that your coaching agents 
 2. CTF layers (all `.md` files from the layers directory, sorted alphabetically)
 3. The agent's methodology files (produced by CTF Designer)
 
-Example (pseudo-code):
 ```javascript
-const layers = loadAllMdFiles('ctf/declinations/ctf-icf/layers/');
-const methodology = loadMethodologyFiles(agent.designPackage);
+const ctf = require('coaching-trust-framework');
+const layers = ctf.loadLayersText('ctf-icf');
+
 const systemPrompt = `
 # Agent Identity
 Name: ${agent.name}

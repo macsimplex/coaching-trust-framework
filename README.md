@@ -91,50 +91,70 @@ Because CTF evolves inductively, **empirical traces are a structural object** of
 
 The detailed methodology lives in [`validation/methodology.md`](./validation/methodology.md). The evidence log itself lives in [`validation/evidence-log.md`](./validation/evidence-log.md). The standardized format for adopters and supervisors to send observations lives in [`validation/feedback-template.md`](./validation/feedback-template.md).
 
+## Installation
+
+### npm (Node.js platforms)
+
+```bash
+npm install macsimplex/coaching-trust-framework
+```
+
+```javascript
+const ctf = require('coaching-trust-framework');
+
+ctf.listDeclinations();                        // ['ctf-icf']
+ctf.loadLayersText('ctf-icf');                 // All layers concatenated
+ctf.loadToolPrompt('ctf-icf', 'designer');     // Designer system prompt
+ctf.loadCore();                                // CTF Core normative document
+```
+
+### Git submodule
+
+```bash
+git submodule add https://github.com/macsimplex/coaching-trust-framework.git ctf
+```
+
+See [INTEGRATION.md](./INTEGRATION.md) for the full step-by-step guide.
+
 ## Repository structure
 
 ```
 ctf/
-├── README.md                                  ← you are here
-├── EXPLAINER.md                               ← plain-language guide (English)
-├── EXPLAINER.fr.md                            ← plain-language guide (French)
-├── LICENSE                                    ← CC BY-SA 4.0
-├── CHANGELOG.md
-├── GOVERNANCE.md                              ← how CTF evolves
-├── CONTRIBUTING.md                            ← how to contribute
-├── ADOPTERS.md                                ← platforms implementing CTF
-├── CONTRIBUTORS.md                            ← contributors to CTF itself
+├── index.js                                   ← npm package entry point (helpers API)
+├── package.json                               ← npm package manifest
+├── INTEGRATION.md                             ← step-by-step platform integration guide
 │
 ├── document/
-│   └── ctf-v1.0.md                            ← the common core, deliberately minimal
+│   └── ctf-v1.0.md                            ← the common core (normative)
 │
 ├── tools/
+│   ├── PIPELINE.md                            ← agent-by-agent pipeline reference
 │   ├── ctf-translator/                        ← federation document → declination
 │   ├── ctf-converger/                         ← declinations → upstream candidates
 │   ├── ctf-designer/                          ← method → portable agent design
-│   ├── ctf-test-plan/                         ← agent design → test plan
-│   ├── ctf-robustness/                        ← agent → adversarial test results
-│   ├── ctf-config/                            ← portable design → platform deployment
+│   ├── ctf-test-plan/                         ← agent design → test plan + test-categories.md
+│   ├── ctf-robustness/                        ← agent → robustness report + evaluation-axes.md
+│   ├── ctf-config/                            ← platform deployment + best-practices.md
 │   └── ctf-audit/                             ← deployed agent → conformance report
 │
 ├── declinations/
-│   ├── README.md                              ← index and status of declinations
-│   ├── ctf-icf/                               ← (when produced)
-│   └── ctf-emcc/                              ← (when produced)
+│   ├── ctf-icf/                               ← ICF declination (layers, tools, mapping)
+│   └── (ctf-emcc/ anticipated)
 │
 ├── certification-scheme/
-│   ├── self-declaration.md                    ← for platforms (any CTF version)
-│   ├── federation-pathway.md                  ← when a federation authors a declination
-│   └── community-pathway.md                   ← when a community member authors a declination
+│   ├── self-declaration.md
+│   ├── federation-pathway.md
+│   └── community-pathway.md
 │
-├── rfcs/
-│   ├── rfc-template.md
-│   └── (accepted RFCs)
+├── validation/
+│   ├── methodology.md
+│   ├── feedback-template.md
+│   └── evidence-log.md
 │
-└── validation/
-    ├── methodology.md                         ← how empirical traces are collected and qualified
-    ├── feedback-template.md                   ← format to send observations
-    └── evidence-log.md                        ← public, versioned record of accumulated evidence
+├── EXPLAINER.md / EXPLAINER.fr.md             ← plain-language guides (EN/FR)
+├── GOVERNANCE.md                              ← how CTF evolves
+├── CONTRIBUTING.md / ADOPTERS.md / CONTRIBUTORS.md
+└── LICENSE                                    ← CC BY-SA 4.0
 ```
 
 ## How to use CTF
