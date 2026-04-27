@@ -5,8 +5,15 @@ title: Coaching Trust Framework
 description: An open framework for trustworthy AI coaching agents — published as a common good under CC BY-SA 4.0.
 url: https://coaching-trust-framework.org
 
-# Theme — clean, minimal, GitHub Pages built-in
-theme: jekyll-theme-cayman
+# No theme — using custom _layouts/default.html
+# theme: jekyll-theme-cayman
+
+# Default layout for all pages
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
 
 # Plugins supported by GitHub Pages
 plugins:
