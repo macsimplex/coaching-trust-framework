@@ -1,0 +1,183 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coaching Trust Framework</title>
+<meta name="description" content="An open framework for trustworthy AI coaching agents — published as a common good.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: #0a0e17; color: #e2e8f0; line-height: 1.7; }
+a { color: #4db89a; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.hero { text-align: center; padding: 80px 24px 60px; max-width: 720px; margin: 0 auto; }
+.hero h1 { font-size: clamp(28px, 5vw, 42px); font-weight: 700; letter-spacing: -0.5px; margin-bottom: 12px; color: #fff; }
+.hero .subtitle { font-size: 18px; color: #94a3b8; margin-bottom: 32px; }
+.hero .badge { display: inline-block; padding: 6px 16px; border-radius: 20px; font-size: 12px; font-weight: 600; background: rgba(77,184,154,0.12); color: #4db89a; border: 1px solid rgba(77,184,154,0.3); margin-bottom: 24px; }
+
+.lang-switch { display: flex; justify-content: center; gap: 0; margin-bottom: 40px; }
+.lang-switch button { padding: 8px 20px; border: 1px solid rgba(255,255,255,0.12); background: transparent; color: #94a3b8; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+.lang-switch button:first-child { border-radius: 8px 0 0 8px; }
+.lang-switch button:last-child { border-radius: 0 8px 8px 0; }
+.lang-switch button.active { background: rgba(77,184,154,0.15); color: #4db89a; border-color: rgba(77,184,154,0.4); }
+
+.content { max-width: 680px; margin: 0 auto; padding: 0 24px 80px; }
+.section { margin-bottom: 48px; }
+.section h2 { font-size: 20px; font-weight: 600; color: #fff; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.section p { color: #cbd5e1; margin-bottom: 12px; }
+.section ul { list-style: none; padding: 0; }
+.section li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.04); color: #cbd5e1; }
+.section li strong { color: #e2e8f0; }
+
+.principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 16px; }
+.principle { padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02); }
+.principle h3 { font-size: 15px; font-weight: 600; color: #fff; margin-bottom: 6px; }
+.principle p { font-size: 14px; color: #94a3b8; margin: 0; }
+
+.cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.cta a { padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 600; transition: background 0.2s; }
+.cta .primary { background: #4db89a; color: #0a0e17; }
+.cta .primary:hover { background: #3da888; text-decoration: none; }
+.cta .secondary { background: rgba(255,255,255,0.06); color: #e2e8f0; border: 1px solid rgba(255,255,255,0.12); }
+.cta .secondary:hover { background: rgba(255,255,255,0.1); text-decoration: none; }
+
+.footer { text-align: center; padding: 40px 24px; color: #64748b; font-size: 13px; border-top: 1px solid rgba(255,255,255,0.06); }
+.footer a { color: #64748b; }
+
+[lang="fr"] { display: none; }
+body.fr [lang="fr"] { display: block; }
+body.fr [lang="en"] { display: none; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="badge">v1.0 — Common Good — CC BY-SA 4.0</div>
+  <h1>Coaching Trust Framework</h1>
+  <div class="subtitle" lang="en">An open framework for trustworthy AI coaching agents.</div>
+  <div class="subtitle" lang="fr">Un cadre ouvert pour des agents de coaching IA dignes de confiance.</div>
+  <div class="lang-switch">
+    <button onclick="setLang('en')" id="btnEn" class="active">English</button>
+    <button onclick="setLang('fr')" id="btnFr">Francais</button>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- ENGLISH -->
+  <div lang="en">
+    <div class="section">
+      <h2>What is CTF?</h2>
+      <p>CTF is a shared, free, open framework that any platform can adopt, any professional federation can adapt, and any practitioner can read and verify.</p>
+      <p>It articulates how an AI coaching agent should be designed, tested, deployed and supervised — so that the people who use it can trust what is being offered to them.</p>
+    </div>
+
+    <div class="section">
+      <h2>Three principles</h2>
+      <div class="principles">
+        <div class="principle">
+          <h3>Inductive</h3>
+          <p>A deliberately minimal common core, declined per professional federation. The core grows only by absorbing what has been observed to be common across multiple implementations.</p>
+        </div>
+        <div class="principle">
+          <h3>Examinable</h3>
+          <p>Empirical evidence is a structural object. Helper agents are sollicited and inspectable. Supervision is tripartite by design.</p>
+        </div>
+        <div class="principle">
+          <h3>Common good</h3>
+          <p>The founding principle: the common good prevails over any organization, including any organization that might one day steward this standard.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Where to start</h2>
+      <ul>
+        <li><strong>Curious?</strong> Read <a href="./EXPLAINER">the plain-language Explainer</a></li>
+        <li><strong>Coach evaluating AI tools?</strong> Ask platforms if they self-declare CTF conformance</li>
+        <li><strong>Building an AI coaching agent?</strong> Start with <a href="./certification-scheme/self-declaration">self-declaration</a> and <a href="./tools/ctf-designer/">CTF Designer</a></li>
+        <li><strong>Professional federation?</strong> See the <a href="./certification-scheme/federation-pathway">federation pathway</a></li>
+        <li><strong>Want to contribute?</strong> Read <a href="./CONTRIBUTING">CONTRIBUTING</a> and <a href="./GOVERNANCE">GOVERNANCE</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Get started</h2>
+      <div class="cta">
+        <a href="./EXPLAINER" class="primary">Read the Explainer</a>
+        <a href="https://github.com/macsimplex/coaching-trust-framework" class="secondary">View on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FRENCH -->
+  <div lang="fr">
+    <div class="section">
+      <h2>Qu'est-ce que le CTF ?</h2>
+      <p>Le CTF est un cadre partage, gratuit et ouvert que toute plateforme peut adopter, toute federation professionnelle peut adapter, et tout praticien peut lire et verifier.</p>
+      <p>Il articule comment un agent de coaching IA doit etre concu, teste, deploye et supervise — pour que les personnes qui le consultent puissent faire confiance a ce qui leur est propose.</p>
+    </div>
+
+    <div class="section">
+      <h2>Trois principes</h2>
+      <div class="principles">
+        <div class="principle">
+          <h3>Inductif</h3>
+          <p>Un noyau commun deliberement minimal, decline par federation professionnelle. Le noyau ne grandit qu'en absorbant ce qui a ete observe comme commun a travers plusieurs implementations.</p>
+        </div>
+        <div class="principle">
+          <h3>Examinable</h3>
+          <p>L'evidence empirique est un objet structurel. Les agents auxiliaires sont sollicites et inspectables. La supervision est tripartite par conception.</p>
+        </div>
+        <div class="principle">
+          <h3>Bien commun</h3>
+          <p>Le principe fondateur : le bien commun prime sur toute organisation, y compris toute organisation qui pourrait un jour porter ce standard.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Par ou commencer</h2>
+      <ul>
+        <li><strong>Curieux ?</strong> Lisez <a href="./EXPLAINER.fr">l'Explainer en francais</a></li>
+        <li><strong>Coach evaluant des outils IA ?</strong> Demandez aux plateformes si elles declarent leur conformite CTF</li>
+        <li><strong>Vous construisez un agent de coaching IA ?</strong> Commencez par l'<a href="./certification-scheme/self-declaration">auto-declaration</a> et le <a href="./tools/ctf-designer/">CTF Designer</a></li>
+        <li><strong>Federation professionnelle ?</strong> Voir le <a href="./certification-scheme/federation-pathway">parcours federation</a></li>
+        <li><strong>Envie de contribuer ?</strong> Lisez <a href="./CONTRIBUTING">CONTRIBUTING</a> et <a href="./GOVERNANCE">GOVERNANCE</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Commencer</h2>
+      <div class="cta">
+        <a href="./EXPLAINER.fr" class="primary">Lire l'Explainer</a>
+        <a href="https://github.com/macsimplex/coaching-trust-framework" class="secondary">Voir sur GitHub</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>Founded by Maxime Bui, 2026 · <a href="mailto:maxime@simplex.coach">maxime@simplex.coach</a></p>
+  <p style="margin-top:6px"><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://github.com/macsimplex/coaching-trust-framework">GitHub</a></p>
+</div>
+
+<script>
+function setLang(lang) {
+  document.body.classList.toggle('fr', lang === 'fr');
+  document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+  document.getElementById('btnFr').classList.toggle('active', lang === 'fr');
+  document.documentElement.lang = lang;
+  try { localStorage.setItem('ctf_lang', lang); } catch(_) {}
+}
+try { const saved = localStorage.getItem('ctf_lang'); if (saved) setLang(saved); } catch(_) {}
+</script>
+
+</body>
+</html>
