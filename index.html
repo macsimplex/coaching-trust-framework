@@ -49,9 +49,9 @@ a:hover { text-decoration: underline; }
 .footer { text-align: center; padding: 40px 24px; color: #64748b; font-size: 13px; border-top: 1px solid rgba(255,255,255,0.06); }
 .footer a { color: #64748b; }
 
-[lang="fr"] { display: none; }
-body.fr [lang="fr"] { display: block; }
-body.fr [lang="en"] { display: none; }
+.content [lang="fr"], .hero [lang="fr"] { display: none; }
+body.fr .content [lang="fr"], body.fr .hero [lang="fr"] { display: block; }
+body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
 </style>
 </head>
 <body>
@@ -201,7 +201,6 @@ function setLang(lang) {
   document.body.classList.toggle('fr', lang === 'fr');
   document.getElementById('btnEn').classList.toggle('active', lang === 'en');
   document.getElementById('btnFr').classList.toggle('active', lang === 'fr');
-  document.documentElement.lang = lang;
   try { localStorage.setItem('ctf_lang', lang); } catch(_) {}
 }
 try { const saved = localStorage.getItem('ctf_lang'); if (saved) setLang(saved); } catch(_) {}
