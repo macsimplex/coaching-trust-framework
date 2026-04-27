@@ -202,7 +202,7 @@ Les sessions Claude Code suggérées, par ordre :
 - **`ctf.energetics.systems`** : redirige vers `coaching-trust-framework.org` ou laisse mourir le sous-domaine. Une redirection 301 est la voie courtoise pour les liens existants.
 - **Site multilingue** : actuellement le site rend tous les `.md` en HTML. Pour un sélecteur de langue propre EN/FR sur la home, c'est une session Claude Code séparée — pas urgent.
 - **Issue templates** sur GitHub : créer des templates pour `bug`, `proposal`, `feedback (evidence log)`. Une session courte.
-- **GitHub Discussions** : à activer si tu veux des conversations communautaires distinctes des issues. Recommandé une fois que le premier contributeur externe (magif.ai ?) arrive.
+- **GitHub Discussions** : à activer si tu veux des conversations communautaires distinctes des issues. Recommandé maintenant que magif.ai est founding partner.
 - **Branding visuel** : pas obligatoire en v1.0, mais un logo simple + une favicon améliorent la perception. À discuter quand tu auras du temps pour ça.
 
 ## Quelques rappels importants

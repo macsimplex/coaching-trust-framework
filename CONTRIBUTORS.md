@@ -19,9 +19,19 @@ The founder authored the initial version of the framework, the seven helper agen
 
 ---
 
+## Founding partner
+
+### magif.ai
+- **Role:** Founding partner
+- **First contribution:** April 2026
+- **Contribution summary:** Content integration, platform implementation, and collaborative shaping of the framework alongside the founder.
+- **Website:** [magif.ai](https://magif.ai)
+
+---
+
 ## Active contributors
 
-*This section will be populated as external contributors begin submitting proposals, improvements, federation adaptations, translations, or other forms of substantive contribution.*
+*This section will be populated as additional contributors begin submitting proposals, improvements, federation adaptations, translations, or other forms of substantive contribution.*
 
 ### Format for entries
 - **Name** (or pseudonym, if preferred)

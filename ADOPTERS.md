@@ -23,16 +23,13 @@ If you are an adopter, please add yourself by submitting a pull request to this 
 
 ## Active contributors
 
-*This section will list adopters who, beyond implementing CTF, actively contribute to its evolution through the proposal process or through documented feedback. As of v1.0, this section is empty pending the formalization of magif.ai's contributor status.*
-
----
-
-## Pending engagements
-
 ### magif.ai
-- **Status:** Invited contributor (pending evaluation)
-- **Date of invitation:** April 2026
-- **Notes:** magif.ai has been invited by the founder to evaluate CTF, implement it in its platform, and join as a first external contributor to the framework. Confirmation of adopter status pending magif.ai's own assessment.
+- **Type:** AI coaching platform
+- **Status:** Founding partner
+- **CTF version implemented:** 1.0
+- **Date of engagement:** April 2026
+- **Notes:** magif.ai joined CTF as founding partner, working on content integration and platform implementation alongside the founder.
+- **Website:** [magif.ai](https://magif.ai)
 
 ---
 
