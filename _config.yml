@@ -40,7 +40,6 @@ readme_index:
 # Files and directories to exclude from the published site
 exclude:
   - CLAUDE.md
-  - HANDOFF.md
   - .gitignore
   - Gemfile
   - Gemfile.lock

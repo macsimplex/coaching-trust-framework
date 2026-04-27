@@ -15,8 +15,10 @@ This directory holds the **raw source material** that informs the production of 
 - Verbatim large excerpts of the ICF normative document — the canonical source is the ICF document itself; we cite, we do not reproduce in bulk.
 - Material under copyright that has not been authorized for redistribution.
 
-## Migration note (April 2026)
+## Current status (April 2026)
 
-The earlier CTF iteration (pre-migration) contained a `/layers/` directory with nine knowledge-base files mapped to ICF sections (KB-A-ethics, KB-B-agreements, KB-C-presence, KB-D-growth, KB-E-evaluation, KB-F-data, KB-safety, KB-supervision, entrypoint). That material is the natural starting point for this declination's source material and should be moved here as the first integration step after the migration.
+The EGG platform (reference implementer) has working ICF-aligned layers in its codebase (`data/ctf/layers/`): nine knowledge-base files mapped to ICF sections (KB-A-ethics, KB-B-agreements, KB-C-presence, KB-D-growth, KB-E-evaluation, KB-F-data, KB-safety, KB-supervision, entrypoint). These layers are the primary source material for this declination.
 
-The next phase — using **CTF Translator** ([`../../../tools/ctf-translator/`](../../../tools/ctf-translator/)) to produce a structured declination from this raw material — is documented in the parent [`README.md`](../README.md).
+The ICF source document is the *ICF AI Coaching Framework and Standards V1.01 (2024)*.
+
+**Next step**: use **CTF Translator** to produce the structured declination from the CTF Core + ICF source document. The output will be placed in `../tools/` as ready-to-use agents.

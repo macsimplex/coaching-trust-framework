@@ -53,15 +53,24 @@ When extending the framework, preserve this discipline. If new vocabulary is nee
 ### What goes on the website vs. only in the repo
 The site is served from the repo. By default, every `.md` file becomes a page on the rendered site. Exclusions are listed in `_config.yml` under `exclude:` — currently `CLAUDE.md`, `HANDOFF.md`, and standard build artifacts.
 
-## Pending work (post-migration)
+## Current work plan
 
-The migration produced a clean structural foundation. Several substantive pieces are still to be filled in. In rough priority order:
+The structural foundation is in place. The following steps are in progress:
 
-1. **Helper agent system prompts and KBs**. The earlier CTF iteration had working prompts for CTF-Design, CTF-Test-Plan, CTF-Robustness, CTF-Audit, CTF-Config. These need to be migrated into the new structure under `tools/ctf-*/system-prompt.md` and `tools/ctf-*/kb/`. Two new helper agents (CTF Translator, CTF Converger) need to be authored from scratch.
-2. **Common core normative content**. The current `document/ctf-v1.0.md` is a structured skeleton with placeholders. The substantive normative content needs to be written, respecting the inductive posture (start minimal — only what almost certainly applies to every trustworthy AI coaching agent).
-3. **CTF-ICF declination**. Move the prior `/layers/` content into `declinations/ctf-icf/source-material/`, then use CTF Translator to produce a structured declination in `declinations/ctf-icf/declination/`. Submit to ICF for review.
-4. **First RFC** for promoting initial requirements (likely from CTF-ICF) into the common core, once a second declination exists or is in progress (multiple implementations rule applies — section 5 of `GOVERNANCE.md`).
-5. **Populate `validation/evidence-log.md`** as adopters and supervisors begin to send observations through `validation/feedback-template.md`.
+1. **Write CTF Core normative content** (`document/ctf-v1.0.md`). Extract universal principles from EGG's working implementation: anonymization by construction, non-anthropomorphization, non-substitution, supervision tripartite, auditability, certification pipeline, metadata invisibility, solicited tool posture, principle hierarchy. Start minimal — only what applies to every trustworthy AI coaching agent regardless of federation.
+2. **Extract core process from helper agents**. Separate the universal process (how to design, test, audit) from federation-specific content (what to check) in each agent prompt. Core process goes to `tools/ctf-*/system-prompt.md`.
+3. **Build CTF Translator agent**. Input: CTF Core + federation source document. Output: complete declination with assembled tools (core process + federation-specific layers and criteria). This is the key automation.
+4. **Generate CTF-ICF declination via CTF Translator**. Input: CTF Core + ICF AI Coaching Framework V1.01. Output: `declinations/ctf-icf/tools/` with ready-to-use agents. Validate against EGG's existing implementation.
+5. **Populate `validation/evidence-log.md`** as adopters (EGG, magif.ai) send observations.
+6. **First promotion RFC** once a second declination exists (multiple implementations rule — section 4 of `GOVERNANCE.md`).
+
+## Architecture decisions (April 2026)
+
+- **Tools are core in process, declination-specific in content.** The Designer, Test Plan, Robustness, Audit agents follow the same methodology regardless of federation. What changes is the KB/layers they inject (ICF requirements vs EMCC requirements vs others).
+- **Declinations contain ready-to-use tools.** A platform adopting CTF-ICF goes to `declinations/ctf-icf/tools/` and gets complete agents (core process + ICF content assembled). No assembly required.
+- **A declination cannot weaken or remove core principles.** It can only add, strengthen, or reformulate while preserving intent.
+- **CTF Converger analysis is mandatory for promotion RFCs.** No requirement can be promoted to core without a formal cross-declination comparison.
+- **EGG** is the reference implementer. **magif.ai** is a founding partner.
 
 ## How to handle ambiguity
 

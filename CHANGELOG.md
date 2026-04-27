@@ -4,6 +4,23 @@ All notable changes to the Coaching Trust Framework are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to a semantic versioning approach adapted to a normative document. The full versioning rules are described in [`GOVERNANCE.md`](./GOVERNANCE.md), section 5.
 
+## [1.0.1] — 2026-04-27
+
+### Added
+- Bilingual landing page (EN/FR) with language switcher, intro videos, and Magif.ai chat widget
+- Custom dark theme layout for all site pages (replaces Cayman theme)
+- magif.ai recognized as founding partner across all documents
+- CTF Converger analysis made mandatory for promotion RFCs (GOVERNANCE.md)
+- Explicit constraint: declinations cannot weaken or remove core principles (federation-pathway.md)
+
+### Changed
+- CLAUDE.md: updated pending work with current architecture decisions
+- ADOPTERS.md: magif.ai status updated from pending to founding partner
+- CONTRIBUTORS.md: founding partner section added
+
+### Removed
+- HANDOFF.md (migration instructions, no longer needed)
+
 ## [1.0.0] — 2026-04
 
 ### Initial public release
