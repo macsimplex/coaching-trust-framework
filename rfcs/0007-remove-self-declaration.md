@@ -40,7 +40,7 @@ No entry from the evidence log (`validation/evidence-log.md`) is cited yet. This
 
 ### On adopters
 
-Self-declared platforms, including EGG, must start validation by the consortium. As long as the consortium does not exist (RFC 0006, stage 1), no platform can claim conformance.
+Self-declared platforms must start validation by the consortium. As long as the consortium does not exist (RFC 0006, stage 1), no platform can claim conformance.
 
 ### On declinations
 

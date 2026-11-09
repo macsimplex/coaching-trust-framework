@@ -2,6 +2,8 @@
 
 > *Protocol for a platform to publicly declare that it implements CTF (the common core, or a specific declination).*
 
+> **Under revision.** This pathway is proposed for removal: according to the [vision](../VISION.md), a platform cannot certify itself. See [RFC 0007](../rfcs/0007-remove-self-declaration.md), open for comments until 2026-12-09.
+
 ---
 
 ## In plain words

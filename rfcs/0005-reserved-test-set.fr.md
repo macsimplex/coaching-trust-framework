@@ -64,7 +64,7 @@ Les certifications s'appuient sur les deux jeux.
 - Quelle proportion entre tests publics et réservés ?
 - Quelle fréquence de renouvellement ?
 - Comment concilier le jeu réservé avec le principe fondateur et l'exigence de vérifiabilité par tous ?
-- Comment gérer les conflits d'intérêts des membres du consortium qui sont aussi éditeurs, y compris le fondateur (EGG) ?
+- Comment gérer les conflits d'intérêts des membres du consortium qui sont aussi éditeurs, y compris le fondateur ?
 
 ## Commentaires publics
 

@@ -4,7 +4,22 @@ All notable changes to the Coaching Trust Framework are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to a semantic versioning approach adapted to a normative document. The full versioning rules are described in [`GOVERNANCE.md`](./GOVERNANCE.md), section 5.
 
-## [Unreleased] — branch `refonte-porte-entree`
+## [Unreleased] — review adjustments
+
+### Added
+- Homepage: a word from the founder (relaunch of the project, conflict of interest, call for contributors and researchers)
+- Homepage: call to action at the top ("Join the founding consortium", "Comment on the proposals") and a diagram of the four building blocks before section 4 of the vision
+
+### Changed
+- `README.md`: shorter "In plain words" summary (three lines and a link to the vision); self-declaration marked as under revision (RFC 0007) in "What CTF is" and in step 7 of the platform workflow
+- `certification-scheme/self-declaration.md`: "under revision" notice pointing to RFC 0007
+
+### Removed
+- `VERSIONS/` folder (git already keeps the history); now ignored via `.gitignore`
+- Names of the founder's own projects in RFCs 0005, 0006 and 0007; the conflict of interest is described generically
+- Two verification screenshots committed by mistake at the repository root (`en-desk.png`, `fr-mobile.png`)
+
+## [Unreleased] — branch `refonte-porte-entree` (merged)
 
 ### Added
 - `VISION.md` (English, authoritative) and `VISION.fr.md` (French): the new entry point of the project — observation, problem, need, CTF and its four building blocks (Frame, Test, Monitor, Guarantee), postulates, why the framework matters, open project

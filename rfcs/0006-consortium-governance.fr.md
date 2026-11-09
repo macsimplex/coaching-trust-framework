@@ -22,14 +22,14 @@ Cette RFC propose que la gouvernance du CTF passe, à terme, d'un mainteneur uni
 
 ## Motivation
 
-La vision pose qu'une plateforme ne peut pas se certifier elle-même et que la confiance ne peut venir que d'un tiers indépendant (postulat 3). Elle confie la validation à un consortium indépendant dont les règles sont publiques. Or `GOVERNANCE.md` prévoit aujourd'hui un mainteneur unique, le fondateur, qui décide seul ; le cercle consultatif et le panel scientifique n'émettent que des avis. Le fondateur est en outre l'auteur de l'implémentation de référence (EGG), ce qui pose une question d'indépendance dès qu'il s'agit de certifier.
+La vision pose qu'une plateforme ne peut pas se certifier elle-même et que la confiance ne peut venir que d'un tiers indépendant (postulat 3). Elle confie la validation à un consortium indépendant dont les règles sont publiques. Or `GOVERNANCE.md` prévoit aujourd'hui un mainteneur unique, le fondateur, qui décide seul ; le cercle consultatif et le panel scientifique n'émettent que des avis. Le fondateur crée et initie le CTF pour l'élargir, non pour en rester propriétaire. Il applique en outre le CTF à ses propres projets d'agents de coaching, ce qui crée un conflit d'intérêts dès qu'il s'agit de certifier : d'autres contributeurs, et des chercheurs pour lire et analyser les données, sont nécessaires.
 
 ## Proposition détaillée
 
 1. **Rôle du consortium.** Le consortium : édite et renouvelle les tests (publics et réservés, RFC 0005) ; valide chaque version du protocole d'évaluation (RFC 0002) ; délivre, suspend et retire les certifications (RFC 0003) ; tranche les RFC.
 2. **Composition.** Le consortium réunit plusieurs collèges : éditeurs de plateformes, fédérations professionnelles, chercheurs, superviseurs. Aucun collège ne détient seul la majorité.
 3. **Règles ouvertes.** Ses statuts, ses décisions motivées, ses comptes et les conflits d'intérêts déclarés de ses membres sont publics. Il s'applique à lui-même les exigences qu'il impose : c'est la cohérence entre ce qu'il exige et ce qu'il s'impose qui fonde sa légitimité.
-4. **Conflits d'intérêts.** Un membre qui édite un agent ne participe à aucune décision concernant cet agent ni ses concurrents directs. Cette règle s'applique au fondateur pour EGG.
+4. **Conflits d'intérêts.** Un membre qui édite un agent ne participe à aucune décision concernant cet agent ni ses concurrents directs. Cette règle s'applique au fondateur pour ses propres agents.
 5. **Transition par étapes.**
     - *Étape 1 (actuelle)* : le fondateur est mainteneur ; le consortium fondateur se constitue.
     - *Étape 2* : le consortium fondateur valide les évaluations et les certifications ; le mainteneur garde la décision sur les RFC, après avis du consortium.

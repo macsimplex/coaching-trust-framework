@@ -15,12 +15,11 @@
 
 ## In plain words
 
-Millions of people already confide their vulnerabilities to AI agents, without knowing whether these agents act as a coach, a therapist or a doctor, nor whether they respect the rules of those professions (**observation**).
-An AI agent is not stable: model updates, prompt changes, manipulation and long conversations make it drift, and nothing today verifies over time that it keeps respecting the norms of a profession (**problem**).
-What is needed is professional norms built in at design time, agents put to the test in situations that look like ordinary use, continuous observation of real exchanges, and an evaluation that can be trusted because it is carried by an independent third party (**need**).
-CTF answers these needs with four building blocks — Frame, Test, Monitor, Guarantee — and a certification tied to a precise version of the agent. It starts with coaching and is meant to extend to any profession that has a framework of its own.
+Millions of people already confide in AI agents without knowing whether these agents act as a coach, a therapist or a doctor, or whether they respect the rules of those professions.
+An AI agent drifts over time, and nothing today checks that it keeps respecting those rules.
+CTF is an open framework to check it, before and during deployment, through four building blocks: Frame, Test, Monitor, Guarantee.
 
-Read the full vision: [VISION.md](./VISION.md) (English) · [VISION.fr.md](./VISION.fr.md) (français).
+Read the full [vision](./VISION.md) ([en français](./VISION.fr.md)).
 
 ---
 
@@ -30,7 +29,7 @@ The **Coaching Trust Framework (CTF)** is an open, generic ethical framework for
 
 1. A **normative document** — a deliberately minimal common core that describes the operational grammar of trustworthy AI in coaching.
 2. A **toolkit of seven specialized helper agents** — they assist humans in translating, designing, testing, hardening, configuring, auditing and converging coaching agents in conformance with the framework.
-3. A **certification scheme** — a documented protocol for self-declaration and federation-led certification.
+3. A **certification scheme** — a documented protocol for self-declaration and federation-led certification. *Under revision: self-declaration is proposed for removal, since a platform cannot certify itself (see [RFC 0007](./rfcs/0007-remove-self-declaration.md)).*
 
 CTF is **inductive by design**. The common core is intentionally light at version 1.0. The richness of the framework grows from below, through declinations adapted to specific federations (CTF-ICF, CTF-EMCC, etc.). When several declinations turn out to share the same requirement, that requirement becomes a candidate for promotion into the common core. Convergence is observed empirically, not decreed in advance.
 
@@ -178,7 +177,7 @@ If you are a **platform** building AI coaching agents:
 4. Validate them with [CTF Test Plan](./tools/ctf-test-plan/) and harden them with [CTF Robustness](./tools/ctf-robustness/).
 5. Use [CTF Config](./tools/ctf-config/) to produce the deployment configuration for your platform.
 6. Submit each new agent and each ongoing operation to [CTF Audit](./tools/ctf-audit/).
-7. Self-declare conformance following [`certification-scheme/self-declaration.md`](./certification-scheme/self-declaration.md).
+7. Self-declare conformance following [`certification-scheme/self-declaration.md`](./certification-scheme/self-declaration.md). *Under revision: this step is proposed for removal in favor of validation by an independent consortium (see [RFC 0007](./rfcs/0007-remove-self-declaration.md) and [RFC 0006](./rfcs/0006-consortium-governance.md)).*
 8. Add yourself to [`ADOPTERS.md`](./ADOPTERS.md) by submitting a pull request.
 9. Send your observations and lessons learned through the [feedback template](./validation/feedback-template.md). Your contributions are what allow the framework to converge over time.
 

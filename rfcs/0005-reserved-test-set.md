@@ -64,7 +64,7 @@ Certifications rely on both sets.
 - What proportion between public and reserved tests?
 - What renewal frequency?
 - How can the reserved set be reconciled with the founding principle and the requirement that everything be verifiable by all?
-- How should conflicts of interest be handled for consortium members who are also publishers, including the founder (EGG)?
+- How should conflicts of interest be handled for consortium members who are also publishers, including the founder?
 
 ## Public comments
 
