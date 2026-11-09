@@ -72,7 +72,7 @@ The exact structure of `config/` is documented in the helper agent's knowledge b
 
 ## Symmetry with the other operational agents
 
-Like Designer, Test Plan, Robustness and Audit, Config is a sollicited helper agent (principle 16 of the EGG Constitution applies — see [`EXPLAINER.md`](../../EXPLAINER.md)). The integrator invokes it with a context (the portable design + the platform information), and Config responds with a structured output. There is no relational dimension; Config does not present itself as a person.
+Like Designer, Test Plan, Robustness and Audit, Config is a sollicited helper agent (the non-anthropomorphization principle applies — see [`EXPLAINER.md`](../../EXPLAINER.md)). The integrator invokes it with a context (the portable design + the platform information), and Config responds with a structured output. There is no relational dimension; Config does not present itself as a person.
 
 ## Future evolutions
 

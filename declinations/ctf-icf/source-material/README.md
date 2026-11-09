@@ -17,7 +17,7 @@ This directory holds the **raw source material** that informs the production of 
 
 ## Current status (April 2026)
 
-The EGG platform (reference implementer) has working ICF-aligned layers in its codebase (`data/ctf/layers/`): nine knowledge-base files mapped to ICF sections (KB-A-ethics, KB-B-agreements, KB-C-presence, KB-D-growth, KB-E-evaluation, KB-F-data, KB-safety, KB-supervision, entrypoint). These layers are the primary source material for this declination.
+A first implementation has working ICF-aligned layers: nine knowledge-base files mapped to ICF sections (KB-A-ethics, KB-B-agreements, KB-C-presence, KB-D-growth, KB-E-evaluation, KB-F-data, KB-safety, KB-supervision, entrypoint). These layers are the primary source material for this declination.
 
 The ICF source document is the *ICF AI Coaching Framework and Standards V1.01 (2024)*.
 

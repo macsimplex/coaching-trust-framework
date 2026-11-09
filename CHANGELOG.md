@@ -4,6 +4,15 @@ All notable changes to the Coaching Trust Framework are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to a semantic versioning approach adapted to a normative document. The full versioning rules are described in [`GOVERNANCE.md`](./GOVERNANCE.md), section 5.
 
+## [Unreleased] — removal of the founder's project names
+
+### Changed
+- The founder's own platform is no longer named anywhere in the repository (adopters list, evidence log, helper agents, CTF-ICF declination, integration guide, Claude Code briefing); the conflict of interest is described generically
+- CTF-ICF Designer: no default target platform; platform-specific deployment values are asked of the designer
+
+### Removed
+- The founder's platform entry in `ADOPTERS.md`
+
 ## [Unreleased] — review adjustments
 
 ### Added

@@ -20,7 +20,7 @@ This is the evidence basis for the inductive growth of the framework. Without it
 
 **As of CTF v1.0 (April 2026), the evidence log is empty.**
 
-The log will be populated as adopters, certified supervisors, federations and researchers begin submitting observations through the [feedback template](./feedback-template.md). The first substantive entries are anticipated within months of v1.0 release as the reference implementer (EGG) and the first invited contributor (magif.ai) begin applying CTF.
+The log will be populated as adopters, certified supervisors, federations and researchers begin submitting observations through the [feedback template](./feedback-template.md). The first substantive entries are anticipated within months of v1.0 release as the first adopters begin applying CTF.
 
 ---
 

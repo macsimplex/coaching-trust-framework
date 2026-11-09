@@ -8,19 +8,6 @@ If you are an adopter, please add yourself by submitting a pull request to this 
 
 ---
 
-## Reference implementer
-
-### EGG (Explore, Grow, Go)
-- **Type:** AI-mediated personal development platform — institution-mission of activated access to the common heritage of thought
-- **Status:** Reference implementer
-- **CTF version implemented:** 1.0
-- **Adaptation followed:** generic CTF (a CTF-ICF adaptation, currently being drafted by the founder, will be considered for adoption once it is endorsed by ICF)
-- **Self-declaration:** Constitutional commitment (EGG Constitution v3.1, section 38)
-- **Notes:** EGG is the first platform to commit to CTF conformance at a constitutional level. Its constitutional commitment to the framework predates the public release of CTF v1.0 and is documented in the EGG Constitution.
-- **Website:** maxime@simplex.coach
-
----
-
 ## Active contributors
 
 ### magif.ai

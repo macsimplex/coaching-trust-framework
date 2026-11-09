@@ -1,6 +1,6 @@
 # Integrating CTF into your platform
 
-*This guide describes how a platform can adopt the Coaching Trust Framework. It is based on the experience of the EGG reference implementation (April 2026) — the first platform to complete the full integration.*
+*This guide describes how a platform can adopt the Coaching Trust Framework. It is based on the experience of a first implementation (April 2026).*
 
 ---
 
@@ -208,4 +208,4 @@ See `certification-scheme/self-declaration.md` for the 8 commitments.
 
 ---
 
-*This guide was written from the experience of integrating CTF into EGG (egg.simplex.coach). If you integrate CTF into your platform, we welcome your feedback and observations to improve this guide.*
+*This guide was written from the experience of a first integration of CTF. If you integrate CTF into your platform, we welcome your feedback and observations to improve this guide.*
