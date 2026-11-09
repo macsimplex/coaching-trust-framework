@@ -18,7 +18,7 @@ For the full status taxonomy of CTF declinations, see [`../README.md`](../README
 
 | Date | Status | Note |
 |---|---|---|
-| 2026-04 | working-draft | Initial setup. EGG (reference implementer) has working ICF-aligned layers covering domains A-F. Full compliance mapping produced (Basic on all domains, Advanced on A.1, A.2, C.6, C.7). CTF Translator to generate structured declination next. |
+| 2026-04 | working-draft | Initial setup. A first implementation has working ICF-aligned layers covering domains A-F. Full compliance mapping produced (Basic on all domains, Advanced on A.1, A.2, C.6, C.7). CTF Translator to generate structured declination next. |
 
 ## Path to endorsement
 

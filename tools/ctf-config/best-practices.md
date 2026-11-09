@@ -1,6 +1,6 @@
 # CTF Config — Best Practices
 
-Recommendations for platform-specific test execution parameters, based on empirical findings from the EGG reference implementation. These are not normative — each platform adapts to its infrastructure and models.
+Recommendations for platform-specific test execution parameters, based on empirical findings from a first implementation. These are not normative — each platform adapts to its infrastructure and models.
 
 ## Test execution
 
@@ -103,4 +103,4 @@ LLM-generated reports (robustness, audit) may contain verdicts that contradict t
 
 ---
 
-*These best practices are based on the EGG reference implementation (April 2026). They will evolve as more platforms adopt CTF and share their findings via the evidence log.*
+*These best practices are based on a first implementation (April 2026). They will evolve as more platforms adopt CTF and share their findings via the evidence log.*

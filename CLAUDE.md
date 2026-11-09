@@ -10,16 +10,20 @@ The **Coaching Trust Framework (CTF)** is an open framework for trustworthy AI c
 
 The founder and initial caretaker is **Maxime Bui** (<maxime@simplex.coach>). The repository is at <https://github.com/macsimplex/coaching-trust-framework>. The website is <https://coaching-trust-framework.org> (served from this repository via GitHub Pages, custom domain in `CNAME`).
 
-## Relationship to the EGG project
+## Inherited principles
 
-CTF is technically independent of EGG (it can be adopted by any platform, governed by its own caretaker, evolve at its own pace), but it shares its philosophical lineage with the **EGG Constitution** authored by the same founder. Several principles from the Constitution are inherited by CTF, in particular:
+CTF shares its philosophical lineage with earlier work by the founder. Several principles are inherited, in particular:
 
-- **Non-anthropomorphization of agents** (EGG Constitution, principle 16) — applies to *all* agents, both coaching and helper.
-- **Non-substitution to humans** (EGG Constitution, principle 11) — coaching agents must escalate to humans when situations exceed their scope.
-- **Sobriety, transparency, examinability** — the broader posture of EGG informs the CTF aesthetic.
+- **Non-anthropomorphization of agents** — applies to *all* agents, both coaching and helper.
+- **Non-substitution to humans** — coaching agents must escalate to humans when situations exceed their scope.
+- **Sobriety, transparency, examinability** — the broader posture that informs the CTF aesthetic.
 - **Vocabulary discipline** — see below.
 
-When in doubt about a normative question, the EGG Constitution v3.1 is a useful reference, but CTF as a published common good has its own integrity and is not formally subordinate to EGG. EGG is one (reference) implementer of CTF.
+CTF as a published common good has its own integrity and is not subordinate to any other project.
+
+## Conflict of interest
+
+The founder creates and initiates CTF in order to broaden it, not to own it, and applies CTF to their own AI coaching agent projects. This is a conflict of interest: other contributors, and researchers to read and analyze the data, are needed (see `rfcs/0006-consortium-governance.md`). Do not name the founder's own projects in the repository.
 
 ## Vocabulary discipline
 
@@ -57,11 +61,11 @@ The site is served from the repo. By default, every `.md` file becomes a page on
 
 The structural foundation is in place. The following steps are in progress:
 
-1. **Write CTF Core normative content** (`document/ctf-v1.0.md`). Extract universal principles from EGG's working implementation: anonymization by construction, non-anthropomorphization, non-substitution, supervision tripartite, auditability, certification pipeline, metadata invisibility, solicited tool posture, principle hierarchy. Start minimal — only what applies to every trustworthy AI coaching agent regardless of federation.
+1. **Write CTF Core normative content** (`document/ctf-v1.0.md`). Extract universal principles from a first working implementation: anonymization by construction, non-anthropomorphization, non-substitution, supervision tripartite, auditability, certification pipeline, metadata invisibility, solicited tool posture, principle hierarchy. Start minimal — only what applies to every trustworthy AI coaching agent regardless of federation.
 2. **Extract core process from helper agents**. Separate the universal process (how to design, test, audit) from federation-specific content (what to check) in each agent prompt. Core process goes to `tools/ctf-*/system-prompt.md`.
 3. **Build CTF Translator agent**. Input: CTF Core + federation source document. Output: complete declination with assembled tools (core process + federation-specific layers and criteria). This is the key automation.
-4. **Generate CTF-ICF declination via CTF Translator**. Input: CTF Core + ICF AI Coaching Framework V1.01. Output: `declinations/ctf-icf/tools/` with ready-to-use agents. Validate against EGG's existing implementation.
-5. **Populate `validation/evidence-log.md`** as adopters (EGG, magif.ai) send observations.
+4. **Generate CTF-ICF declination via CTF Translator**. Input: CTF Core + ICF AI Coaching Framework V1.01. Output: `declinations/ctf-icf/tools/` with ready-to-use agents. Validate against a first existing implementation.
+5. **Populate `validation/evidence-log.md`** as adopters send observations.
 6. **First promotion RFC** once a second declination exists (multiple implementations rule — section 4 of `GOVERNANCE.md`).
 
 ## Architecture decisions (April 2026)
@@ -70,7 +74,7 @@ The structural foundation is in place. The following steps are in progress:
 - **Declinations contain ready-to-use tools.** A platform adopting CTF-ICF goes to `declinations/ctf-icf/tools/` and gets complete agents (core process + ICF content assembled). No assembly required.
 - **A declination cannot weaken or remove core principles.** It can only add, strengthen, or reformulate while preserving intent.
 - **CTF Converger analysis is mandatory for promotion RFCs.** No requirement can be promoted to core without a formal cross-declination comparison.
-- **EGG** is the reference implementer. **magif.ai** is a founding partner.
+- **magif.ai** is a founding partner.
 
 ## How to handle ambiguity
 

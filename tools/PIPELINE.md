@@ -201,4 +201,4 @@ An audit report in markdown containing:
 - A way to run multi-turn chat (for Designer) and single calls (for the rest)
 - A way to store and pass documents between steps
 
-That's it. No dependency on EGG or any specific platform.
+That's it. No dependency on any specific platform.
