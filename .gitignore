@@ -47,3 +47,6 @@ scratch/
 *.pem
 *.key
 secrets/
+
+# Local working copies (version history lives in git)
+VERSIONS/

@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ## [Unreleased] — review adjustments
 
 ### Added
+- Homepage: a word from the founder (relaunch of the project, conflict of interest, call for contributors and researchers)
 - Homepage: call to action at the top ("Join the founding consortium", "Comment on the proposals") and a diagram of the four building blocks before section 4 of the vision
 
 ### Changed
@@ -14,6 +15,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - `certification-scheme/self-declaration.md`: "under revision" notice pointing to RFC 0007
 
 ### Removed
+- `VERSIONS/` folder (git already keeps the history); now ignored via `.gitignore`
+- Names of the founder's own projects in RFCs 0005, 0006 and 0007; the conflict of interest is described generically
 - Two verification screenshots committed by mistake at the repository root (`en-desk.png`, `fr-mobile.png`)
 
 ## [Unreleased] — branch `refonte-porte-entree` (merged)

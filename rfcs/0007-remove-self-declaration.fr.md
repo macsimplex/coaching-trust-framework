@@ -40,7 +40,7 @@ Aucune entrée du registre de preuves (`validation/evidence-log.md`) n'est encor
 
 ### Sur les adoptants
 
-Les plateformes auto-déclarées, dont EGG, doivent engager la validation par le consortium. Tant que le consortium n'existe pas (RFC 0006, étape 1), aucune plateforme ne peut se dire conforme.
+Les plateformes auto-déclarées doivent engager la validation par le consortium. Tant que le consortium n'existe pas (RFC 0006, étape 1), aucune plateforme ne peut se dire conforme.
 
 ### Sur les déclinaisons
 

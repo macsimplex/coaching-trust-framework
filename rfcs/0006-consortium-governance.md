@@ -22,14 +22,14 @@ This RFC proposes that CTF governance move, over time, from a single caretaker (
 
 ## Motivation
 
-The vision states that a platform cannot certify itself and that trust can only come from an independent third party (postulate 3). It entrusts validation to an independent consortium whose rules are public. Yet `GOVERNANCE.md` currently provides for a single caretaker, the founder, who decides alone; the advisory circle and the scientific panel only give opinions. The founder is also the author of the reference implementation (EGG), which raises a question of independence as soon as certification is involved.
+The vision states that a platform cannot certify itself and that trust can only come from an independent third party (postulate 3). It entrusts validation to an independent consortium whose rules are public. Yet `GOVERNANCE.md` currently provides for a single caretaker, the founder, who decides alone; the advisory circle and the scientific panel only give opinions. The founder creates and initiates CTF in order to broaden it, not to remain its owner. The founder also applies CTF to their own coaching agent projects, which creates a conflict of interest as soon as certification is involved: other contributors, and researchers to read and analyze the data, are needed.
 
 ## Detailed proposal
 
 1. **Role of the consortium.** The consortium: publishes and renews the tests (public and reserved, RFC 0005); validates each version of the evaluation protocol (RFC 0002); issues, suspends and withdraws certifications (RFC 0003); decides on RFCs.
 2. **Composition.** The consortium brings together several colleges: platform publishers, professional federations, researchers, supervisors. No college holds a majority on its own.
 3. **Open rules.** Its statutes, its reasoned decisions, its accounts and its members' declared conflicts of interest are public. It applies to itself the requirements it imposes: its legitimacy rests on the consistency between what it requires and what it imposes on itself.
-4. **Conflicts of interest.** A member who publishes an agent takes no part in any decision concerning that agent or its direct competitors. This rule applies to the founder with respect to EGG.
+4. **Conflicts of interest.** A member who publishes an agent takes no part in any decision concerning that agent or its direct competitors. This rule applies to the founder with respect to their own agents.
 5. **Staged transition.**
     - *Stage 1 (current)*: the founder is caretaker; the founding consortium is being formed.
     - *Stage 2*: the founding consortium validates evaluations and certifications; the caretaker keeps the decision on RFCs, after the consortium's opinion.
