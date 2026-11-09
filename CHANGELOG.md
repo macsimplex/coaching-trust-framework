@@ -13,7 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - `VERSIONS/` folder keeping the previous version of every modified file (excluded from the website)
 
 ### Changed
-- Homepage (`index.html`): now displays the vision (rendered from `VISION.md` / `VISION.fr.md`), followed only by links to the technical README and the Explainer; the former "What is CTF?", "Three principles", "Where to start", "Who's working on CTF" and "Get started" blocks are removed
+- Homepage (`index.html`): now displays the vision (rendered from `VISION.md` / `VISION.fr.md`), followed only by links to the technical README and the Explainer; the former "What is CTF?", "Three principles", "Where to start", "Who's working on CTF" and "Get started" blocks and the intro videos are removed
 - `README.md`: "In plain words" replaced by a summary of the vision (observation → problem → need → CTF) with a link to `VISION.md`
 - `CONTRIBUTING.md`: invitation to comment on the seven RFCs
 - Vision: "scores" replaced by "evaluation results", in line with CTF vocabulary
