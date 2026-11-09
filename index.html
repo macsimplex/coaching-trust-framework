@@ -58,6 +58,31 @@ a:hover { text-decoration: underline; }
 .vision blockquote p { margin: 0; color: #94a3b8; font-style: italic; }
 .vision hr { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 32px 0; }
 
+.hero-cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: -8px 0 32px; }
+.hero-cta a { padding: 11px 22px; border-radius: 8px; font-size: 14px; font-weight: 600; }
+.hero-cta .primary { background: #4db89a; color: #0a0e17; }
+.hero-cta .primary:hover { background: #3da888; text-decoration: none; }
+.hero-cta .secondary { background: rgba(255,255,255,0.06); color: #e2e8f0; border: 1px solid rgba(255,255,255,0.12); }
+.hero-cta .secondary:hover { background: rgba(255,255,255,0.1); text-decoration: none; }
+body.fr .hero .hero-cta[lang="fr"], body:not(.fr) .hero .hero-cta[lang="en"] { display: flex; }
+
+.bricks { margin: 36px 0 8px; }
+.bricks-cycle { display: grid; grid-template-columns: 1fr 20px 1fr 20px 1fr; align-items: stretch; gap: 6px; }
+.brick { border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.025); border-radius: 12px; padding: 14px 16px; }
+.brick .when { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #64748b; margin: 0 0 4px; }
+.brick .name { font-size: 16px; font-weight: 700; color: #fff; margin: 0 0 4px; }
+.brick .need { font-size: 13.5px; line-height: 1.5; color: #94a3b8; margin: 0; }
+.bricks .arrow { display: flex; align-items: center; justify-content: center; color: #4db89a; font-size: 16px; }
+.bricks .arrow::before { content: "→"; }
+.brick.base { border-color: rgba(77,184,154,0.45); background: rgba(77,184,154,0.07); text-align: center; margin-top: 14px; }
+.brick.base .name { color: #4db89a; }
+.bricks .caption { font-size: 13px; color: #64748b; text-align: center; margin: 10px 0 0; }
+@media (max-width: 640px) {
+  .bricks-cycle { grid-template-columns: 1fr; }
+  .bricks .arrow { height: 18px; }
+  .bricks .arrow::before { content: "↓"; }
+}
+
 .footer { text-align: center; padding: 40px 24px; color: #64748b; font-size: 13px; border-top: 1px solid rgba(255,255,255,0.06); }
 .footer a { color: #64748b; }
 
@@ -73,6 +98,14 @@ body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
   <h1>Coaching Trust Framework</h1>
   <div class="subtitle" lang="en">An open framework for verifying, before and during deployment, that AI agents respect the norms of a profession.</div>
   <div class="subtitle" lang="fr">Un cadre ouvert pour vérifier, avant et pendant leur mise en service, que des agents IA respectent les normes d'un métier.</div>
+  <div class="hero-cta" lang="en">
+    <a class="primary" href="mailto:maxime@simplex.coach?subject=Joining%20the%20CTF%20founding%20consortium">Join the founding consortium</a>
+    <a class="secondary" href="https://github.com/macsimplex/coaching-trust-framework/tree/main/rfcs">Comment on the proposals</a>
+  </div>
+  <div class="hero-cta" lang="fr">
+    <a class="primary" href="mailto:maxime@simplex.coach?subject=Rejoindre%20le%20consortium%20fondateur%20du%20CTF">Rejoindre le consortium fondateur</a>
+    <a class="secondary" href="https://github.com/macsimplex/coaching-trust-framework/tree/main/rfcs">Commenter les propositions</a>
+  </div>
   <div class="lang-switch">
     <button onclick="setLang('en')" id="btnEn" class="active">English</button>
     <button onclick="setLang('fr')" id="btnFr">Français</button>
@@ -84,13 +117,39 @@ body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
   <!-- Vision (EN) : rendered from VISION.md, do not duplicate the text here -->
   <div lang="en" class="vision">
     {% capture vision_en %}{% include_relative VISION.md %}{% endcapture %}
-    {{ vision_en | remove_first: "# Coaching Trust Framework (CTF)" | remove_first: "*This English version of the vision is authoritative. A French version is available in [VISION.fr.md](./VISION.fr.md). License [CC BY-SA 4.0](./LICENSE).*" | remove_first: "*To go further: the [technical README](./README.md) describes the architecture and the tools; the [EXPLAINER](./EXPLAINER.md) introduces every concept in plain language.*" | replace: "./README.md)", "https://github.com/macsimplex/coaching-trust-framework#readme)" | replace: ".md)", ")" | markdownify }}
+    {% assign v_en = vision_en | remove_first: "# Coaching Trust Framework (CTF)" | remove_first: "*This English version of the vision is authoritative. A French version is available in [VISION.fr.md](./VISION.fr.md). License [CC BY-SA 4.0](./LICENSE).*" | remove_first: "*To go further: the [technical README](./README.md) describes the architecture and the tools; the [EXPLAINER](./EXPLAINER.md) introduces every concept in plain language.*" | replace: "./README.md)", "https://github.com/macsimplex/coaching-trust-framework#readme)" | replace: ".md)", ")" | split: "## 4. " %}
+    {{ v_en[0] | markdownify }}
+  <div class="bricks" role="figure" aria-label="The four building blocks of CTF">
+    <div class="bricks-cycle">
+      <div class="brick"><p class="when">Design</p><p class="name">1. Frame</p><p class="need">The norms of the profession are built in from the design of the agent.</p></div>
+      <div class="arrow" aria-hidden="true"></div>
+      <div class="brick"><p class="when">Before and during deployment</p><p class="name">2. Test</p><p class="need">The agent faces standardized situations, some of them incognito.</p></div>
+      <div class="arrow" aria-hidden="true"></div>
+      <div class="brick"><p class="when">In service</p><p class="name">3. Monitor</p><p class="need">All real exchanges are evaluated, at the platform.</p></div>
+    </div>
+    <div class="brick base"><p class="name">4. Guarantee</p><p class="need">Several models evaluate, another arbitrates, humans calibrate, an independent consortium validates. Certification is tied to a version of the agent.</p></div>
+    <p class="caption">The first three blocks follow the life of the agent; the fourth guarantees the whole.</p>
+  </div>
+    {{ "## 4. " | append: v_en[1] | markdownify }}
   </div>
 
   <!-- Vision (FR) : rendered from VISION.fr.md, do not duplicate the text here -->
   <div lang="fr" class="vision">
     {% capture vision_fr %}{% include_relative VISION.fr.md %}{% endcapture %}
-    {{ vision_fr | remove_first: "# Coaching Trust Framework (CTF)" | remove_first: "*Version française de la vision. En cas de divergence avec la version anglaise ([VISION.md](./VISION.md)), la version anglaise fait foi. Licence [CC BY-SA 4.0](./LICENSE).*" | remove_first: "*Pour aller plus loin : le [README technique](./README.md) décrit l'architecture et les outils ; l'[EXPLAINER](./EXPLAINER.fr.md) présente chaque concept en langage clair.*" | replace: "./README.md)", "https://github.com/macsimplex/coaching-trust-framework#readme)" | replace: ".md)", ")" | markdownify }}
+    {% assign v_fr = vision_fr | remove_first: "# Coaching Trust Framework (CTF)" | remove_first: "*Version française de la vision. En cas de divergence avec la version anglaise ([VISION.md](./VISION.md)), la version anglaise fait foi. Licence [CC BY-SA 4.0](./LICENSE).*" | remove_first: "*Pour aller plus loin : le [README technique](./README.md) décrit l'architecture et les outils ; l'[EXPLAINER](./EXPLAINER.fr.md) présente chaque concept en langage clair.*" | replace: "./README.md)", "https://github.com/macsimplex/coaching-trust-framework#readme)" | replace: ".md)", ")" | split: "## 4. " %}
+    {{ v_fr[0] | markdownify }}
+  <div class="bricks" role="figure" aria-label="Les quatre briques du CTF">
+    <div class="bricks-cycle">
+      <div class="brick"><p class="when">Conception</p><p class="name">1. Cadrer</p><p class="need">Les normes du métier sont intégrées dès la conception de l'agent.</p></div>
+      <div class="arrow" aria-hidden="true"></div>
+      <div class="brick"><p class="when">Avant et pendant la mise en service</p><p class="name">2. Éprouver</p><p class="need">L'agent affronte des situations normées, dont une partie incognito.</p></div>
+      <div class="arrow" aria-hidden="true"></div>
+      <div class="brick"><p class="when">En service</p><p class="name">3. Surveiller</p><p class="need">Tous les échanges réels sont évalués, chez la plateforme.</p></div>
+    </div>
+    <div class="brick base"><p class="name">4. Garantir</p><p class="need">Plusieurs modèles évaluent, un autre arbitre, des humains étalonnent, un consortium indépendant valide. La certification est liée à une version de l'agent.</p></div>
+    <p class="caption">Les trois premières briques suivent la vie de l'agent ; la quatrième garantit l'ensemble.</p>
+  </div>
+    {{ "## 4. " | append: v_fr[1] | markdownify }}
   </div>
 
   <!-- ENGLISH -->
