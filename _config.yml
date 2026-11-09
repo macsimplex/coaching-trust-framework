@@ -2,7 +2,7 @@
 # Site: https://coaching-trust-framework.org
 
 title: Coaching Trust Framework
-description: An open framework for trustworthy AI coaching agents — published as a common good under CC BY-SA 4.0.
+description: An open framework for verifying, before and during deployment, that AI agents respect the norms of a profession. Published as a common good under CC BY-SA 4.0.
 url: https://coaching-trust-framework.org
 
 # No theme — using custom _layouts/default.html
