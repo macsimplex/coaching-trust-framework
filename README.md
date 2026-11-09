@@ -15,13 +15,12 @@
 
 ## In plain words
 
-Imagine that AI is being used more and more in coaching: chatbots that help people set goals, agents that listen to what someone is going through, automated guides that draw on the wisdom of philosophers or coaching methodologies. This is happening, and it is going to grow. Some of these AI agents are well-designed and respectful. Some are sloppy. Some are outright dangerous to the people who consult them.
+Millions of people already confide their vulnerabilities to AI agents, without knowing whether these agents act as a coach, a therapist or a doctor, nor whether they respect the rules of those professions (**observation**).
+An AI agent is not stable: model updates, prompt changes, manipulation and long conversations make it drift, and nothing today verifies over time that it keeps respecting the norms of a profession (**problem**).
+What is needed is professional norms built in at design time, agents put to the test in situations that look like ordinary use, continuous observation of real exchanges, and an evaluation that can be trusted because it is carried by an independent third party (**need**).
+CTF answers these needs with four building blocks — Frame, Test, Monitor, Guarantee — and a certification tied to a precise version of the agent. It starts with coaching and is meant to extend to any profession that has a framework of its own.
 
-There is no shared rulebook today that says: *here is what a trustworthy AI coaching agent looks like, here is how to build one, here is how to check that it actually behaves the way it should*.
-
-CTF tries to be that shared rulebook. It is open, free to use, written for the long term, and built to be **adapted by each professional coaching federation** (ICF, EMCC, and others) to fit their own ethical traditions. Platforms that build AI coaching agents can use CTF to design, test and audit their agents, and can publicly commit to following it.
-
-CTF is created and maintained by a community of contributors, in the open. It does not belong to any company, and it never will.
+Read the full vision: [VISION.md](./VISION.md) (English) · [VISION.fr.md](./VISION.fr.md) (français).
 
 ---
 
@@ -65,6 +64,19 @@ The common core (level 2 of the table above, generic CTF) is initially minimal. 
 6. Accepted proposals enter the next version of the generic CTF.
 
 Over time, the generic CTF accumulates what has been empirically validated as common to multiple federations, while each declination retains what is specific to its tradition.
+
+## The four building blocks
+
+Each building block of CTF answers one need identified in the [vision](./VISION.md). The helper agents and documents of this repository map onto them as follows.
+
+| Building block | Need covered | Existing agents and documents |
+| --- | --- | --- |
+| **Frame** (*Cadrer*) | Build professional norms in from the design stage | CTF Translator, CTF Designer, CTF Config, [declinations](./declinations/) |
+| **Test** (*Éprouver*) | Confront the agent with real situations | CTF Test Plan, CTF Robustness |
+| **Monitor** (*Surveiller*) | Observe over time | CTF Audit |
+| **Guarantee** (*Garantir*) | Trust the evaluator | [`certification-scheme/`](./certification-scheme/), [`GOVERNANCE.md`](./GOVERNANCE.md), [`validation/`](./validation/) |
+
+CTF Converger sits outside the four building blocks: it does not evaluate agents, it serves the evolution of the norm itself, by comparing declinations. In the long run, CTF is meant to produce and feed its own norm, drawing on what these comparisons and the evaluations reveal.
 
 ## The seven helper agents (CTF Toolkit)
 

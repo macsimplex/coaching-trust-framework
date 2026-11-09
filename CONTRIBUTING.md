@@ -44,6 +44,8 @@ How to do it:
 4. Submit it as a pull request to the repository.
 5. Be available during the open feedback window (30–60 days).
 
+**Open for comment until 2026-12-09:** seven proposals derived from the [vision](./VISION.md) — [incognito testing](./rfcs/0001-incognito-testing.md), [multi-model evaluation protocol](./rfcs/0002-multi-model-evaluation-protocol.md), [version-bound continuous certification](./rfcs/0003-version-bound-continuous-certification.md), [supervision of real exchanges](./rfcs/0004-supervision-of-real-exchanges.md), [reserved test set](./rfcs/0005-reserved-test-set.md), [governance by an independent consortium](./rfcs/0006-consortium-governance.md) and [removal of self-declaration](./rfcs/0007-remove-self-declaration.md) (each also in French). Evidence is still to be gathered: observations from adopters are especially welcome. Comments are welcome as issues or pull requests.
+
 ### 3. Help draft or maintain a federation adaptation
 
 If you have deep knowledge of a federation's normative documents (ICF AI Coaching Framework, EMCC Code of Ethics, others), you can help in two ways:

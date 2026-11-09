@@ -24,6 +24,17 @@ Second, **a toolkit of seven helper agents**. These are small AI tools, themselv
 
 Third, **a way to declare publicly that one is following the framework**. This can take the form of self-declaration, where the platform commits in writing on its own website. Or it can take the form of certification by a professional federation, once that federation has produced its own adapted version of CTF. Both pathways are valid; they address different audiences.
 
+## The four building blocks
+
+CTF is organized in four building blocks, each answering a need described in the [vision](./VISION.md).
+
+- **Frame** (*Cadrer*): the norms of the profession are made available from the design stage of the agent, through CTF Translator, CTF Designer, CTF Config and the declinations.
+- **Test** (*Éprouver*): the agent is confronted with real, standardized situations, prepared by CTF Test Plan and hardened by CTF Robustness.
+- **Monitor** (*Surveiller*): the agent is observed over time, on its real exchanges, with CTF Audit.
+- **Guarantee** (*Garantir*): trust in the evaluator rests on the certification scheme (`certification-scheme/`), the governance (`GOVERNANCE.md`) and empirical validation (`validation/`).
+
+CTF Converger sits outside the four building blocks: it does not evaluate agents, it serves the evolution of the norm itself, by comparing declinations. In the long run, CTF is meant to produce and feed its own norm, drawing on what these comparisons and the evaluations reveal.
+
 ## A founding principle, written first
 
 The whole project is governed by one principle, written at the head of every key document:

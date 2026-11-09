@@ -26,6 +26,17 @@ Ensuite, **une boîte à outils de sept agents assistants**. Ce sont de petits o
 
 Enfin, **une manière de déclarer publiquement qu'on suit le framework**. Cela peut prendre la forme d'une auto-déclaration, où la plateforme s'engage par écrit sur son propre site. Ou la forme d'une certification par une fédération professionnelle, une fois que cette fédération a produit sa propre version adaptée du CTF. Les deux voies sont valides ; elles s'adressent à des publics différents.
 
+## Les quatre briques
+
+Le CTF s'organise en quatre briques, chacune répondant à un besoin décrit dans la [vision](./VISION.fr.md).
+
+- **Cadrer** : les normes du métier sont mises à disposition dès la conception de l'agent, grâce à CTF Translator, CTF Designer, CTF Config et aux déclinaisons.
+- **Éprouver** : l'agent est confronté à des situations réelles et normées, préparées par CTF Test Plan et durcies par CTF Robustness.
+- **Surveiller** : l'agent est observé dans la durée, sur ses échanges réels, avec CTF Audit.
+- **Garantir** : la confiance dans celui qui évalue repose sur le dispositif de certification (`certification-scheme/`), la gouvernance (`GOVERNANCE.md`) et la validation empirique (`validation/`).
+
+CTF Converger se situe hors des quatre briques : il n'évalue pas les agents, il sert l'évolution de la norme elle-même, en comparant les déclinaisons. À terme, le CTF a vocation à produire et nourrir sa propre norme, à partir de ce que révèlent ces comparaisons et les évaluations.
+
 ## Un principe fondateur, écrit en premier
 
 L'ensemble du projet est régi par un principe, inscrit en tête de chaque document clé :
