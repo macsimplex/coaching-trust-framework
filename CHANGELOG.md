@@ -4,6 +4,20 @@ All notable changes to the Coaching Trust Framework are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to a semantic versioning approach adapted to a normative document. The full versioning rules are described in [`GOVERNANCE.md`](./GOVERNANCE.md), section 5.
 
+## [Unreleased] — branch `refonte-porte-entree`
+
+### Added
+- `VISION.fr.md` (French original) and `VISION.md` (English translation): the new entry point of the project — observation, problem, need, CTF and its four building blocks (Frame, Test, Monitor, Guarantee), postulates, why the framework matters, open project
+- Five draft RFCs derived from the vision, each in French and English: `0001` incognito testing, `0002` multi-model evaluation protocol, `0003` version-bound continuous certification, `0004` supervision of real exchanges, `0005` reserved test set
+- Mapping of helper agents and documents to the four building blocks in `README.md`, `tools/PIPELINE.md`, `EXPLAINER.md` and `EXPLAINER.fr.md`
+- `VERSIONS/` folder keeping the previous version of every modified file (excluded from the website)
+
+### Changed
+- Homepage (`index.html`): now displays the vision (rendered from `VISION.md` / `VISION.fr.md`), with links to the technical README and the Explainer; the former "What is CTF?" and "Get started" blocks are replaced by these links
+- `README.md`: "In plain words" replaced by a summary of the vision (observation → problem → need → CTF) with a link to `VISION.md`
+- `CONTRIBUTING.md`: invitation to comment on the five draft RFCs
+- `_config.yml`: `VERSIONS/` excluded from the website
+
 ## [1.0.1] — 2026-04-27
 
 ### Added

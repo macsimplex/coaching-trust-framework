@@ -20,6 +20,24 @@ Each arrow = one or more LLM calls. Each box = a document you store and pass for
 
 ---
 
+## The four building blocks
+
+The agents described below map onto the four building blocks of CTF (see [`../VISION.md`](../VISION.md)).
+
+| Building block | Need covered | Agents and documents |
+| --- | --- | --- |
+| **Frame** (*Cadrer*) | Build professional norms in from the design stage | CTF Translator, CTF Designer, CTF Config, declinations |
+| **Test** (*Éprouver*) | Confront the agent with real situations | CTF Test Plan, CTF Robustness |
+| **Monitor** (*Surveiller*) | Observe over time | CTF Audit |
+| **Guarantee** (*Garantir*) | Trust the evaluator | `certification-scheme/`, `GOVERNANCE.md`, `validation/` |
+
+- **Frame**: Designer (Agent 1) produces a design document from the norms of the declination; Config prepares its deployment.
+- **Test**: Test Plan (Agent 2), test execution (Agent 3) and Robustness (Agent 4) confront the agent with standardized situations.
+- **Monitor**: Audit (Agent 5) evaluates the agent's conformance over time.
+- **Guarantee**: no agent in this pipeline covers it; it rests on the certification scheme, the governance and the validation methodology.
+
+---
+
 ## Agent 1 — CTF Designer
 
 **Purpose:** Produce the design document for a coaching agent.
