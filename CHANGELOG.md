@@ -20,6 +20,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - CTF Converger placed outside the four building blocks, as serving the evolution of the norm
 - `_config.yml`: `VERSIONS/` excluded from the website
 
+### Removed
+- magif.ai chat widget from the homepage
+
 ## [1.0.1] — 2026-04-27
 
 ### Added
