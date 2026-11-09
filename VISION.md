@@ -119,6 +119,3 @@ We are looking for platform publishers, professional federations, researchers an
 
 **Contact:** Maxime Bui — maxime@simplex.coach — coaching-trust-framework.org
 
----
-
-*To go further: the [technical README](./README.md) describes the architecture and the tools; the [EXPLAINER](./EXPLAINER.md) introduces every concept in plain language.*

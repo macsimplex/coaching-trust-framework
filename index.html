@@ -27,24 +27,6 @@ a:hover { text-decoration: underline; }
 .lang-switch button.active { background: rgba(77,184,154,0.15); color: #4db89a; border-color: rgba(77,184,154,0.4); }
 
 .content { max-width: 680px; margin: 0 auto; padding: 0 24px 80px; }
-.section { margin-bottom: 48px; }
-.section h2 { font-size: 20px; font-weight: 600; color: #fff; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.08); }
-.section p { color: #cbd5e1; margin-bottom: 12px; }
-.section ul { list-style: none; padding: 0; }
-.section li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.04); color: #cbd5e1; }
-.section li strong { color: #e2e8f0; }
-
-.principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 16px; }
-.principle { padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02); }
-.principle h3 { font-size: 15px; font-weight: 600; color: #fff; margin-bottom: 6px; }
-.principle p { font-size: 14px; color: #94a3b8; margin: 0; }
-
-.cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
-.cta a { padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 600; transition: background 0.2s; }
-.cta .primary { background: #4db89a; color: #0a0e17; }
-.cta .primary:hover { background: #3da888; text-decoration: none; }
-.cta .secondary { background: rgba(255,255,255,0.06); color: #e2e8f0; border: 1px solid rgba(255,255,255,0.12); }
-.cta .secondary:hover { background: rgba(255,255,255,0.1); text-decoration: none; }
 
 .vision { margin-bottom: 56px; }
 .vision h2 { font-size: 22px; font-weight: 600; color: #fff; margin: 40px 0 12px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.08); }
@@ -83,7 +65,6 @@ body.fr .hero .hero-cta[lang="fr"], body:not(.fr) .hero .hero-cta[lang="en"] { d
   .bricks .arrow::before { content: "↓"; }
 }
 
-
 .footer { text-align: center; padding: 40px 24px; color: #64748b; font-size: 13px; border-top: 1px solid rgba(255,255,255,0.06); }
 .footer a { color: #64748b; }
 
@@ -101,11 +82,11 @@ body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
   <div class="subtitle" lang="fr">Un cadre ouvert pour vérifier, avant et pendant leur mise en service, que des agents IA respectent les normes d'un métier.</div>
   <div class="hero-cta" lang="en">
     <a class="primary" href="mailto:maxime@simplex.coach?subject=Joining%20the%20CTF%20founding%20consortium">Join the founding consortium</a>
-    <a class="secondary" href="https://github.com/macsimplex/coaching-trust-framework/tree/main/rfcs">Comment on the proposals</a>
+    <a class="secondary" href="https://github.com/macsimplex/coaching-trust-framework">View on GitHub</a>
   </div>
   <div class="hero-cta" lang="fr">
     <a class="primary" href="mailto:maxime@simplex.coach?subject=Rejoindre%20le%20consortium%20fondateur%20du%20CTF">Rejoindre le consortium fondateur</a>
-    <a class="secondary" href="https://github.com/macsimplex/coaching-trust-framework/tree/main/rfcs">Commenter les propositions</a>
+    <a class="secondary" href="https://github.com/macsimplex/coaching-trust-framework">Voir sur GitHub</a>
   </div>
   <div class="lang-switch">
     <button onclick="setLang('en')" id="btnEn" class="active">English</button>
@@ -118,7 +99,7 @@ body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
   <!-- Vision (EN) : rendered from VISION.md, do not duplicate the text here -->
   <div lang="en" class="vision">
     {% capture vision_en %}{% include_relative VISION.md %}{% endcapture %}
-    {% assign v_en = vision_en | remove_first: "# Coaching Trust Framework (CTF)" | remove_first: "*This English version of the vision is authoritative. A French version is available in [VISION.fr.md](./VISION.fr.md). License [CC BY-SA 4.0](./LICENSE).*" | remove_first: "*To go further: the [technical README](./README.md) describes the architecture and the tools; the [EXPLAINER](./EXPLAINER.md) introduces every concept in plain language.*" | replace: "./README.md)", "https://github.com/macsimplex/coaching-trust-framework#readme)" | replace: ".md)", ")" | split: "## 4. " %}
+    {% assign v_en = vision_en | remove_first: "# Coaching Trust Framework (CTF)" | remove_first: "*This English version of the vision is authoritative. A French version is available in [VISION.fr.md](./VISION.fr.md). License [CC BY-SA 4.0](./LICENSE).*" | replace: ".md)", ")" | split: "## 4. " %}
     {{ v_en[0] | markdownify }}
   <div class="bricks" role="figure" aria-label="The four building blocks of CTF">
     <div class="bricks-cycle">
@@ -137,7 +118,7 @@ body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
   <!-- Vision (FR) : rendered from VISION.fr.md, do not duplicate the text here -->
   <div lang="fr" class="vision">
     {% capture vision_fr %}{% include_relative VISION.fr.md %}{% endcapture %}
-    {% assign v_fr = vision_fr | remove_first: "# Coaching Trust Framework (CTF)" | remove_first: "*Version française de la vision. En cas de divergence avec la version anglaise ([VISION.md](./VISION.md)), la version anglaise fait foi. Licence [CC BY-SA 4.0](./LICENSE).*" | remove_first: "*Pour aller plus loin : le [README technique](./README.md) décrit l'architecture et les outils ; l'[EXPLAINER](./EXPLAINER.fr.md) présente chaque concept en langage clair.*" | replace: "./README.md)", "https://github.com/macsimplex/coaching-trust-framework#readme)" | replace: ".md)", ")" | split: "## 4. " %}
+    {% assign v_fr = vision_fr | remove_first: "# Coaching Trust Framework (CTF)" | remove_first: "*Version française de la vision. En cas de divergence avec la version anglaise ([VISION.md](./VISION.md)), la version anglaise fait foi. Licence [CC BY-SA 4.0](./LICENSE).*" | replace: ".md)", ")" | split: "## 4. " %}
     {{ v_fr[0] | markdownify }}
   <div class="bricks" role="figure" aria-label="Les quatre briques du CTF">
     <div class="bricks-cycle">
@@ -151,32 +132,6 @@ body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
     <p class="caption">Les trois premières briques suivent la vie de l'agent ; la quatrième garantit l'ensemble.</p>
   </div>
     {{ "## 4. " | append: v_fr[1] | markdownify }}
-  </div>
-
-  <!-- ENGLISH -->
-  <div lang="en">
-    <div class="section">
-      <h2>Go further</h2>
-      <div class="cta">
-        <a href="https://github.com/macsimplex/coaching-trust-framework#readme" class="primary">Technical README</a>
-        <a href="./EXPLAINER" class="secondary">Plain-language Explainer</a>
-        <a href="https://github.com/macsimplex/coaching-trust-framework" class="secondary">View on GitHub</a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- FRENCH -->
-  <div lang="fr">
-    <div class="section">
-      <h2>Pour aller plus loin</h2>
-      <div class="cta">
-        <a href="https://github.com/macsimplex/coaching-trust-framework#readme" class="primary">README technique (en anglais)</a>
-        <a href="./EXPLAINER.fr" class="secondary">L'Explainer en français</a>
-        <a href="https://github.com/macsimplex/coaching-trust-framework" class="secondary">Voir sur GitHub</a>
-      </div>
-    </div>
-
   </div>
 
 </div>
@@ -195,7 +150,6 @@ function setLang(lang) {
 }
 try { const saved = localStorage.getItem('ctf_lang'); if (saved) setLang(saved); } catch(_) {}
 </script>
-
 
 </body>
 </html>
