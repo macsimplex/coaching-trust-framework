@@ -11,8 +11,8 @@
 - **Type:** Substantive
 - **Author(s):** Maxime Bui
 - **Date submitted:** 2026-11-09
-- **Public comment period:** [will be set by the caretaker on opening]
-- **Status:** Draft
+- **Public comment period:** 2026-11-09 to 2026-12-09 (30 days)
+- **Status:** Open for comments (evidence to be gathered)
 - **Affects:** Monitor building block · Normative document · CTF Audit · Certification scheme
 - **Supersedes:** —
 
@@ -35,7 +35,7 @@ Since an agent drifts, it must be observed continuously, on its real exchanges a
 
 ## Empirical evidence
 
-No entry from the evidence log (`validation/evidence-log.md`) is cited yet. This RFC is submitted as a **working proposal** derived from the [vision](../VISION.md); empirical evidence must be gathered before the public comment period opens, in line with [`../validation/methodology.md`](../validation/methodology.md).
+No entry from the evidence log (`validation/evidence-log.md`) is cited yet. This RFC is submitted as a **working proposal** derived from the [vision](../VISION.md); it will be gathered during the public comment period (**evidence to be gathered**), in line with [`../validation/methodology.md`](../validation/methodology.md).
 
 ## Impact analysis
 
@@ -66,7 +66,6 @@ Adherence implies accepting supervision of all exchanges. Merely informing peopl
 - What reference technical architecture for on-site evaluation?
 - What anonymization standard for the extracts that leave?
 - What happens when an end client refuses consent: is the exchange excluded from evaluation, or is access to the service refused?
-- The term "score" used in the vision is currently excluded from CTF vocabulary: should it be reintroduced?
 
 ## Public comments
 
@@ -78,4 +77,4 @@ Adherence implies accepting supervision of all exchanges. Merely informing peopl
 
 ## Changelog of this RFC
 
-- **2026-11-09** — Initial submission (draft).
+- **2026-11-09** — Initial submission, opened for comments.

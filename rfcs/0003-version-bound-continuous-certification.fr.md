@@ -2,7 +2,7 @@
 
 > **Le bien commun prime sur toute organisation, y compris toute organisation qui pourrait un jour émerger pour porter ce standard.**
 
-*Version anglaise : [0003-version-bound-continuous-certification.md](./0003-version-bound-continuous-certification.md).*
+*Version anglaise, qui fait foi en cas de divergence : [0003-version-bound-continuous-certification.md](./0003-version-bound-continuous-certification.md).*
 
 ## En-tête
 
@@ -11,8 +11,8 @@
 - **Type :** Substantielle (« Substantive »)
 - **Auteur :** Maxime Bui
 - **Date de dépôt :** 2026-11-09
-- **Période de commentaires publics :** [à fixer par le mainteneur à l'ouverture]
-- **Statut :** Brouillon
+- **Période de commentaires publics :** du 2026-11-09 au 2026-12-09 (30 jours)
+- **Statut :** Ouverte aux commentaires (preuves à réunir)
 - **Concerne :** Brique Garantir · Document normatif · Dispositif de certification · CTF Audit · CTF Config
 - **Remplace :** —
 
@@ -35,7 +35,7 @@ Un agent IA dérive : le fournisseur met à jour le modèle, le créateur modifi
 
 ## Éléments empiriques
 
-Aucune entrée du registre de preuves (`validation/evidence-log.md`) n'est encore citée. Cette RFC est déposée comme **proposition de travail** issue de la [vision](../VISION.fr.md) ; les éléments empiriques devront être réunis avant l'ouverture de la période de commentaires, conformément à [`../validation/methodology.md`](../validation/methodology.md).
+Aucune entrée du registre de preuves (`validation/evidence-log.md`) n'est encore citée. Cette RFC est déposée comme **proposition de travail** issue de la [vision](../VISION.fr.md) ; ils seront réunis pendant la période de commentaires (**preuves à réunir**), conformément à [`../validation/methodology.md`](../validation/methodology.md).
 
 ## Analyse d'impact
 
@@ -76,4 +76,4 @@ Les durées de validité fixes et les revues annuelles sont remplacées par un �
 
 ## Historique de cette RFC
 
-- **2026-11-09** — Dépôt initial (brouillon).
+- **2026-11-09** — Dépôt initial et ouverture aux commentaires.

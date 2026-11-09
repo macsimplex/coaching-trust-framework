@@ -2,7 +2,7 @@
 
 > **Le bien commun prime sur toute organisation, y compris toute organisation qui pourrait un jour émerger pour porter ce standard.**
 
-*Version française de référence de la vision. La traduction anglaise se trouve dans [VISION.md](./VISION.md). Licence [CC BY-SA 4.0](./LICENSE).*
+*Version française de la vision. En cas de divergence avec la version anglaise ([VISION.md](./VISION.md)), la version anglaise fait foi. Licence [CC BY-SA 4.0](./LICENSE).*
 
 Des millions de personnes confient déjà leurs fragilités à des agents IA. Elles ne savent pas si ces agents agissent comme un coach, un thérapeute ou un médecin, ni s'ils respectent les règles de ces métiers. Et rien ne permet aujourd'hui de le vérifier dans la durée.
 
@@ -87,7 +87,7 @@ Le Coaching Trust Framework est la réponse qui émerge de ces besoins. Il ne pa
 
 1. **Cadrer**, pour intégrer les normes dès la conception : les normes du métier sont mises à disposition des plateformes de création d'agents.
 2. **Éprouver**, pour confronter l'agent à des situations réelles : des agents simulés jouent des situations normées, dont une partie incognito, par l'interface utilisateur et depuis des comptes ordinaires.
-3. **Surveiller**, pour observer dans la durée : l'évaluation tourne chez la plateforme sur tous les échanges ; seuls sortent les scores, les alertes et des extraits anonymisés.
+3. **Surveiller**, pour observer dans la durée : l'évaluation tourne chez la plateforme sur tous les échanges ; seuls sortent les résultats d'évaluation, les alertes et des extraits anonymisés.
 4. **Garantir**, pour faire confiance à celui qui évalue : plusieurs modèles évaluent, un autre arbitre, des humains étalonnent, et un consortium indépendant valide le tout. La certification est liée à une version précise de l'agent, et tout changement relance les tests.
 
 Le CTF est un **processus qualité**, comme l'ISO 9001 : il certifie le respect d'un cadre, notamment le périmètre du métier, pas l'excellence de la pratique. En contrepartie, les plateformes qui y adhèrent acceptent les tests incognito, la supervision de tous les échanges et l'anonymisation des données ; les clients finaux consentent au partage encadré des transcriptions.

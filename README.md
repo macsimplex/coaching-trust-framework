@@ -76,6 +76,8 @@ Each building block of CTF answers one need identified in the [vision](./VISION.
 | **Monitor** (*Surveiller*) | Observe over time | CTF Audit |
 | **Guarantee** (*Garantir*) | Trust the evaluator | [`certification-scheme/`](./certification-scheme/), [`GOVERNANCE.md`](./GOVERNANCE.md), [`validation/`](./validation/) |
 
+CTF Converger sits outside the four building blocks: it does not evaluate agents, it serves the evolution of the norm itself, by comparing declinations. In the long run, CTF is meant to produce and feed its own norm, drawing on what these comparisons and the evaluations reveal.
+
 ## The seven helper agents (CTF Toolkit)
 
 CTF is accompanied by seven helper agents. Each one is a sollicited tool, not a conversational companion. Each one assists a human team in a specific phase of the lifecycle.

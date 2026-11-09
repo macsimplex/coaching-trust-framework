@@ -2,7 +2,7 @@
 
 > **Le bien commun prime sur toute organisation, y compris toute organisation qui pourrait un jour émerger pour porter ce standard.**
 
-*Version anglaise : [0004-supervision-of-real-exchanges.md](./0004-supervision-of-real-exchanges.md).*
+*Version anglaise, qui fait foi en cas de divergence : [0004-supervision-of-real-exchanges.md](./0004-supervision-of-real-exchanges.md).*
 
 ## En-tête
 
@@ -11,8 +11,8 @@
 - **Type :** Substantielle (« Substantive »)
 - **Auteur :** Maxime Bui
 - **Date de dépôt :** 2026-11-09
-- **Période de commentaires publics :** [à fixer par le mainteneur à l'ouverture]
-- **Statut :** Brouillon
+- **Période de commentaires publics :** du 2026-11-09 au 2026-12-09 (30 jours)
+- **Statut :** Ouverte aux commentaires (preuves à réunir)
 - **Concerne :** Brique Surveiller · Document normatif · CTF Audit · Dispositif de certification
 - **Remplace :** —
 
@@ -35,7 +35,7 @@ Puisqu'un agent dérive, il faut l'observer en continu, sur ses échanges réels
 
 ## Éléments empiriques
 
-Aucune entrée du registre de preuves (`validation/evidence-log.md`) n'est encore citée. Cette RFC est déposée comme **proposition de travail** issue de la [vision](../VISION.fr.md) ; les éléments empiriques devront être réunis avant l'ouverture de la période de commentaires, conformément à [`../validation/methodology.md`](../validation/methodology.md).
+Aucune entrée du registre de preuves (`validation/evidence-log.md`) n'est encore citée. Cette RFC est déposée comme **proposition de travail** issue de la [vision](../VISION.fr.md) ; ils seront réunis pendant la période de commentaires (**preuves à réunir**), conformément à [`../validation/methodology.md`](../validation/methodology.md).
 
 ## Analyse d'impact
 
@@ -66,7 +66,6 @@ L'adhésion implique d'accepter la supervision de tous les échanges. La simple 
 - Quelle architecture technique de référence pour l'évaluation sur place ?
 - Quel standard d'anonymisation pour les extraits qui sortent ?
 - Que faire lorsqu'un client final refuse le consentement : l'échange est-il exclu de l'évaluation ou l'accès au service refusé ?
-- Le terme « score » utilisé dans la vision est aujourd'hui écarté du vocabulaire du CTF : faut-il le réintroduire ?
 
 ## Commentaires publics
 
@@ -78,4 +77,4 @@ L'adhésion implique d'accepter la supervision de tous les échanges. La simple 
 
 ## Historique de cette RFC
 
-- **2026-11-09** — Dépôt initial (brouillon).
+- **2026-11-09** — Dépôt initial et ouverture aux commentaires.

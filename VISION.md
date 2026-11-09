@@ -2,7 +2,7 @@
 
 > **The common good prevails over any organization, including any organization that might one day emerge to steward this standard.**
 
-*English translation of the vision. The French original is in [VISION.fr.md](./VISION.fr.md). License [CC BY-SA 4.0](./LICENSE).*
+*This English version of the vision is authoritative. A French version is available in [VISION.fr.md](./VISION.fr.md). License [CC BY-SA 4.0](./LICENSE).*
 
 Millions of people already confide their vulnerabilities to AI agents. They do not know whether these agents are acting as a coach, a therapist or a doctor, nor whether they respect the rules of those professions. And nothing today makes it possible to verify this over time.
 
@@ -87,7 +87,7 @@ The Coaching Trust Framework is the answer that emerges from these needs. It doe
 
 1. **Frame**, to build norms in from the design stage: the norms of the profession are made available to agent-building platforms.
 2. **Test**, to confront the agent with real situations: simulated agents play standardized situations, some of them incognito, through the ordinary interface and from ordinary accounts.
-3. **Monitor**, to observe over time: evaluation runs at the platform on all exchanges; only scores, alerts and anonymized extracts leave it.
+3. **Monitor**, to observe over time: evaluation runs at the platform on all exchanges; only evaluation results, alerts and anonymized extracts leave it.
 4. **Guarantee**, to trust the evaluator: several models evaluate, another arbitrates, humans calibrate, and an independent consortium validates the whole. Certification is tied to a precise version of the agent, and any change re-triggers the tests.
 
 CTF is a **quality process**, like ISO 9001: it certifies respect for a framework, notably the scope of the profession, not excellence of practice. In return, platforms that adhere to it accept incognito tests, supervision of all exchanges and anonymization of data; end clients consent to the framed sharing of transcripts.

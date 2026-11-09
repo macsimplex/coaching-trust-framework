@@ -35,6 +35,8 @@ Le CTF s'organise en quatre briques, chacune répondant à un besoin décrit dan
 - **Surveiller** : l'agent est observé dans la durée, sur ses échanges réels, avec CTF Audit.
 - **Garantir** : la confiance dans celui qui évalue repose sur le dispositif de certification (`certification-scheme/`), la gouvernance (`GOVERNANCE.md`) et la validation empirique (`validation/`).
 
+CTF Converger se situe hors des quatre briques : il n'évalue pas les agents, il sert l'évolution de la norme elle-même, en comparant les déclinaisons. À terme, le CTF a vocation à produire et nourrir sa propre norme, à partir de ce que révèlent ces comparaisons et les évaluations.
+
 ## Un principe fondateur, écrit en premier
 
 L'ensemble du projet est régi par un principe, inscrit en tête de chaque document clé :

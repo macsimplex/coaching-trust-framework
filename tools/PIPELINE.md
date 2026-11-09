@@ -36,6 +36,8 @@ The agents described below map onto the four building blocks of CTF (see [`../VI
 - **Monitor**: Audit (Agent 5) evaluates the agent's conformance over time.
 - **Guarantee**: no agent in this pipeline covers it; it rests on the certification scheme, the governance and the validation methodology.
 
+CTF Converger sits outside the four building blocks: it does not evaluate agents, it serves the evolution of the norm itself, by comparing declinations. In the long run, CTF is meant to produce and feed its own norm, drawing on what these comparisons and the evaluations reveal.
+
 ---
 
 ## Agent 1 — CTF Designer

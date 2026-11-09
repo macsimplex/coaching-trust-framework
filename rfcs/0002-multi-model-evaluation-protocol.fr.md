@@ -2,7 +2,7 @@
 
 > **Le bien commun prime sur toute organisation, y compris toute organisation qui pourrait un jour émerger pour porter ce standard.**
 
-*Version anglaise : [0002-multi-model-evaluation-protocol.md](./0002-multi-model-evaluation-protocol.md).*
+*Version anglaise, qui fait foi en cas de divergence : [0002-multi-model-evaluation-protocol.md](./0002-multi-model-evaluation-protocol.md).*
 
 ## En-tête
 
@@ -11,8 +11,8 @@
 - **Type :** Substantielle (« Substantive »)
 - **Auteur :** Maxime Bui
 - **Date de dépôt :** 2026-11-09
-- **Période de commentaires publics :** [à fixer par le mainteneur à l'ouverture]
-- **Statut :** Brouillon
+- **Période de commentaires publics :** du 2026-11-09 au 2026-12-09 (30 jours)
+- **Statut :** Ouverte aux commentaires (preuves à réunir)
 - **Concerne :** Brique Garantir · CTF Audit · Méthodologie de validation · Gouvernance
 - **Remplace :** —
 
@@ -36,7 +36,7 @@ L'évaluation sera largement faite par des IA. Aujourd'hui, chaque agent assista
 
 ## Éléments empiriques
 
-Aucune entrée du registre de preuves (`validation/evidence-log.md`) n'est encore citée. Cette RFC est déposée comme **proposition de travail** issue de la [vision](../VISION.fr.md) ; les éléments empiriques devront être réunis avant l'ouverture de la période de commentaires, conformément à [`../validation/methodology.md`](../validation/methodology.md).
+Aucune entrée du registre de preuves (`validation/evidence-log.md`) n'est encore citée. Cette RFC est déposée comme **proposition de travail** issue de la [vision](../VISION.fr.md) ; ils seront réunis pendant la période de commentaires (**preuves à réunir**), conformément à [`../validation/methodology.md`](../validation/methodology.md).
 
 ## Analyse d'impact
 
@@ -67,7 +67,6 @@ Une certification ne peut s'appuyer que sur une évaluation menée selon une ver
 - Comment garantir la diversité réelle des trois évaluateurs (fournisseurs, versions) ?
 - Quelle fréquence et quelle taille pour l'étalonnage humain ?
 - Quel taux d'accord minimal rend une évaluation recevable ?
-- Le terme « score » est aujourd'hui écarté du vocabulaire du CTF : comment nommer le résultat d'une évaluation ?
 
 ## Commentaires publics
 
@@ -79,4 +78,4 @@ Une certification ne peut s'appuyer que sur une évaluation menée selon une ver
 
 ## Historique de cette RFC
 
-- **2026-11-09** — Dépôt initial (brouillon).
+- **2026-11-09** — Dépôt initial et ouverture aux commentaires.

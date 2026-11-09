@@ -33,6 +33,8 @@ CTF is organized in four building blocks, each answering a need described in the
 - **Monitor** (*Surveiller*): the agent is observed over time, on its real exchanges, with CTF Audit.
 - **Guarantee** (*Garantir*): trust in the evaluator rests on the certification scheme (`certification-scheme/`), the governance (`GOVERNANCE.md`) and empirical validation (`validation/`).
 
+CTF Converger sits outside the four building blocks: it does not evaluate agents, it serves the evolution of the norm itself, by comparing declinations. In the long run, CTF is meant to produce and feed its own norm, drawing on what these comparisons and the evaluations reveal.
+
 ## A founding principle, written first
 
 The whole project is governed by one principle, written at the head of every key document:

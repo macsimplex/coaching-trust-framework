@@ -11,8 +11,8 @@
 - **Type:** Substantive
 - **Author(s):** Maxime Bui
 - **Date submitted:** 2026-11-09
-- **Public comment period:** [will be set by the caretaker on opening]
-- **Status:** Draft
+- **Public comment period:** 2026-11-09 to 2026-12-09 (30 days)
+- **Status:** Open for comments (evidence to be gathered)
 - **Affects:** Test building block · CTF Test Plan · CTF Robustness · Certification scheme
 - **Supersedes:** —
 
@@ -36,7 +36,7 @@ An agent that knows it is being tested may behave differently, as Dieselgate sho
 
 ## Empirical evidence
 
-No entry from the evidence log (`validation/evidence-log.md`) is cited yet. This RFC is submitted as a **working proposal** derived from the [vision](../VISION.md); empirical evidence must be gathered before the public comment period opens, in line with [`../validation/methodology.md`](../validation/methodology.md).
+No entry from the evidence log (`validation/evidence-log.md`) is cited yet. This RFC is submitted as a **working proposal** derived from the [vision](../VISION.md); it will be gathered during the public comment period (**evidence to be gathered**), in line with [`../validation/methodology.md`](../validation/methodology.md).
 
 ## Impact analysis
 
@@ -79,4 +79,4 @@ Consent to incognito tests becomes a condition of adherence. Its form needs to b
 
 ## Changelog of this RFC
 
-- **2026-11-09** — Initial submission (draft).
+- **2026-11-09** — Initial submission, opened for comments.
