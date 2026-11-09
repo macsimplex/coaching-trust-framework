@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Removed
 - The founder's platform entry in `ADOPTERS.md`
+- The founder's note from the homepage
 
 ## [Unreleased] — review adjustments
 
