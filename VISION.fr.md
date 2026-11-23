@@ -85,12 +85,16 @@ Ces besoins ne sont pas nouveaux. L'aviation y répond depuis longtemps : un pil
 
 Le Coaching Trust Framework est la réponse qui émerge de ces besoins. Il ne part pas d'un modèle théorique : chacune de ses briques correspond à un besoin.
 
+<!-- ctf:avant-briques -->
+
 1. **Cadrer**, pour intégrer les normes dès la conception : les normes du métier sont mises à disposition des plateformes de création d'agents.
 2. **Éprouver**, pour confronter l'agent à des situations réelles : des agents simulés jouent des situations normées, dont une partie incognito, par l'interface utilisateur et depuis des comptes ordinaires.
 3. **Surveiller**, pour observer dans la durée : l'évaluation tourne chez la plateforme sur tous les échanges ; seuls sortent les résultats d'évaluation, les alertes et des extraits anonymisés.
 4. **Garantir**, pour faire confiance à celui qui évalue : plusieurs modèles évaluent, un autre arbitre, des humains étalonnent, et un consortium indépendant valide le tout. La certification est liée à une version précise de l'agent, et tout changement relance les tests.
 
 Le CTF est un **processus qualité**, comme l'ISO 9001 : il certifie le respect d'un cadre, notamment le périmètre du métier, pas l'excellence de la pratique. En contrepartie, les plateformes qui y adhèrent acceptent les tests incognito, la supervision de tous les échanges et l'anonymisation des données ; les clients finaux consentent au partage encadré des transcriptions.
+
+<!-- ctf:apres-briques -->
 
 ## 5. Les postulats
 
@@ -135,7 +139,7 @@ Ce catalogue est une liste ouverte : chaque chercheur peut y choisir une piste, 
 | Interaction humain-machine | Les utilisateurs s'attachent-ils à l'agent ? Comment perçoivent-ils ses limites ? | Surveiller | Échanges réels, avec consentement |
 | Santé publique | Un agent conforme protège-t-il mieux les personnes fragiles ? | Surveiller | Alertes, orientations vers des professionnels |
 | Sociologie des professions | Comment l'IA redessine-t-elle les frontières entre métiers d'accompagnement et le rôle du superviseur ? | Toutes | Entretiens, déclinaisons par métier |
-| Sciences des organisations | Une gouvernance de type sociocratique, mêlant IA et humains, produit-elle de meilleures décisions ? | Garantir | Décisions du consortium, propositions d'évolution |
+| Sciences des organisations | Une gouvernance de type sociocratique, mêlant IA et humains, produit-elle de meilleures décisions ? | Garantir | Décisions du consortium, propositions d'évolution (RFC) |
 | Économie | Un label de confiance change-t-il l'adoption et les choix des acheteurs ? | Garantir | Données d'adoption des plateformes |
 | Sciences de l'éducation | Ce que le CTF apprend sur les agents peut-il améliorer la formation et la supervision des coachs humains ? | Toutes | Comparaison agents et coachs |
 
@@ -151,7 +155,7 @@ Ce protocole pose des questions de recherche à part entière : cette boucle con
 - **Les évaluations** : scores, alertes et désaccords entre évaluateurs, anonymisés et agrégés.
 - **Les échanges réels** : uniquement sous forme anonymisée, avec le consentement des personnes et l'accord d'un comité d'éthique.
 
-Les résultats alimentent le registre public des preuves du CTF et ses propositions d'évolution. Le panel scientifique veille à la qualité de ces preuves.
+Les résultats alimenteront le registre public des preuves du CTF et ses propositions d'évolution. Un panel scientifique veillera à la qualité de ces preuves.
 
 ## 8. Un projet ouvert
 

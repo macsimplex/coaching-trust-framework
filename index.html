@@ -137,8 +137,12 @@ body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
   <!-- Vision (EN) : rendered from VISION.md, do not duplicate the text here -->
   <div lang="en" class="vision">
     {% capture vision_en %}{% include_relative VISION.md %}{% endcapture %}
-    {% assign v_en = vision_en | remove_first: "# Coaching Trust Framework (CTF)" | remove_first: "*This English version of the vision is authoritative. A French version is available in [VISION.fr.md](./VISION.fr.md). License [CC BY-SA 4.0](./LICENSE).*" | replace: ".md)", ")" | split: "## 4. " %}
-    {{ v_en[0] | markdownify }}
+    {% assign v_en = vision_en | remove_first: "# Coaching Trust Framework (CTF)" | remove_first: "*This English version of the vision is authoritative. A French version is available in [VISION.fr.md](./VISION.fr.md). License [CC BY-SA 4.0](./LICENSE).*" | replace: ".md)", ")" %}
+    {% comment %} The diagram and the call to action are placed at the invisible markers found in the VISION file. Without both markers, the text is shown whole. {% endcomment %}
+    {% assign top_en = v_en | split: "<!-- ctf:avant-briques -->" %}
+    {% assign end_en = top_en[1] | split: "<!-- ctf:apres-briques -->" %}
+    {% if top_en.size == 2 and end_en.size == 2 %}
+    {{ top_en[0] | markdownify }}
   <div class="bricks" role="figure" aria-label="The four building blocks of CTF, each with the need it covers">
     <div class="bricks-cycle">
       <div class="brick"><p class="when">Design</p><p class="name">1. Frame</p><p class="covers"><span>Need covered</span>Build norms in from the design stage</p><p class="need">The norms of the profession are built in from the design of the agent.</p></div>
@@ -150,17 +154,23 @@ body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
     <div class="brick base"><p class="name">4. Guarantee</p><p class="covers"><span>Need covered</span>Trust the evaluator</p><p class="need">Several models evaluate, another arbitrates, humans calibrate, an independent consortium validates. Certification is tied to a version of the agent.</p></div>
     <p class="caption">The first three blocks follow the life of the agent; the fourth guarantees the whole.</p>
   </div>
-    {% assign rest_en = v_en[1] | split: "## 5. " %}
-    {{ "## 4. " | append: rest_en[0] | markdownify }}
+    {{ end_en[0] | markdownify }}
     <p class="section-cta"><a href="mailto:maxime@simplex.coach?subject=Joining%20the%20CTF%20founding%20consortium">Join the founding consortium</a></p>
-    {{ "## 5. " | append: rest_en[1] | markdownify }}
+    {{ end_en[1] | markdownify }}
+    {% else %}
+    {{ v_en | markdownify }}
+    {% endif %}
   </div>
 
   <!-- Vision (FR) : rendered from VISION.fr.md, do not duplicate the text here -->
   <div lang="fr" class="vision">
     {% capture vision_fr %}{% include_relative VISION.fr.md %}{% endcapture %}
-    {% assign v_fr = vision_fr | remove_first: "# Coaching Trust Framework (CTF)" | remove_first: "*Version française de la vision. En cas de divergence avec la version anglaise ([VISION.md](./VISION.md)), la version anglaise fait foi. Licence [CC BY-SA 4.0](./LICENSE).*" | replace: ".md)", ")" | split: "## 4. " %}
-    {{ v_fr[0] | markdownify }}
+    {% assign v_fr = vision_fr | remove_first: "# Coaching Trust Framework (CTF)" | remove_first: "*Version française de la vision. En cas de divergence avec la version anglaise ([VISION.md](./VISION.md)), la version anglaise fait foi. Licence [CC BY-SA 4.0](./LICENSE).*" | replace: ".md)", ")" %}
+    {% comment %} The diagram and the call to action are placed at the invisible markers found in the VISION file. Without both markers, the text is shown whole. {% endcomment %}
+    {% assign top_fr = v_fr | split: "<!-- ctf:avant-briques -->" %}
+    {% assign end_fr = top_fr[1] | split: "<!-- ctf:apres-briques -->" %}
+    {% if top_fr.size == 2 and end_fr.size == 2 %}
+    {{ top_fr[0] | markdownify }}
   <div class="bricks" role="figure" aria-label="Les quatre briques du CTF, chacune avec le besoin qu'elle couvre">
     <div class="bricks-cycle">
       <div class="brick"><p class="when">Conception</p><p class="name">1. Cadrer</p><p class="covers"><span>Besoin couvert</span>Intégrer les normes dès la conception</p><p class="need">Les normes du métier sont intégrées dès la conception de l'agent.</p></div>
@@ -172,10 +182,12 @@ body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
     <div class="brick base"><p class="name">4. Garantir</p><p class="covers"><span>Besoin couvert</span>Faire confiance à celui qui évalue</p><p class="need">Plusieurs modèles évaluent, un autre arbitre, des humains étalonnent, un consortium indépendant valide. La certification est liée à une version de l'agent.</p></div>
     <p class="caption">Les trois premières briques suivent la vie de l'agent ; la quatrième garantit l'ensemble.</p>
   </div>
-    {% assign rest_fr = v_fr[1] | split: "## 5. " %}
-    {{ "## 4. " | append: rest_fr[0] | markdownify }}
+    {{ end_fr[0] | markdownify }}
     <p class="section-cta"><a href="mailto:maxime@simplex.coach?subject=Rejoindre%20le%20consortium%20fondateur%20du%20CTF">Rejoindre le consortium fondateur</a></p>
-    {{ "## 5. " | append: rest_fr[1] | markdownify }}
+    {{ end_fr[1] | markdownify }}
+    {% else %}
+    {{ v_fr | markdownify }}
+    {% endif %}
   </div>
 
 </div>

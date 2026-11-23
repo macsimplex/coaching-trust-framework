@@ -85,12 +85,16 @@ These needs are not new. Aviation has long answered them: a pilot follows writte
 
 The Coaching Trust Framework is the answer that emerges from these needs. It does not start from a theoretical model: each of its building blocks corresponds to a need.
 
+<!-- ctf:avant-briques -->
+
 1. **Frame**, to build norms in from the design stage: the norms of the profession are made available to agent-building platforms.
 2. **Test**, to confront the agent with real situations: simulated agents play standardized situations, some of them incognito, through the ordinary interface and from ordinary accounts.
 3. **Monitor**, to observe over time: evaluation runs at the platform on all exchanges; only evaluation results, alerts and anonymized extracts leave it.
 4. **Guarantee**, to trust the evaluator: several models evaluate, another arbitrates, humans calibrate, and an independent consortium validates the whole. Certification is tied to a precise version of the agent, and any change re-triggers the tests.
 
 CTF is a **quality process**, like ISO 9001: it certifies respect for a framework, notably the scope of the profession, not excellence of practice. In return, platforms that adhere to it accept incognito tests, supervision of all exchanges and anonymization of data; end clients consent to the framed sharing of transcripts.
+
+<!-- ctf:apres-briques -->
 
 ## 5. The postulates
 
@@ -126,16 +130,16 @@ This catalogue is an open list: any researcher can choose an avenue from it, ref
 | Ethics and moral philosophy | Can a deontological norm be translated into observable behaviors without betraying it? | Frame | Reference standards, CTF adaptations |
 | Law | What legal value does a continuous certification have? How does it fit with the AI Act and the GDPR? | Guarantee | Certification scheme, use cases |
 | Clinical psychology | Where does the boundary between coaching and therapy lie? Does an agent detect distress and refer in time? | Test | Simulated crisis scenarios |
-| Evidence-based coaching | Are a coach's competencies observable in an agent? | Frame, Test | Simulated exchanges, evaluation grids |
+| Evidence-based coaching | Are a coach's competencies observable in an agent? | Frame, Test | Simulated exchanges, evaluation rubrics |
 | Linguistics and discourse analysis | Which language markers reveal an agent's stance: open questions, directiveness, advice? | Monitor | Anonymized transcripts |
 | Artificial intelligence | Can one AI evaluate another AI reliably? Do the evaluators agree with human supervisors? | Guarantee | Evaluations, disagreements between models |
 | Systems reliability | How, and how fast, does an agent drift from one version to the next or over the course of a conversation? | Monitor | Scores by version and over time |
 | AI safety | Which manipulations push an agent out of its framework? | Test | Adversarial tests |
-| Psychometrics | Are CTF's evaluation grids valid and reliable? | Guarantee | Scores, human calibrations |
+| Psychometrics | Are CTF's evaluation rubrics valid and reliable? | Guarantee | Scores, human calibrations |
 | Human-computer interaction | Do users become attached to the agent? How do they perceive its limits? | Monitor | Real exchanges, with consent |
 | Public health | Does a compliant agent better protect vulnerable people? | Monitor | Alerts, referrals to professionals |
 | Sociology of professions | How is AI redrawing the boundaries between the helping professions and the role of the supervisor? | All | Interviews, adaptations by profession |
-| Organization studies | Does sociocratic-style governance, combining AI and humans, produce better decisions? | Guarantee | Consortium decisions, proposals for evolution |
+| Organization studies | Does sociocratic-style governance, combining AI and humans, produce better decisions? | Guarantee | Consortium decisions, change proposals (RFC) |
 | Economics | Does a trust label change adoption and buyers' choices? | Guarantee | Platform adoption data |
 | Education sciences | Can what CTF learns about agents improve the training and supervision of human coaches? | All | Comparison of agents and coaches |
 
@@ -151,7 +155,7 @@ This protocol raises research questions in their own right: does this loop conve
 - **Evaluations**: scores, alerts and disagreements between evaluators, anonymized and aggregated.
 - **Real exchanges**: only in anonymized form, with the consent of the people concerned and the approval of an ethics committee.
 
-The results feed CTF's public evidence registry and its proposals for evolution. The scientific panel watches over the quality of this evidence.
+The results will feed CTF's public evidence log and its change proposals. A scientific panel will watch over the quality of this evidence.
 
 ## 8. An open project
 
