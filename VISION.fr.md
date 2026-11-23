@@ -4,7 +4,7 @@
 
 *Version française de la vision. En cas de divergence avec la version anglaise ([VISION.md](./VISION.md)), la version anglaise fait foi. Licence [CC BY-SA 4.0](./LICENSE).*
 
-> **État au mois de novembre 2026.** Ce texte est une vision accompagnée de propositions en cours de rédaction ([RFC](./rfcs/README.md)). Il n'existe encore ni tests publiés, ni outil de test en service public, ni données, ni consortium. La version 0 de la norme est en préparation. Rien ici ne certifie quoi que ce soit : l'outil de test de référence produira des rapports d'auto-évaluation, pas des certificats. La certification par un consortium indépendant est une hypothèse de long terme, présentée plus bas comme telle. La version 0 est rédigée pour des agents francophones utilisés en France ; elle vérifie des garde-fous (sécurité, limites du rôle de coach), pas la qualité du coaching lui-même.
+> **État au mois de novembre 2026.** Ce texte est une vision accompagnée de propositions en cours de rédaction ([RFC](https://github.com/macsimplex/coaching-trust-framework/tree/main/rfcs#readme)). Il n'existe encore ni tests publiés, ni outil de test en service public, ni données, ni consortium. La version 0 de la norme est en préparation. Rien ici ne certifie quoi que ce soit : l'outil de test de référence produira des rapports d'auto-évaluation, pas des certificats. La certification par un consortium indépendant est une hypothèse de long terme, présentée plus bas comme telle. La version 0 est rédigée pour des agents francophones utilisés en France ; elle vérifie des garde-fous (sécurité, limites du rôle de coach), pas la qualité du coaching lui-même.
 
 Des millions de personnes confient déjà leurs fragilités à des agents IA. Elles ne savent pas si ces agents agissent comme un coach, un thérapeute ou un médecin, ni s'ils respectent les règles de ces métiers. Et rien ne permet aujourd'hui de le vérifier dans la durée.
 
@@ -113,7 +113,7 @@ Au-delà de l'IA, nous partageons une conviction : beaucoup de pertes de repère
 
 Un cadre protège. Il dit ce qui est attendu, ce qui ne l'est pas, et où s'arrête le rôle de chacun. Mais un cadre n'est respecté que si ceux qui le portent le respectent eux-mêmes. Une autorité qui impose des règles qu'elle ne s'applique pas perd sa légitimité, et le cadre avec elle.
 
-Le CTF s'applique ce principe. Ses règles sont publiques ; à terme, ses tests seront édités par un consortium indépendant, lui-même soumis à des règles ouvertes et vérifiables. Tant que ce consortium n'existe pas, l'auteur décide et motive chaque décision par écrit ([CONTRIBUTING](./CONTRIBUTING.md)). La confiance ne vient pas de l'autorité de celui qui évalue, mais de la cohérence entre ce qu'il exige et ce qu'il s'impose.
+Le CTF s'applique ce principe. Ses règles sont publiques ; à terme, ses tests seront édités par un consortium indépendant, lui-même soumis à des règles ouvertes et vérifiables. Tant que ce consortium n'existe pas, l'auteur décide et motive chaque décision par écrit ([CONTRIBUTING](https://github.com/macsimplex/coaching-trust-framework/blob/main/CONTRIBUTING.fr.md#contribuer-au-coaching-trust-framework)). La confiance ne vient pas de l'autorité de celui qui évalue, mais de la cohérence entre ce qu'il exige et ce qu'il s'impose.
 
 ## 7. Un terrain de recherche
 
@@ -165,6 +165,6 @@ Un tel cadre ne peut tenir que s'il appartient à tous.
 
 Le CTF est publié sous licence ouverte (CC BY-SA 4.0) : l'éthique d'un métier n'appartient à aucune organisation. Les éditeurs l'intègrent librement ; à terme, un consortium garantira l'indépendance de la vérification.
 
-Nous cherchons des éditeurs de plateformes, des fédérations professionnelles, des chercheurs et des superviseurs prêts à rejoindre le consortium fondateur. Il existe aussi des façons plus légères de participer : commenter une proposition, apporter des éléments de preuve, relire un scénario dans sa langue. Voir [CONTRIBUTING](./CONTRIBUTING.md).
+Nous cherchons des éditeurs de plateformes, des fédérations professionnelles, des chercheurs et des superviseurs prêts à rejoindre le consortium fondateur. Il existe aussi des façons plus légères de participer : commenter une proposition, apporter des éléments de preuve, relire un scénario dans sa langue. Voir [CONTRIBUTING](https://github.com/macsimplex/coaching-trust-framework/blob/main/CONTRIBUTING.fr.md#contribuer-au-coaching-trust-framework).
 
 **Contact :** Maxime Bui — maxime@simplex.coach — coaching-trust-framework.org

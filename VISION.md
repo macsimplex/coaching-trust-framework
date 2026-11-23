@@ -4,7 +4,7 @@
 
 *This English version of the vision is authoritative. A French version is available in [VISION.fr.md](./VISION.fr.md). License [CC BY-SA 4.0](./LICENSE).*
 
-> **Status, November 2026.** This is a vision and a set of draft proposals ([RFCs](./rfcs/README.md)). There are no published tests, no testing tool in public use, no data and no consortium yet. Version 0 of the standard is being prepared. Nothing here certifies anything: the reference testing tool will produce self-evaluation reports, not certificates. Certification by an independent consortium is a long-term hypothesis, described below as such. Version 0 is being written for French-language agents used in France; it checks safeguards (safety, the limits of the coaching role), not the quality of the coaching itself.
+> **Status, November 2026.** This is a vision and a set of draft proposals ([RFCs](https://github.com/macsimplex/coaching-trust-framework/tree/main/rfcs#readme)). There are no published tests, no testing tool in public use, no data and no consortium yet. Version 0 of the standard is being prepared. Nothing here certifies anything: the reference testing tool will produce self-evaluation reports, not certificates. Certification by an independent consortium is a long-term hypothesis, described below as such. Version 0 is being written for French-language agents used in France; it checks safeguards (safety, the limits of the coaching role), not the quality of the coaching itself.
 
 Millions of people already confide their vulnerabilities to AI agents. They do not know whether these agents are acting as a coach, a therapist or a doctor, nor whether they respect the rules of those professions. And nothing today makes it possible to verify this over time.
 
@@ -113,7 +113,7 @@ Beyond AI, we share a conviction: much of today's loss of bearings stems from ou
 
 A framework protects. It says what is expected, what is not, and where each person's role ends. But a framework is only respected if those who uphold it respect it themselves. An authority that imposes rules it does not apply to itself loses its legitimacy, and the framework with it.
 
-CTF applies this principle to itself. Its rules are public; in time, its tests will be published by an independent consortium, itself subject to open and verifiable rules. Until that consortium exists, the author decides and explains every decision in writing ([CONTRIBUTING](./CONTRIBUTING.md)). Trust does not come from the authority of the evaluator, but from the consistency between what it requires and what it imposes on itself.
+CTF applies this principle to itself. Its rules are public; in time, its tests will be published by an independent consortium, itself subject to open and verifiable rules. Until that consortium exists, the author decides and explains every decision in writing ([CONTRIBUTING](https://github.com/macsimplex/coaching-trust-framework/blob/main/CONTRIBUTING.md#contributing-to-the-coaching-trust-framework)). Trust does not come from the authority of the evaluator, but from the consistency between what it requires and what it imposes on itself.
 
 ## 7. A field for research
 
@@ -165,7 +165,7 @@ Such a framework can only hold if it belongs to everyone.
 
 CTF is published under an open licence (CC BY-SA 4.0): the ethics of a profession belong to no organization. Software publishers integrate it freely; in time, a consortium will guarantee the independence of verification.
 
-We are looking for platform publishers, professional federations, researchers and supervisors willing to join the founding consortium. There are also lighter ways to take part: commenting on a proposal, bringing evidence, reviewing a scenario in your language. See [CONTRIBUTING](./CONTRIBUTING.md).
+We are looking for platform publishers, professional federations, researchers and supervisors willing to join the founding consortium. There are also lighter ways to take part: commenting on a proposal, bringing evidence, reviewing a scenario in your language. See [CONTRIBUTING](https://github.com/macsimplex/coaching-trust-framework/blob/main/CONTRIBUTING.md#contributing-to-the-coaching-trust-framework).
 
 **Contact:** Maxime Bui — maxime@simplex.coach — coaching-trust-framework.org
 
