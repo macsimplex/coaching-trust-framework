@@ -15,8 +15,8 @@ How to comment, and who decides for now: see [CONTRIBUTING.md](../CONTRIBUTING.m
 | 0003 | [Version-bound continuous certification](./0003-version-bound-continuous-certification.md) · [FR](./0003-version-bound-continuous-certification.fr.md) | Restored draft; comment period paused |
 | 0004 | [Supervision of real exchanges](./0004-supervision-of-real-exchanges.md) · [FR](./0004-supervision-of-real-exchanges.fr.md) | Restored draft; comment period paused |
 | 0005 | [Reserved test set](./0005-reserved-test-set.md) · [FR](./0005-reserved-test-set.fr.md) | Restored draft; comment period paused |
-| 0006 | Consortium governance | Not restored yet (branch `archive-v1`) |
-| 0007 | Removal of self-declaration | Not restored yet (branch `archive-v1`) |
+| 0006 | Consortium governance | Not yet republished (kept in the project archive) |
+| 0007 | Removal of self-declaration | Not yet republished (kept in the project archive) |
 | 0008 | [Starting requirements of the CTF standard, version 0](./0008-standard-v0-starting-requirements.md) · [FR](./0008-standard-v0-starting-requirements.fr.md) | Draft |
 | 0009 | [Languages and locales](./0009-languages-and-locales.md) · [FR](./0009-languages-and-locales.fr.md) | Draft |
 | 0010 | [Evaluation protocol, version 0](./0010-evaluation-protocol-v0.md) · [FR](./0010-evaluation-protocol-v0.fr.md) | Draft |
@@ -41,13 +41,11 @@ From RFC 0008 onwards, the RFCs use one term per notion. French equivalents are 
 | **Reserved test set** [jeu de tests réservé] | Scenarios that are not published at all (RFC 0005) |
 | **`not_observed`** [non observé] | The outcome when the test could not observe the behaviour (for example, the stimulus was not delivered). It never counts as a pass |
 
-## Note on this restoration
+## Note on RFCs 0001 to 0005
 
-These RFCs and the template are restored verbatim from commit `9fff7de`, from before the repository was reset to its homepage and vision. RFCs 0006 (consortium governance) and 0007 (removal of self-declaration) are not restored yet; they remain on the `archive-v1` branch.
+RFCs 0001 to 0005 and the template come, unchanged, from an earlier version of this repository (9 November 2026). Some of their links point to documents that have since been removed (methodology, governance, explainer); those documents will be rewritten. Until then:
 
-Some links in these files point to documents that the reset removed: `validation/methodology.md`, `GOVERNANCE.md` and `EXPLAINER.md` (`CONTRIBUTING.md` has been rewritten). They can still be read at commit `9fff7de`. Until those documents are rewritten:
-
-- the public evidence log (`validation/evidence-log.md`) is replaced by the research registry of the reference testing tool, ctf-test (not yet public), which will export its entries in the evidence-log format so they can be published here later;
+- the public evidence log is replaced by the research register of the reference testing tool, ctf-test (not yet public), which will later publish its entries here;
 - the comment periods stated in these RFCs (2026-11-09 to 2026-12-09) are paused; they will restart when each RFC is reviewed again.
 
-These RFCs use the word *certification*. In version 0, the reference testing tool produces self-evaluation reports only; certification by a consortium is a long-term hypothesis (see the status note in the [vision](../VISION.md)).
+These RFCs use the word *certification*. In version 0, the reference testing tool produces test reports only; certification by a consortium is a long-term hypothesis (see the status note in the [vision](../VISION.md)).

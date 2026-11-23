@@ -12,7 +12,7 @@ You do not need to be a developer, and you do not need a GitHub account.
 |---|---|
 | A coach or a supervisor | Tell us whether a requirement matches good coaching practice; review a test scenario in your language; point out anything unclear |
 | A clinician | Check the expected behaviour in distress situations (RFC 0008, R3, R4, R7) |
-| A researcher | Challenge the method (RFC 0010); propose a study using the research avenues in the [vision](./VISION.md#7-a-field-for-research) |
+| A researcher | Challenge the method (RFC 0010); propose a study using the research avenues in the [vision](./VISION.md#6-a-field-for-research) |
 | A platform or agent publisher | Tell us whether the requirements are testable and fair; test your own agent once the tool is available |
 | A federation or professional body | Discuss governance and the future consortium |
 | Willing to review test conversations | Later, read simulated conversations and say whether the agent met each criterion (RFC 0010, section 11); tell us if you are interested |

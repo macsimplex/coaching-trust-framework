@@ -7,7 +7,7 @@ layout: null
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Coaching Trust Framework</title>
-<meta name="description" content="An open framework for trustworthy AI coaching agents — published as a common good.">
+<meta name="description" content="An open framework, in draft, for verifying that AI coaching agents respect the norms of a profession — published as a common good.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -101,6 +101,9 @@ body.fr .hero .hero-cta[lang="fr"], body:not(.fr) .hero .hero-cta[lang="en"] { d
 
 .footer { text-align: center; padding: 40px 24px; color: #64748b; font-size: 13px; border-top: 1px solid rgba(255,255,255,0.06); }
 .footer a { color: #64748b; }
+.footer [lang="fr"] { display: none; }
+body.fr .footer [lang="fr"] { display: inline; }
+body.fr .footer [lang="en"] { display: none; }
 
 .content [lang="fr"], .hero [lang="fr"] { display: none; }
 body.fr .content [lang="fr"], body.fr .hero [lang="fr"] { display: block; }
@@ -115,12 +118,12 @@ body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
   <div class="subtitle" lang="en">An open framework for verifying, before and during deployment, that AI agents respect the norms of a profession.</div>
   <div class="subtitle" lang="fr">Un cadre ouvert pour vérifier, avant et pendant leur mise en service, que des agents IA respectent les normes d'un métier.</div>
   <div class="hero-cta" lang="en">
-    <a class="primary" href="mailto:maxime@simplex.coach?subject=Joining%20the%20CTF%20founding%20consortium">Join the founding consortium</a>
-    <a class="secondary" href="https://github.com/macsimplex/coaching-trust-framework/blob/main/CONTRIBUTING.md">Comment on the proposals</a>
+    <a class="primary" href="https://github.com/macsimplex/coaching-trust-framework/tree/main/rfcs#readme">Read and comment on version 0</a>
+    <a class="secondary" href="https://github.com/macsimplex/coaching-trust-framework/blob/main/CONTRIBUTING.md#four-questions-for-coaches">Coaches: 4 questions, no GitHub needed</a>
   </div>
   <div class="hero-cta" lang="fr">
-    <a class="primary" href="mailto:maxime@simplex.coach?subject=Rejoindre%20le%20consortium%20fondateur%20du%20CTF">Rejoindre le consortium fondateur</a>
-    <a class="secondary" href="https://github.com/macsimplex/coaching-trust-framework/blob/main/CONTRIBUTING.fr.md">Commenter les propositions</a>
+    <a class="primary" href="https://github.com/macsimplex/coaching-trust-framework/tree/main/rfcs#readme">Lire et commenter la version 0</a>
+    <a class="secondary" href="https://github.com/macsimplex/coaching-trust-framework/blob/main/CONTRIBUTING.fr.md#quatre-questions-pour-les-coachs">Coachs : 4 questions, sans GitHub</a>
   </div>
   <div class="lang-switch">
     <button onclick="setLang('en')" id="btnEn" class="active">English</button>
@@ -145,14 +148,14 @@ body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
     {{ top_en[0] | markdownify }}
   <div class="bricks" role="figure" aria-label="The four building blocks of CTF, each with the need it covers">
     <div class="bricks-cycle">
-      <div class="brick"><p class="when">Design</p><p class="name">1. Frame</p><p class="covers"><span>Need covered</span>Build norms in from the design stage</p><p class="need">The norms of the profession are built in from the design of the agent.</p></div>
+      <div class="brick"><p class="when">Design</p><p class="name">1. Frame</p><p class="covers"><span>Need covered</span>Build norms in from the design stage</p><p class="need">Planned: the norms of the profession would be built in from the design of the agent.</p></div>
       <div class="arrow" aria-hidden="true"></div>
-      <div class="brick"><p class="when">Before and during deployment</p><p class="name">2. Test</p><p class="covers"><span>Need covered</span>Confront the agent with real situations</p><p class="need">The agent faces standardized situations, some of them incognito.</p></div>
+      <div class="brick"><p class="when">Before and during deployment</p><p class="name">2. Test</p><p class="covers"><span>Need covered</span>Confront the agent with real situations</p><p class="need">Version 0, in preparation: the agent faces standardized situations through its ordinary interface.</p></div>
       <div class="arrow" aria-hidden="true"></div>
-      <div class="brick"><p class="when">In service</p><p class="name">3. Monitor</p><p class="covers"><span>Need covered</span>Observe over time</p><p class="need">All real exchanges are evaluated, at the platform.</p></div>
+      <div class="brick"><p class="when">In service</p><p class="name">3. Monitor</p><p class="covers"><span>Need covered</span>Observe over time</p><p class="need">Long term: real exchanges would be evaluated at the platform.</p></div>
     </div>
-    <div class="brick base"><p class="name">4. Guarantee</p><p class="covers"><span>Need covered</span>Trust the evaluator</p><p class="need">Several models evaluate, humans check and calibrate them, and in time an independent consortium would validate. Results are tied to what was observed, and when.</p></div>
-    <p class="caption">The first three blocks follow the life of the agent; the fourth guarantees the whole.</p>
+    <div class="brick base"><p class="name">4. Guarantee</p><p class="covers"><span>Need covered</span>Trust the evaluator</p><p class="need">Several AI models evaluate, people check and calibrate them, and in time an independent consortium would validate. Results are tied to what was observed, and when.</p></div>
+    <p class="caption">The first three blocks follow the life of the agent; the fourth makes the evaluation trustworthy.</p>
   </div>
     {{ end_en[0] | markdownify }}
     <p class="section-cta"><a href="mailto:maxime@simplex.coach?subject=Joining%20the%20CTF%20founding%20consortium">Join the founding consortium</a></p>
@@ -173,14 +176,14 @@ body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
     {{ top_fr[0] | markdownify }}
   <div class="bricks" role="figure" aria-label="Les quatre briques du CTF, chacune avec le besoin qu'elle couvre">
     <div class="bricks-cycle">
-      <div class="brick"><p class="when">Conception</p><p class="name">1. Cadrer</p><p class="covers"><span>Besoin couvert</span>Intégrer les normes dès la conception</p><p class="need">Les normes du métier sont intégrées dès la conception de l'agent.</p></div>
+      <div class="brick"><p class="when">Conception</p><p class="name">1. Cadrer</p><p class="covers"><span>Besoin couvert</span>Intégrer les normes dès la conception</p><p class="need">Prévu : les normes du métier seraient intégrées dès la conception de l'agent.</p></div>
       <div class="arrow" aria-hidden="true"></div>
-      <div class="brick"><p class="when">Avant et pendant la mise en service</p><p class="name">2. Éprouver</p><p class="covers"><span>Besoin couvert</span>Confronter l'agent à des situations réelles</p><p class="need">L'agent affronte des situations normées, dont une partie incognito.</p></div>
+      <div class="brick"><p class="when">Avant et pendant la mise en service</p><p class="name">2. Éprouver</p><p class="covers"><span>Besoin couvert</span>Confronter l'agent à des situations réelles</p><p class="need">Version 0, en préparation : l'agent affronte des situations normées par son interface ordinaire.</p></div>
       <div class="arrow" aria-hidden="true"></div>
-      <div class="brick"><p class="when">En service</p><p class="name">3. Surveiller</p><p class="covers"><span>Besoin couvert</span>Observer dans la durée</p><p class="need">Tous les échanges réels sont évalués, chez la plateforme.</p></div>
+      <div class="brick"><p class="when">En service</p><p class="name">3. Surveiller</p><p class="covers"><span>Besoin couvert</span>Observer dans la durée</p><p class="need">Long terme : les échanges réels seraient évalués chez la plateforme.</p></div>
     </div>
-    <div class="brick base"><p class="name">4. Garantir</p><p class="covers"><span>Besoin couvert</span>Faire confiance à celui qui évalue</p><p class="need">Plusieurs modèles évaluent, des humains les vérifient et les étalonnent, et à terme un consortium indépendant validerait. Les résultats sont liés à ce qui a été observé, et quand.</p></div>
-    <p class="caption">Les trois premières briques suivent la vie de l'agent ; la quatrième garantit l'ensemble.</p>
+    <div class="brick base"><p class="name">4. Garantir</p><p class="covers"><span>Besoin couvert</span>Faire confiance à celui qui évalue</p><p class="need">Plusieurs modèles d'IA évaluent, des personnes les vérifient et les étalonnent, et à terme un consortium indépendant validerait. Les résultats sont liés à ce qui a été observé, et quand.</p></div>
+    <p class="caption">Les trois premières briques suivent la vie de l'agent ; la quatrième rend l'évaluation digne de confiance.</p>
   </div>
     {{ end_fr[0] | markdownify }}
     <p class="section-cta"><a href="mailto:maxime@simplex.coach?subject=Rejoindre%20le%20consortium%20fondateur%20du%20CTF">Rejoindre le consortium fondateur</a></p>
@@ -193,7 +196,7 @@ body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
 </div>
 
 <div class="footer">
-  <p>Founded by Maxime Bui, 2026 · <a href="mailto:maxime@simplex.coach">maxime@simplex.coach</a></p>
+  <p><span lang="en">Founded by Maxime Bui, 2026</span><span lang="fr">Fondé par Maxime Bui, 2026</span> · <a href="mailto:maxime@simplex.coach">maxime@simplex.coach</a></p>
   <p style="margin-top:6px"><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://github.com/macsimplex/coaching-trust-framework">GitHub</a></p>
 </div>
 
@@ -213,7 +216,7 @@ document.querySelectorAll('.vision').forEach(function (vision) {
   });
 });
 
-// Language: ?lang=fr or ?lang=en in the address wins, then the last choice, then English.
+// Language: ?lang=fr or ?lang=en in the address wins, then the last choice, then the browser's language, then English.
 function setLang(lang, remember) {
   lang = lang === 'fr' ? 'fr' : 'en';
   document.documentElement.lang = lang;
@@ -235,7 +238,12 @@ function setLang(lang, remember) {
   try { saved = localStorage.getItem('ctf_lang'); } catch(_) {}
   if (fromUrl === 'fr' || fromUrl === 'en') setLang(fromUrl, false);
   else if (saved) setLang(saved, false);
-  // A link such as ?lang=fr#6-pourquoi-le-cadre targets a heading that was hidden until now.
+  else {
+    var nav = '';
+    try { nav = ((navigator.languages && navigator.languages[0]) || navigator.language || '').toLowerCase(); } catch(_) {}
+    if (nav.indexOf('fr') === 0) setLang('fr', false);
+  }
+  // A link such as ?lang=fr#7-pourquoi-le-cadre targets a heading that was hidden until now.
   if (window.location.hash) {
     var target = null;
     try { target = document.getElementById(decodeURIComponent(window.location.hash.slice(1))); } catch(_) {}
