@@ -19,6 +19,8 @@ Il n'est pas nécessaire d'être développeur, ni d'avoir un compte GitHub.
 
 ## Quatre questions pour les coachs
 
+Les mêmes questions, avec un e-mail prêt à remplir, figurent sur la [page des coachs](https://coaching-trust-framework.org/coaches.fr).
+
 Inutile de tout lire. Lisez les exigences de la [RFC 0008](./rfcs/0008-standard-v0-starting-requirements.fr.md) (sections R1 à R8), puis répondez en quelques lignes à l'une ou l'autre de ces questions :
 
 1. Chaque comportement attendu correspond-il à la bonne pratique et à la déontologie du coaching telles que vous les connaissez ?

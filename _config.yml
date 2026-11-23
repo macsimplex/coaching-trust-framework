@@ -56,3 +56,7 @@ markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
+
+# GitHub Pages leaves CONTRIBUTING.md out by default; publish it.
+include:
+  - CONTRIBUTING.md

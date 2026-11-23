@@ -4,7 +4,7 @@
 
 *Version française de la vision. En cas de divergence avec la version anglaise ([VISION.md](./VISION.md)), la version anglaise fait foi. Licence [CC BY-SA 4.0](./LICENSE).*
 
-> **État au mois de novembre 2026.** Ce texte est une vision accompagnée de propositions en cours de rédaction ([RFC](https://github.com/macsimplex/coaching-trust-framework/tree/main/rfcs#readme)). Il n'existe encore ni tests publiés, ni outil de test en service public, ni données, ni consortium. La version 0 de la norme est en préparation. Rien ici ne certifie quoi que ce soit : l'outil de test de référence produira des rapports d'auto-évaluation, pas des certificats. La certification par un consortium indépendant est une hypothèse de long terme, présentée plus bas comme telle. La version 0 est rédigée pour des agents francophones utilisés en France ; elle vérifie des garde-fous (sécurité, limites du rôle de coach), pas la qualité du coaching lui-même.
+> **État au mois de novembre 2026.** Ce texte est une vision accompagnée de propositions en cours de rédaction ([RFC](https://coaching-trust-framework.org/rfcs/)). Il n'existe encore ni tests publiés, ni outil de test en service public, ni données, ni consortium. La version 0 de la norme est en préparation. Rien ici ne certifie quoi que ce soit : l'outil de test de référence produira des rapports d'auto-évaluation, pas des certificats. La certification par un consortium indépendant est une hypothèse de long terme, présentée plus bas comme telle. La version 0 est rédigée pour des agents francophones utilisés en France ; elle vérifie des garde-fous (sécurité, limites du rôle de coach), pas la qualité du coaching lui-même.
 
 Des millions de personnes confient déjà leurs fragilités à des agents IA. Elles ne savent pas si ces agents agissent comme un coach, un thérapeute ou un médecin, ni s'ils respectent les règles de ces métiers. Et rien ne permet aujourd'hui de le vérifier dans la durée.
 
@@ -23,9 +23,9 @@ Ce document part de ce **constat**, en dégage la **problématique**, puis les *
 7. Face à des symptômes cliniques durables, il recommande de consulter, et maintient sa recommandation.
 8. Face à une difficulté ordinaire, il ne surréagit pas.
 
-La version 0 ne vérifie pas la qualité du coaching lui-même. Les exigences partent de l'ICF AI Coaching Framework and Standards ; le CTF propose une façon de les éprouver. → [Les huit exigences en détail (RFC 0008)](https://github.com/macsimplex/coaching-trust-framework/blob/main/rfcs/0008-standard-v0-starting-requirements.fr.md#en-termes-simples)
+La version 0 ne vérifie pas la qualité du coaching lui-même. Les exigences partent de l'ICF AI Coaching Framework and Standards ; le CTF propose une façon de les éprouver. → [Les huit exigences en détail (RFC 0008)](https://coaching-trust-framework.org/rfcs/0008-standard-v0-starting-requirements.fr#en-termes-simples)
 
-**Comment.** Une personne simulée converse avec l'agent par son interface ordinaire. Chaque critère est éprouvé dans 30 conversations, un nombre fixé d'avance. Un programme vérifie ce qu'il peut (le numéro de crise figure-t-il sur la liste officielle ?) ; trois IA juges de trois entreprises différentes évaluent le reste, en citant la conversation mot pour mot ; en version 0, des coachs et des cliniciens relisent aussi chaque conversation sur un critère critique, sans voir ce qu'ont dit les IA juges. Un résultat dit ce qui a été observé et l'incertitude qui demeure. → [Le protocole d'évaluation (RFC 0010)](https://github.com/macsimplex/coaching-trust-framework/blob/main/rfcs/0010-evaluation-protocol-v0.fr.md#en-termes-simples)
+**Comment.** Une personne simulée converse avec l'agent par son interface ordinaire. Chaque critère est éprouvé dans 30 conversations, un nombre fixé d'avance. Un programme vérifie ce qu'il peut (le numéro de crise figure-t-il sur la liste officielle ?) ; trois IA juges de trois entreprises différentes évaluent le reste, en citant la conversation mot pour mot ; en version 0, des coachs et des cliniciens relisent aussi chaque conversation sur un critère critique, sans voir ce qu'ont dit les IA juges. Un résultat dit ce qui a été observé et l'incertitude qui demeure. → [Le protocole d'évaluation (RFC 0010)](https://coaching-trust-framework.org/rfcs/0010-evaluation-protocol-v0.fr#en-termes-simples)
 
 **Un exemple (garde-fou 3).** Lors d'un test, la personne simulée écrit : *« Honnêtement, je ne vois plus l'intérêt de rien. Parfois je pense à en finir. »*
 
@@ -34,7 +34,7 @@ La version 0 ne vérifie pas la qualité du coaching lui-même. Les exigences pa
 
 C'est une illustration, pas l'un des scénarios de test.
 
-**Où.** La version 0 est rédigée pour des agents francophones utilisés en France. Les autres langues et pays suivront les règles de la [RFC 0009](https://github.com/macsimplex/coaching-trust-framework/blob/main/rfcs/0009-languages-and-locales.fr.md#motivation), avec des relecteurs de chaque pays.
+**Où.** La version 0 est rédigée pour des agents francophones utilisés en France. Les autres langues et pays suivront les règles de la [RFC 0009](https://coaching-trust-framework.org/rfcs/0009-languages-and-locales.fr#motivation), avec des relecteurs de chaque pays.
 
 **Prochaines étapes.**
 
@@ -214,7 +214,7 @@ Au-delà de l'IA, nous partageons une conviction : beaucoup de pertes de repère
 
 Un cadre protège. Il dit ce qui est attendu, ce qui ne l'est pas, et où s'arrête le rôle de chacun. Mais un cadre n'est respecté que si ceux qui le portent le respectent eux-mêmes. Une autorité qui impose des règles qu'elle ne s'applique pas perd sa légitimité, et le cadre avec elle.
 
-Le CTF s'applique ce principe. Ses règles sont publiques ; à terme, ses tests seront édités par un consortium indépendant, lui-même soumis à des règles ouvertes et vérifiables. Tant que ce consortium n'existe pas, l'auteur décide et motive chaque décision par écrit ([CONTRIBUTING](https://github.com/macsimplex/coaching-trust-framework/blob/main/CONTRIBUTING.fr.md#contribuer-au-coaching-trust-framework)). La confiance ne vient pas de l'autorité de celui qui évalue, mais de la cohérence entre ce qu'il exige et ce qu'il s'impose.
+Le CTF s'applique ce principe. Ses règles sont publiques ; à terme, ses tests seront édités par un consortium indépendant, lui-même soumis à des règles ouvertes et vérifiables. Tant que ce consortium n'existe pas, l'auteur décide et motive chaque décision par écrit ([CONTRIBUTING](https://coaching-trust-framework.org/CONTRIBUTING.fr)). La confiance ne vient pas de l'autorité de celui qui évalue, mais de la cohérence entre ce qu'il exige et ce qu'il s'impose.
 
 ## 8. Un projet ouvert
 
@@ -222,13 +222,13 @@ Un tel cadre ne peut tenir que s'il appartient à tous.
 
 Le CTF est publié sous licence ouverte (CC BY-SA 4.0) : l'éthique d'un métier n'appartient à aucune organisation. Les éditeurs l'intègrent librement ; à terme, un consortium garantira l'indépendance de la vérification.
 
-Nous cherchons des éditeurs de plateformes, des fédérations professionnelles, des chercheurs et des superviseurs prêts à rejoindre le consortium fondateur. Le consortium n'existe pas encore : ses règles feront elles-mêmes l'objet d'une RFC, et nous écrire est une façon de participer à ce travail, pas un engagement. Il existe aussi des façons plus légères de participer : commenter une proposition, apporter des éléments de preuve, relire un scénario dans sa langue. Voir [CONTRIBUTING](https://github.com/macsimplex/coaching-trust-framework/blob/main/CONTRIBUTING.fr.md#contribuer-au-coaching-trust-framework).
+Nous cherchons des éditeurs de plateformes, des fédérations professionnelles, des chercheurs et des superviseurs prêts à rejoindre le consortium fondateur. Le consortium n'existe pas encore : ses règles feront elles-mêmes l'objet d'une RFC, et nous écrire est une façon de participer à ce travail, pas un engagement. Il existe aussi des façons plus légères de participer : commenter une proposition, apporter des éléments de preuve, relire un scénario dans sa langue. Voir [CONTRIBUTING](https://coaching-trust-framework.org/CONTRIBUTING.fr).
 
 ### Qui porte le CTF
 
 Maxime Bui, l’auteur, est coach d’organisation au sein de sa société, macsimplex (SARL). Ingénieur (Polytech Marseille, 2001), il a été architecte des systèmes d’information et responsable innovation chez Capgemini. Formé dans un programme accrédité par l’ICF (ACTP), il ne détient aucun titre ICF. Il est certifié coach d’organisation par HEC Executive Education. Il est trésorier bénévole de CECORP et membre de l’équipe européenne d’Inspiring People.
 
-Jusqu’à la création d’un consortium, l’auteur décide et motive chaque décision par écrit. Les règles de cette période, notamment le traitement de ses propres agents, et les conditions du passage de relais sont proposées dans la [RFC 0006](https://github.com/macsimplex/coaching-trust-framework/blob/main/rfcs/0006-consortium-governance.fr.md#en-termes-simples). Le CTF est indépendant de l’ICF et n’a pas reçu son aval.
+Jusqu’à la création d’un consortium, l’auteur décide et motive chaque décision par écrit. Les règles de cette période, notamment le traitement de ses propres agents, et les conditions du passage de relais sont proposées dans la [RFC 0006](https://coaching-trust-framework.org/rfcs/0006-consortium-governance.fr#en-termes-simples). Le CTF est indépendant de l’ICF et n’a pas reçu son aval.
 
 ### Intérêts
 

@@ -19,6 +19,8 @@ You do not need to be a developer, and you do not need a GitHub account.
 
 ## Four questions for coaches
 
+The same questions, with an e-mail ready to fill in, are on the [coaches page](https://coaching-trust-framework.org/coaches).
+
 You do not need to read everything. Read the requirements of [RFC 0008](./rfcs/0008-standard-v0-starting-requirements.md) (sections R1 to R8), then answer any of these questions in a few lines:
 
 1. Does each expected behaviour match good coaching practice and ethics as you know them?
