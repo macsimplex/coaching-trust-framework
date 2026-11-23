@@ -1,5 +1,7 @@
 # RFC 0008: Starting requirements of the CTF standard, version 0
 
+*French version: [0008-standard-v0-starting-requirements.fr.md](./0008-standard-v0-starting-requirements.fr.md).*
+
 ## Header
 
 - **RFC number:** 0008
