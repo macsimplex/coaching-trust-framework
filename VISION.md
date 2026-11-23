@@ -4,6 +4,8 @@
 
 *This English version of the vision is authoritative. A French version is available in [VISION.fr.md](./VISION.fr.md). License [CC BY-SA 4.0](./LICENSE).*
 
+> **Status, November 2026.** This is a vision and a set of draft proposals ([RFCs](./rfcs/README.md)). There are no published tests, no testing tool in public use, no data and no consortium yet. Version 0 of the standard is being prepared. Nothing here certifies anything: the reference testing tool will produce self-evaluation reports, not certificates. Certification by an independent consortium is a long-term hypothesis, described below as such. Version 0 is being written for French-language agents used in France; it checks safeguards (safety, the limits of the coaching role), not the quality of the coaching itself.
+
 Millions of people already confide their vulnerabilities to AI agents. They do not know whether these agents are acting as a coach, a therapist or a doctor, nor whether they respect the rules of those professions. And nothing today makes it possible to verify this over time.
 
 This document starts from that **observation**, draws out the **problem**, then the **needs** that follow from it. The **Coaching Trust Framework** (CTF) emerges from these needs: an open framework for verifying, before and during deployment, that AI agents respect the norms of a profession. It starts with coaching and is meant to extend to any profession that has a framework of its own.
@@ -51,7 +53,7 @@ The model used to certify humans does not help either. A professional is certifi
 
 ### What AI makes possible
 
-For the first time, it is possible to **observe the practice itself**, rather than indirect indicators such as hours of training. The same situations can be replayed at will, every exchange can be evaluated, and drift can be detected as soon as it appears. Certification can become **continuous**.
+For the first time, it is possible to **observe the practice itself**, rather than indirect indicators such as hours of training. The same situations can be replayed at will, every exchange can be evaluated, and drift can be detected as soon as it appears. Verification can become **continuous**.
 
 ## 3. The need
 
@@ -75,7 +77,7 @@ Since an agent drifts, it must be observed continuously, on its real exchanges a
 
 ### Trusting the evaluator
 
-Evaluation will largely be carried out by AI. It must therefore be robust, with several perspectives and with humans to calibrate it. And it must be carried by an independent third party: a platform cannot certify itself.
+Evaluation will largely be carried out by AI. It must therefore be robust, with several perspectives and with humans to calibrate it. And, in time, it must be carried by an independent third party: a platform cannot be the only judge of its own agent.
 
 ### An analogy: the airline pilot
 
@@ -88,11 +90,11 @@ The Coaching Trust Framework is the answer that emerges from these needs. It doe
 <!-- ctf:avant-briques -->
 
 1. **Frame**, to build norms in from the design stage: the norms of the profession are made available to agent-building platforms.
-2. **Test**, to confront the agent with real situations: simulated agents play standardized situations, some of them incognito, through the ordinary interface and from ordinary accounts.
-3. **Monitor**, to observe over time: evaluation runs at the platform on all exchanges; only evaluation results, alerts and anonymized extracts leave it.
-4. **Guarantee**, to trust the evaluator: several models evaluate, another arbitrates, humans calibrate, and an independent consortium validates the whole. Certification is tied to a precise version of the agent, and any change re-triggers the tests.
+2. **Test**, to confront the agent with real situations: simulated agents play standardized situations, some of them incognito (with the agreement of the agent's publisher), through the ordinary interface and from ordinary accounts.
+3. **Monitor**, to observe over time: evaluation runs at the platform on all exchanges; the conversations stay there, and only evaluation results, alerts and anonymized extracts leave it.
+4. **Guarantee**, to trust the evaluator: several models evaluate, humans check and calibrate them, and, in time, an independent consortium would validate the whole. Results are tied to what was observed, when, and with which version of the standard; any change to the agent calls for new tests.
 
-CTF is a **quality process**, like ISO 9001: it certifies respect for a framework, notably the scope of the profession, not excellence of practice. In return, platforms that adhere to it accept incognito tests, supervision of all exchanges and anonymization of data; end clients consent to the framed sharing of transcripts.
+CTF is meant as a **quality process**, like ISO 9001: it verifies respect for a framework, notably the scope of the profession, not excellence of practice. In the long term, platforms that adhere to it would accept incognito tests, supervision of all exchanges and anonymization of data, and end clients would consent to the framed sharing of transcripts. Version 0 asks none of this: anyone can test an agent from the outside, through its ordinary interface.
 
 <!-- ctf:apres-briques -->
 
@@ -102,8 +104,8 @@ CTF rests on four assumptions, which we state here so that they can be discussed
 
 1. The norms of a profession can be translated into observable, and therefore testable, behaviors.
 2. These behaviors can be evaluated reliably, by several AI models calibrated by humans.
-3. Trust can only come from an independent third party: a platform cannot certify itself.
-4. A certification is only worth something if it is tied to a precise version of the agent and renewed with every change.
+3. Lasting trust can only come from an independent third party: a platform cannot be the only judge of its own agent.
+4. A test result is only worth something if it says what was observed, when, and with which version of the standard, and if it is renewed when the agent changes.
 
 ## 6. Why the framework matters
 
@@ -111,11 +113,11 @@ Beyond AI, we share a conviction: much of today's loss of bearings stems from ou
 
 A framework protects. It says what is expected, what is not, and where each person's role ends. But a framework is only respected if those who uphold it respect it themselves. An authority that imposes rules it does not apply to itself loses its legitimacy, and the framework with it.
 
-CTF applies this principle to itself. Its rules are public, its tests are published by an independent consortium, and that consortium is itself subject to open and verifiable rules. Trust does not come from the authority of the certifier, but from the consistency between what it requires and what it imposes on itself.
+CTF applies this principle to itself. Its rules are public; in time, its tests will be published by an independent consortium, itself subject to open and verifiable rules. Until that consortium exists, the author decides and explains every decision in writing ([CONTRIBUTING](./CONTRIBUTING.md)). Trust does not come from the authority of the evaluator, but from the consistency between what it requires and what it imposes on itself.
 
 ## 7. A field for research
 
-CTF is not only a certification scheme: it is also an observation scheme, which produces data that research can draw on.
+CTF is not only a verification scheme: it is also an observation scheme, which produces data that research can draw on.
 
 ### From postulates to hypotheses
 
@@ -128,7 +130,7 @@ This catalogue is an open list: any researcher can choose an avenue from it, ref
 | Discipline | Research question | Building block concerned | Data that can be used |
 | --- | --- | --- | --- |
 | Ethics and moral philosophy | Can a deontological norm be translated into observable behaviors without betraying it? | Frame | Reference standards, CTF adaptations |
-| Law | What legal value does a continuous certification have? How does it fit with the AI Act and the GDPR? | Guarantee | Certification scheme, use cases |
+| Law | What legal value could a continuous verification have? How does it fit with the AI Act and the GDPR? | Guarantee | Verification scheme, use cases |
 | Clinical psychology | Where does the boundary between coaching and therapy lie? Does an agent detect distress and refer in time? | Test | Simulated crisis scenarios |
 | Evidence-based coaching | Are a coach's competencies observable in an agent? | Frame, Test | Simulated exchanges, evaluation rubrics |
 | Linguistics and discourse analysis | Which language markers reveal an agent's stance: open questions, directiveness, advice? | Monitor | Anonymized transcripts |
@@ -140,7 +142,7 @@ This catalogue is an open list: any researcher can choose an avenue from it, ref
 | Public health | Does a compliant agent better protect vulnerable people? | Monitor | Alerts, referrals to professionals |
 | Sociology of professions | How is AI redrawing the boundaries between the helping professions and the role of the supervisor? | All | Interviews, adaptations by profession |
 | Organization studies | Does sociocratic-style governance, combining AI and humans, produce better decisions? | Guarantee | Consortium decisions, change proposals (RFC) |
-| Economics | Does a trust label change adoption and buyers' choices? | Guarantee | Platform adoption data |
+| Economics | Do published test results change adoption and buyers' choices? | Guarantee | Platform adoption data |
 | Education sciences | Can what CTF learns about agents improve the training and supervision of human coaches? | All | Comparison of agents and coaches |
 
 ### CTF as an object of research
@@ -151,7 +153,7 @@ This protocol raises research questions in their own right: does this loop conve
 
 ### The available data
 
-- **Simulated exchanges**: they belong to the consortium and can be shared freely with researchers.
+- **Simulated exchanges**: they will belong to the consortium and can be shared freely with researchers.
 - **Evaluations**: scores, alerts and disagreements between evaluators, anonymized and aggregated.
 - **Real exchanges**: only in anonymized form, with the consent of the people concerned and the approval of an ethics committee.
 
@@ -161,9 +163,9 @@ The results will feed CTF's public evidence log and its change proposals. A scie
 
 Such a framework can only hold if it belongs to everyone.
 
-CTF is open source (CC BY-SA 4.0): the ethics of a profession belong to no organization. Software publishers integrate it freely; the consortium guarantees the independence of verification.
+CTF is published under an open licence (CC BY-SA 4.0): the ethics of a profession belong to no organization. Software publishers integrate it freely; in time, a consortium will guarantee the independence of verification.
 
-We are looking for platform publishers, professional federations, researchers and supervisors willing to join the founding consortium.
+We are looking for platform publishers, professional federations, researchers and supervisors willing to join the founding consortium. There are also lighter ways to take part: commenting on a proposal, bringing evidence, reviewing a scenario in your language. See [CONTRIBUTING](./CONTRIBUTING.md).
 
 **Contact:** Maxime Bui — maxime@simplex.coach — coaching-trust-framework.org
 

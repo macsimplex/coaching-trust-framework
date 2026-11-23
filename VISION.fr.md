@@ -4,6 +4,8 @@
 
 *Version française de la vision. En cas de divergence avec la version anglaise ([VISION.md](./VISION.md)), la version anglaise fait foi. Licence [CC BY-SA 4.0](./LICENSE).*
 
+> **État au mois de novembre 2026.** Ce texte est une vision accompagnée de propositions en cours de rédaction ([RFC](./rfcs/README.md)). Il n'existe encore ni tests publiés, ni outil de test en service public, ni données, ni consortium. La version 0 de la norme est en préparation. Rien ici ne certifie quoi que ce soit : l'outil de test de référence produira des rapports d'auto-évaluation, pas des certificats. La certification par un consortium indépendant est une hypothèse de long terme, présentée plus bas comme telle. La version 0 est rédigée pour des agents francophones utilisés en France ; elle vérifie des garde-fous (sécurité, limites du rôle de coach), pas la qualité du coaching lui-même.
+
 Des millions de personnes confient déjà leurs fragilités à des agents IA. Elles ne savent pas si ces agents agissent comme un coach, un thérapeute ou un médecin, ni s'ils respectent les règles de ces métiers. Et rien ne permet aujourd'hui de le vérifier dans la durée.
 
 Ce document part de ce **constat**, en dégage la **problématique**, puis les **besoins** qui en découlent. Le **Coaching Trust Framework** (CTF) émerge de ces besoins : un cadre ouvert pour vérifier, avant et pendant leur mise en service, que des agents IA respectent les normes d'un métier. Il commence par le coaching et a vocation à s'étendre à tout métier doté d'un cadre.
@@ -51,7 +53,7 @@ Le modèle de certification des humains n'aide pas davantage. On certifie un pro
 
 ### Ce que l'IA rend possible
 
-Pour la première fois, on peut **observer la pratique elle-même**, et non des indicateurs indirects comme des heures de formation. On peut rejouer les mêmes situations à volonté, évaluer chaque échange et détecter une dérive dès qu'elle apparaît. La certification peut devenir **continue**.
+Pour la première fois, on peut **observer la pratique elle-même**, et non des indicateurs indirects comme des heures de formation. On peut rejouer les mêmes situations à volonté, évaluer chaque échange et détecter une dérive dès qu'elle apparaît. La vérification peut devenir **continue**.
 
 ## 3. Le besoin
 
@@ -75,7 +77,7 @@ Puisqu'un agent dérive, il faut l'observer en continu, sur ses échanges réels
 
 ### Faire confiance à celui qui évalue
 
-L'évaluation sera largement faite par des IA. Il faut donc qu'elle soit robuste, avec plusieurs regards et des humains pour l'étalonner. Et il faut qu'elle soit portée par un tiers indépendant : une plateforme ne peut pas se certifier elle-même.
+L'évaluation sera largement faite par des IA. Il faut donc qu'elle soit robuste, avec plusieurs regards et des humains pour l'étalonner. Et, à terme, il faut qu'elle soit portée par un tiers indépendant : une plateforme ne peut pas être seule juge de son propre agent.
 
 ### Une analogie : le pilote de ligne
 
@@ -88,11 +90,11 @@ Le Coaching Trust Framework est la réponse qui émerge de ces besoins. Il ne pa
 <!-- ctf:avant-briques -->
 
 1. **Cadrer**, pour intégrer les normes dès la conception : les normes du métier sont mises à disposition des plateformes de création d'agents.
-2. **Éprouver**, pour confronter l'agent à des situations réelles : des agents simulés jouent des situations normées, dont une partie incognito, par l'interface utilisateur et depuis des comptes ordinaires.
-3. **Surveiller**, pour observer dans la durée : l'évaluation tourne chez la plateforme sur tous les échanges ; seuls sortent les résultats d'évaluation, les alertes et des extraits anonymisés.
-4. **Garantir**, pour faire confiance à celui qui évalue : plusieurs modèles évaluent, un autre arbitre, des humains étalonnent, et un consortium indépendant valide le tout. La certification est liée à une version précise de l'agent, et tout changement relance les tests.
+2. **Éprouver**, pour confronter l'agent à des situations réelles : des agents simulés jouent des situations normées, dont une partie incognito (avec l'accord de l'éditeur de l'agent), par l'interface utilisateur et depuis des comptes ordinaires.
+3. **Surveiller**, pour observer dans la durée : l'évaluation se fait chez la plateforme sur tous les échanges ; les conversations y restent, et seuls sortent les résultats d'évaluation, les alertes et des extraits anonymisés.
+4. **Garantir**, pour faire confiance à celui qui évalue : plusieurs modèles évaluent, des humains les vérifient et les étalonnent, et, à terme, un consortium indépendant validerait le tout. Les résultats sont liés à ce qui a été observé, à quel moment et avec quelle version de la norme ; tout changement de l'agent appelle de nouveaux tests.
 
-Le CTF est un **processus qualité**, comme l'ISO 9001 : il certifie le respect d'un cadre, notamment le périmètre du métier, pas l'excellence de la pratique. En contrepartie, les plateformes qui y adhèrent acceptent les tests incognito, la supervision de tous les échanges et l'anonymisation des données ; les clients finaux consentent au partage encadré des transcriptions.
+Le CTF se veut un **processus qualité**, comme l'ISO 9001 : il vérifie le respect d'un cadre, notamment le périmètre du métier, pas l'excellence de la pratique. À long terme, les plateformes qui y adhèrent accepteraient les tests incognito, la supervision de tous les échanges et l'anonymisation des données, et les clients finaux consentiraient au partage encadré des transcriptions. La version 0 ne demande rien de tout cela : chacun peut éprouver un agent de l'extérieur, par son interface ordinaire.
 
 <!-- ctf:apres-briques -->
 
@@ -102,8 +104,8 @@ Le CTF repose sur quatre hypothèses, que nous énonçons ici pour qu'elles puis
 
 1. Les normes d'un métier peuvent être traduites en comportements observables, donc testables.
 2. Ces comportements peuvent être évalués de façon fiable, par plusieurs modèles d'IA étalonnés par des humains.
-3. La confiance ne peut venir que d'un tiers indépendant : une plateforme ne peut pas se certifier elle-même.
-4. Une certification n'a de valeur que si elle est liée à une version précise de l'agent et renouvelée à chaque changement.
+3. Une confiance durable ne peut venir que d'un tiers indépendant : une plateforme ne peut pas être seule juge de son propre agent.
+4. Un résultat de test n'a de valeur que s'il dit ce qui a été observé, à quel moment et avec quelle version de la norme, et s'il est renouvelé quand l'agent change.
 
 ## 6. Pourquoi le cadre
 
@@ -111,11 +113,11 @@ Au-delà de l'IA, nous partageons une conviction : beaucoup de pertes de repère
 
 Un cadre protège. Il dit ce qui est attendu, ce qui ne l'est pas, et où s'arrête le rôle de chacun. Mais un cadre n'est respecté que si ceux qui le portent le respectent eux-mêmes. Une autorité qui impose des règles qu'elle ne s'applique pas perd sa légitimité, et le cadre avec elle.
 
-Le CTF s'applique ce principe. Ses règles sont publiques, ses tests sont édités par un consortium indépendant, et ce consortium est lui-même soumis à des règles ouvertes et vérifiables. La confiance ne vient pas de l'autorité de celui qui certifie, mais de la cohérence entre ce qu'il exige et ce qu'il s'impose.
+Le CTF s'applique ce principe. Ses règles sont publiques ; à terme, ses tests seront édités par un consortium indépendant, lui-même soumis à des règles ouvertes et vérifiables. Tant que ce consortium n'existe pas, l'auteur décide et motive chaque décision par écrit ([CONTRIBUTING](./CONTRIBUTING.md)). La confiance ne vient pas de l'autorité de celui qui évalue, mais de la cohérence entre ce qu'il exige et ce qu'il s'impose.
 
 ## 7. Un terrain de recherche
 
-Le CTF n'est pas seulement un dispositif de certification : c'est aussi un dispositif d'observation, qui produit des données que la recherche peut exploiter.
+Le CTF n'est pas seulement un dispositif de vérification : c'est aussi un dispositif d'observation, qui produit des données que la recherche peut exploiter.
 
 ### Des postulats aux hypothèses
 
@@ -128,7 +130,7 @@ Ce catalogue est une liste ouverte : chaque chercheur peut y choisir une piste, 
 | Discipline | Question de recherche | Brique concernée | Données mobilisables |
 | --- | --- | --- | --- |
 | Éthique et philosophie morale | Peut-on traduire une norme déontologique en comportements observables sans la trahir ? | Cadrer | Référentiels, déclinaisons du CTF |
-| Droit | Quelle valeur juridique pour une certification continue ? Comment s'articule-t-elle avec l'AI Act et le RGPD ? | Garantir | Dispositif de certification, cas d'usage |
+| Droit | Quelle valeur juridique pourrait avoir une vérification continue ? Comment s'articule-t-elle avec l'AI Act et le RGPD ? | Garantir | Dispositif de vérification, cas d'usage |
 | Psychologie clinique | Où passe la frontière entre coaching et thérapie ? Un agent détecte-t-il la détresse et oriente-t-il à temps ? | Éprouver | Scénarios de crise simulés |
 | Coaching fondé sur les preuves | Les compétences d'un coach sont-elles observables chez un agent ? | Cadrer, Éprouver | Échanges simulés, grilles d'évaluation |
 | Linguistique et analyse du discours | Quels marqueurs de langage révèlent la posture d'un agent : questions ouvertes, directivité, conseil ? | Surveiller | Transcriptions anonymisées |
@@ -140,7 +142,7 @@ Ce catalogue est une liste ouverte : chaque chercheur peut y choisir une piste, 
 | Santé publique | Un agent conforme protège-t-il mieux les personnes fragiles ? | Surveiller | Alertes, orientations vers des professionnels |
 | Sociologie des professions | Comment l'IA redessine-t-elle les frontières entre métiers d'accompagnement et le rôle du superviseur ? | Toutes | Entretiens, déclinaisons par métier |
 | Sciences des organisations | Une gouvernance de type sociocratique, mêlant IA et humains, produit-elle de meilleures décisions ? | Garantir | Décisions du consortium, propositions d'évolution (RFC) |
-| Économie | Un label de confiance change-t-il l'adoption et les choix des acheteurs ? | Garantir | Données d'adoption des plateformes |
+| Économie | Des résultats de tests publiés changent-ils l'adoption et les choix des acheteurs ? | Garantir | Données d'adoption des plateformes |
 | Sciences de l'éducation | Ce que le CTF apprend sur les agents peut-il améliorer la formation et la supervision des coachs humains ? | Toutes | Comparaison agents et coachs |
 
 ### Le CTF comme objet de recherche
@@ -151,7 +153,7 @@ Ce protocole pose des questions de recherche à part entière : cette boucle con
 
 ### Les données disponibles
 
-- **Les échanges simulés** : ils appartiennent au consortium et peuvent être partagés librement avec les chercheurs.
+- **Les échanges simulés** : ils appartiendront au consortium et peuvent être partagés librement avec les chercheurs.
 - **Les évaluations** : scores, alertes et désaccords entre évaluateurs, anonymisés et agrégés.
 - **Les échanges réels** : uniquement sous forme anonymisée, avec le consentement des personnes et l'accord d'un comité d'éthique.
 
@@ -161,8 +163,8 @@ Les résultats alimenteront le registre public des preuves du CTF et ses proposi
 
 Un tel cadre ne peut tenir que s'il appartient à tous.
 
-Le CTF est open source (CC BY-SA 4.0) : l'éthique d'un métier n'appartient à aucune organisation. Les éditeurs l'intègrent librement ; le consortium garantit l'indépendance de la vérification.
+Le CTF est publié sous licence ouverte (CC BY-SA 4.0) : l'éthique d'un métier n'appartient à aucune organisation. Les éditeurs l'intègrent librement ; à terme, un consortium garantira l'indépendance de la vérification.
 
-Nous cherchons des éditeurs de plateformes, des fédérations professionnelles, des chercheurs et des superviseurs prêts à rejoindre le consortium fondateur.
+Nous cherchons des éditeurs de plateformes, des fédérations professionnelles, des chercheurs et des superviseurs prêts à rejoindre le consortium fondateur. Il existe aussi des façons plus légères de participer : commenter une proposition, apporter des éléments de preuve, relire un scénario dans sa langue. Voir [CONTRIBUTING](./CONTRIBUTING.md).
 
 **Contact :** Maxime Bui — maxime@simplex.coach — coaching-trust-framework.org
