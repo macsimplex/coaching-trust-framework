@@ -13,6 +13,14 @@ authors:
     affiliation: macsimplex
     orcid: "https://orcid.org/0009-0009-0935-1214"
 license: CC-BY-SA-4.0
+doi: 10.5281/zenodo.24471324
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24471324
+    description: "Concept DOI: all versions, resolves to the latest"
+  - type: doi
+    value: 10.5281/zenodo.24471325
+    description: "Version draft-2026-11-23"
 repository-code: "https://github.com/macsimplex/coaching-trust-framework"
 url: "https://coaching-trust-framework.org"
 version: "draft-2026-11-23"

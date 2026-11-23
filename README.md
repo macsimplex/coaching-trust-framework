@@ -1,5 +1,7 @@
 # Coaching Trust Framework (CTF)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24471324.svg)](https://doi.org/10.5281/zenodo.24471324)
+
 An open draft standard for testing, from the outside, whether AI coaching agents respect safeguards drawn from the norms of the coaching profession. Published as a common good under [CC BY-SA 4.0](./LICENSE).
 
 *Français : la vision et les RFC existent en français ; voir [VISION.fr.md](./VISION.fr.md) et les fichiers `.fr.md` du dossier [rfcs](./rfcs/).*
@@ -14,7 +16,9 @@ An open draft standard for testing, from the outside, whether AI coaching agents
 
 ## How to cite
 
-Use the "Cite this repository" button on GitHub, or the metadata in [CITATION.cff](./CITATION.cff). Cite the version you read, since drafts change.
+Bui, M. *Coaching Trust Framework (CTF): an open draft standard for testing AI coaching agents.* Zenodo. [doi:10.5281/zenodo.24471324](https://doi.org/10.5281/zenodo.24471324)
+
+This DOI always points to the latest version. Each release also has its own DOI, listed on the Zenodo page; cite that one to name the exact version you read, since drafts change. The "Cite this repository" button on GitHub and [CITATION.cff](./CITATION.cff) give the same metadata.
 
 ## Author and interests
 
