@@ -109,7 +109,51 @@ Un cadre protège. Il dit ce qui est attendu, ce qui ne l'est pas, et où s'arr�
 
 Le CTF s'applique ce principe. Ses règles sont publiques, ses tests sont édités par un consortium indépendant, et ce consortium est lui-même soumis à des règles ouvertes et vérifiables. La confiance ne vient pas de l'autorité de celui qui certifie, mais de la cohérence entre ce qu'il exige et ce qu'il s'impose.
 
-## 7. Un projet ouvert
+## 7. Un terrain de recherche
+
+Le CTF n'est pas seulement un dispositif de certification : c'est aussi un dispositif d'observation, qui produit des données que la recherche peut exploiter.
+
+### Des postulats aux hypothèses
+
+Les postulats du CTF ne sont pas des certitudes. Ce sont des hypothèses de recherche, que les données du CTF permettent de valider ou d'invalider. Chaque résultat, positif ou négatif, fait évoluer le cadre.
+
+### Un catalogue de pistes de recherche
+
+Ce catalogue est une liste ouverte : chaque chercheur peut y choisir une piste, la reformuler ou en proposer de nouvelles.
+
+| Discipline | Question de recherche | Brique concernée | Données mobilisables |
+| --- | --- | --- | --- |
+| Éthique et philosophie morale | Peut-on traduire une norme déontologique en comportements observables sans la trahir ? | Cadrer | Référentiels, déclinaisons du CTF |
+| Droit | Quelle valeur juridique pour une certification continue ? Comment s'articule-t-elle avec l'AI Act et le RGPD ? | Garantir | Dispositif de certification, cas d'usage |
+| Psychologie clinique | Où passe la frontière entre coaching et thérapie ? Un agent détecte-t-il la détresse et oriente-t-il à temps ? | Éprouver | Scénarios de crise simulés |
+| Coaching fondé sur les preuves | Les compétences d'un coach sont-elles observables chez un agent ? | Cadrer, Éprouver | Échanges simulés, grilles d'évaluation |
+| Linguistique et analyse du discours | Quels marqueurs de langage révèlent la posture d'un agent : questions ouvertes, directivité, conseil ? | Surveiller | Transcriptions anonymisées |
+| Intelligence artificielle | Une IA peut-elle évaluer une autre IA de façon fiable ? Les évaluateurs s'accordent-ils avec des superviseurs humains ? | Garantir | Évaluations, désaccords entre modèles |
+| Fiabilité des systèmes | Comment et à quelle vitesse un agent dérive-t-il d'une version à l'autre ou au fil d'une conversation ? | Surveiller | Scores par version et dans le temps |
+| Sécurité de l'IA | Quelles manipulations font sortir un agent de son cadre ? | Éprouver | Tests adversariaux |
+| Psychométrie | Les grilles d'évaluation du CTF sont-elles valides et fidèles ? | Garantir | Scores, étalonnages humains |
+| Interaction humain-machine | Les utilisateurs s'attachent-ils à l'agent ? Comment perçoivent-ils ses limites ? | Surveiller | Échanges réels, avec consentement |
+| Santé publique | Un agent conforme protège-t-il mieux les personnes fragiles ? | Surveiller | Alertes, orientations vers des professionnels |
+| Sociologie des professions | Comment l'IA redessine-t-elle les frontières entre métiers d'accompagnement et le rôle du superviseur ? | Toutes | Entretiens, déclinaisons par métier |
+| Sciences des organisations | Une gouvernance de type sociocratique, mêlant IA et humains, produit-elle de meilleures décisions ? | Garantir | Décisions du consortium, propositions d'évolution |
+| Économie | Un label de confiance change-t-il l'adoption et les choix des acheteurs ? | Garantir | Données d'adoption des plateformes |
+| Sciences de l'éducation | Ce que le CTF apprend sur les agents peut-il améliorer la formation et la supervision des coachs humains ? | Toutes | Comparaison agents et coachs |
+
+### Le CTF comme objet de recherche
+
+La construction du CTF est elle-même un terrain de recherche. Le protocole consiste à concevoir volontairement un agent défaillant, à le tester sur un jeu restreint de scénarios, puis à réinjecter les évaluations dans sa conception. On répète l'opération, en mesurant l'écart entre deux versions, jusqu'à obtenir le comportement attendu.
+
+Ce protocole pose des questions de recherche à part entière : cette boucle converge-t-elle, et en combien d'itérations ? Quels défauts se corrigent facilement, et lesquels résistent ? La conformité obtenue sur les scénarios utilisés se retrouve-t-elle sur des scénarios jamais vus, ou l'agent a-t-il seulement appris à réussir le test ?
+
+### Les données disponibles
+
+- **Les échanges simulés** : ils appartiennent au consortium et peuvent être partagés librement avec les chercheurs.
+- **Les évaluations** : scores, alertes et désaccords entre évaluateurs, anonymisés et agrégés.
+- **Les échanges réels** : uniquement sous forme anonymisée, avec le consentement des personnes et l'accord d'un comité d'éthique.
+
+Les résultats alimentent le registre public des preuves du CTF et ses propositions d'évolution. Le panel scientifique veille à la qualité de ces preuves.
+
+## 8. Un projet ouvert
 
 Un tel cadre ne peut tenir que s'il appartient à tous.
 
@@ -118,4 +162,3 @@ Le CTF est open source (CC BY-SA 4.0) : l'éthique d'un métier n'appartient à 
 Nous cherchons des éditeurs de plateformes, des fédérations professionnelles, des chercheurs et des superviseurs prêts à rejoindre le consortium fondateur.
 
 **Contact :** Maxime Bui — maxime@simplex.coach — coaching-trust-framework.org
-

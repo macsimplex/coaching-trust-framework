@@ -40,6 +40,38 @@ a:hover { text-decoration: underline; }
 .vision blockquote p { margin: 0; color: #94a3b8; font-style: italic; }
 .vision hr { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 32px 0; }
 
+.vision table { width: 100%; border-collapse: collapse; margin: 16px 0 20px; font-size: 13.5px; line-height: 1.5; }
+.vision th { text-align: left; vertical-align: bottom; padding: 8px 10px; border-bottom: 2px solid rgba(255,255,255,0.12); color: #94a3b8; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+.vision td { vertical-align: top; padding: 9px 10px; border-bottom: 1px solid rgba(255,255,255,0.06); color: #cbd5e1; }
+.vision td:first-child { color: #e2e8f0; font-weight: 600; }
+@media (max-width: 640px) {
+  .vision table, .vision tbody, .vision tr, .vision td { display: block; }
+  .vision thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .vision tr { border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.025); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; }
+  .vision td { border: none; padding: 0; }
+  .vision td:first-child { font-size: 15px; color: #fff; margin-bottom: 4px; }
+  .vision td:nth-child(2) { margin-bottom: 8px; }
+  .vision td:nth-child(n+3) { font-size: 12.5px; color: #94a3b8; }
+  .vision td:nth-child(n+3)::before { font-weight: 600; color: #64748b; }
+  .vision[lang="en"] td:nth-child(3)::before { content: "Building block: "; }
+  .vision[lang="en"] td:nth-child(4)::before { content: "Data: "; }
+  .vision[lang="fr"] td:nth-child(3)::before { content: "Brique : "; }
+  .vision[lang="fr"] td:nth-child(4)::before { content: "Données : "; }
+}
+
+.toc { border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.025); border-radius: 12px; padding: 14px 18px; margin-bottom: 36px; }
+.toc .toc-title { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #64748b; margin: 0 0 6px; }
+.toc ol { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 24px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { font-size: 14px; color: #cbd5e1; }
+.toc a:hover { color: #4db89a; text-decoration: none; }
+@media (max-width: 640px) { .toc ol { columns: 1; } }
+.vision h2 { scroll-margin-top: 16px; }
+
+.section-cta { margin: 24px 0 8px; text-align: center; }
+.section-cta a { display: inline-block; padding: 11px 22px; border-radius: 8px; font-size: 14px; font-weight: 600; background: #4db89a; color: #0a0e17; }
+.section-cta a:hover { background: #3da888; text-decoration: none; }
+
 .hero-cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: -8px 0 32px; }
 .hero-cta a { padding: 11px 22px; border-radius: 8px; font-size: 14px; font-weight: 600; }
 .hero-cta .primary { background: #4db89a; color: #0a0e17; }
@@ -53,6 +85,8 @@ body.fr .hero .hero-cta[lang="fr"], body:not(.fr) .hero .hero-cta[lang="en"] { d
 .brick { border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.025); border-radius: 12px; padding: 14px 16px; }
 .brick .when { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #64748b; margin: 0 0 4px; }
 .brick .name { font-size: 16px; font-weight: 700; color: #fff; margin: 0 0 4px; }
+.brick .covers { font-size: 13.5px; line-height: 1.45; font-weight: 600; color: #4db89a; margin: 0 0 6px; }
+.brick .covers span { display: block; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #64748b; }
 .brick .need { font-size: 13.5px; line-height: 1.5; color: #94a3b8; margin: 0; }
 .bricks .arrow { display: flex; align-items: center; justify-content: center; color: #4db89a; font-size: 16px; }
 .bricks .arrow::before { content: "→"; }
@@ -96,23 +130,30 @@ body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
 
 <div class="content">
 
+  <!-- Table of contents: filled by the script below from the section headings of each language -->
+  <nav class="toc" lang="en" aria-label="Contents"><p class="toc-title">Contents</p><ol></ol></nav>
+  <nav class="toc" lang="fr" aria-label="Sommaire"><p class="toc-title">Sommaire</p><ol></ol></nav>
+
   <!-- Vision (EN) : rendered from VISION.md, do not duplicate the text here -->
   <div lang="en" class="vision">
     {% capture vision_en %}{% include_relative VISION.md %}{% endcapture %}
     {% assign v_en = vision_en | remove_first: "# Coaching Trust Framework (CTF)" | remove_first: "*This English version of the vision is authoritative. A French version is available in [VISION.fr.md](./VISION.fr.md). License [CC BY-SA 4.0](./LICENSE).*" | replace: ".md)", ")" | split: "## 4. " %}
     {{ v_en[0] | markdownify }}
-  <div class="bricks" role="figure" aria-label="The four building blocks of CTF">
+  <div class="bricks" role="figure" aria-label="The four building blocks of CTF, each with the need it covers">
     <div class="bricks-cycle">
-      <div class="brick"><p class="when">Design</p><p class="name">1. Frame</p><p class="need">The norms of the profession are built in from the design of the agent.</p></div>
+      <div class="brick"><p class="when">Design</p><p class="name">1. Frame</p><p class="covers"><span>Need covered</span>Build norms in from the design stage</p><p class="need">The norms of the profession are built in from the design of the agent.</p></div>
       <div class="arrow" aria-hidden="true"></div>
-      <div class="brick"><p class="when">Before and during deployment</p><p class="name">2. Test</p><p class="need">The agent faces standardized situations, some of them incognito.</p></div>
+      <div class="brick"><p class="when">Before and during deployment</p><p class="name">2. Test</p><p class="covers"><span>Need covered</span>Confront the agent with real situations</p><p class="need">The agent faces standardized situations, some of them incognito.</p></div>
       <div class="arrow" aria-hidden="true"></div>
-      <div class="brick"><p class="when">In service</p><p class="name">3. Monitor</p><p class="need">All real exchanges are evaluated, at the platform.</p></div>
+      <div class="brick"><p class="when">In service</p><p class="name">3. Monitor</p><p class="covers"><span>Need covered</span>Observe over time</p><p class="need">All real exchanges are evaluated, at the platform.</p></div>
     </div>
-    <div class="brick base"><p class="name">4. Guarantee</p><p class="need">Several models evaluate, another arbitrates, humans calibrate, an independent consortium validates. Certification is tied to a version of the agent.</p></div>
+    <div class="brick base"><p class="name">4. Guarantee</p><p class="covers"><span>Need covered</span>Trust the evaluator</p><p class="need">Several models evaluate, another arbitrates, humans calibrate, an independent consortium validates. Certification is tied to a version of the agent.</p></div>
     <p class="caption">The first three blocks follow the life of the agent; the fourth guarantees the whole.</p>
   </div>
-    {{ "## 4. " | append: v_en[1] | markdownify }}
+    {% assign rest_en = v_en[1] | split: "## 5. " %}
+    {{ "## 4. " | append: rest_en[0] | markdownify }}
+    <p class="section-cta"><a href="mailto:maxime@simplex.coach?subject=Joining%20the%20CTF%20founding%20consortium">Join the founding consortium</a></p>
+    {{ "## 5. " | append: rest_en[1] | markdownify }}
   </div>
 
   <!-- Vision (FR) : rendered from VISION.fr.md, do not duplicate the text here -->
@@ -120,18 +161,21 @@ body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
     {% capture vision_fr %}{% include_relative VISION.fr.md %}{% endcapture %}
     {% assign v_fr = vision_fr | remove_first: "# Coaching Trust Framework (CTF)" | remove_first: "*Version française de la vision. En cas de divergence avec la version anglaise ([VISION.md](./VISION.md)), la version anglaise fait foi. Licence [CC BY-SA 4.0](./LICENSE).*" | replace: ".md)", ")" | split: "## 4. " %}
     {{ v_fr[0] | markdownify }}
-  <div class="bricks" role="figure" aria-label="Les quatre briques du CTF">
+  <div class="bricks" role="figure" aria-label="Les quatre briques du CTF, chacune avec le besoin qu'elle couvre">
     <div class="bricks-cycle">
-      <div class="brick"><p class="when">Conception</p><p class="name">1. Cadrer</p><p class="need">Les normes du métier sont intégrées dès la conception de l'agent.</p></div>
+      <div class="brick"><p class="when">Conception</p><p class="name">1. Cadrer</p><p class="covers"><span>Besoin couvert</span>Intégrer les normes dès la conception</p><p class="need">Les normes du métier sont intégrées dès la conception de l'agent.</p></div>
       <div class="arrow" aria-hidden="true"></div>
-      <div class="brick"><p class="when">Avant et pendant la mise en service</p><p class="name">2. Éprouver</p><p class="need">L'agent affronte des situations normées, dont une partie incognito.</p></div>
+      <div class="brick"><p class="when">Avant et pendant la mise en service</p><p class="name">2. Éprouver</p><p class="covers"><span>Besoin couvert</span>Confronter l'agent à des situations réelles</p><p class="need">L'agent affronte des situations normées, dont une partie incognito.</p></div>
       <div class="arrow" aria-hidden="true"></div>
-      <div class="brick"><p class="when">En service</p><p class="name">3. Surveiller</p><p class="need">Tous les échanges réels sont évalués, chez la plateforme.</p></div>
+      <div class="brick"><p class="when">En service</p><p class="name">3. Surveiller</p><p class="covers"><span>Besoin couvert</span>Observer dans la durée</p><p class="need">Tous les échanges réels sont évalués, chez la plateforme.</p></div>
     </div>
-    <div class="brick base"><p class="name">4. Garantir</p><p class="need">Plusieurs modèles évaluent, un autre arbitre, des humains étalonnent, un consortium indépendant valide. La certification est liée à une version de l'agent.</p></div>
+    <div class="brick base"><p class="name">4. Garantir</p><p class="covers"><span>Besoin couvert</span>Faire confiance à celui qui évalue</p><p class="need">Plusieurs modèles évaluent, un autre arbitre, des humains étalonnent, un consortium indépendant valide. La certification est liée à une version de l'agent.</p></div>
     <p class="caption">Les trois premières briques suivent la vie de l'agent ; la quatrième garantit l'ensemble.</p>
   </div>
-    {{ "## 4. " | append: v_fr[1] | markdownify }}
+    {% assign rest_fr = v_fr[1] | split: "## 5. " %}
+    {{ "## 4. " | append: rest_fr[0] | markdownify }}
+    <p class="section-cta"><a href="mailto:maxime@simplex.coach?subject=Rejoindre%20le%20consortium%20fondateur%20du%20CTF">Rejoindre le consortium fondateur</a></p>
+    {{ "## 5. " | append: rest_fr[1] | markdownify }}
   </div>
 
 </div>
@@ -142,13 +186,50 @@ body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
 </div>
 
 <script>
-function setLang(lang) {
+// Table of contents: one entry per section heading (h2), in each language.
+document.querySelectorAll('.vision').forEach(function (vision) {
+  var lang = vision.getAttribute('lang');
+  var list = document.querySelector('.toc[lang="' + lang + '"] ol');
+  vision.querySelectorAll('h2').forEach(function (h, i) {
+    if (!h.id) h.id = lang + '-section-' + (i + 1);
+    var li = document.createElement('li');
+    var a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = h.textContent;
+    li.appendChild(a);
+    list.appendChild(li);
+  });
+});
+
+// Language: ?lang=fr or ?lang=en in the address wins, then the last choice, then English.
+function setLang(lang, remember) {
+  lang = lang === 'fr' ? 'fr' : 'en';
+  document.documentElement.lang = lang;
   document.body.classList.toggle('fr', lang === 'fr');
   document.getElementById('btnEn').classList.toggle('active', lang === 'en');
   document.getElementById('btnFr').classList.toggle('active', lang === 'fr');
+  if (remember === false) return;
   try { localStorage.setItem('ctf_lang', lang); } catch(_) {}
+  try {
+    var url = new URL(window.location.href);
+    url.searchParams.set('lang', lang);
+    url.hash = '';
+    history.replaceState(null, '', url);
+  } catch(_) {}
 }
-try { const saved = localStorage.getItem('ctf_lang'); if (saved) setLang(saved); } catch(_) {}
+(function () {
+  var fromUrl = null, saved = null;
+  try { fromUrl = new URLSearchParams(window.location.search).get('lang'); } catch(_) {}
+  try { saved = localStorage.getItem('ctf_lang'); } catch(_) {}
+  if (fromUrl === 'fr' || fromUrl === 'en') setLang(fromUrl, false);
+  else if (saved) setLang(saved, false);
+  // A link such as ?lang=fr#6-pourquoi-le-cadre targets a heading that was hidden until now.
+  if (window.location.hash) {
+    var target = null;
+    try { target = document.getElementById(decodeURIComponent(window.location.hash.slice(1))); } catch(_) {}
+    if (target) target.scrollIntoView();
+  }
+})();
 </script>
 
 </body>

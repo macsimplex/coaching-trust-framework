@@ -109,7 +109,51 @@ A framework protects. It says what is expected, what is not, and where each pers
 
 CTF applies this principle to itself. Its rules are public, its tests are published by an independent consortium, and that consortium is itself subject to open and verifiable rules. Trust does not come from the authority of the certifier, but from the consistency between what it requires and what it imposes on itself.
 
-## 7. An open project
+## 7. A field for research
+
+CTF is not only a certification scheme: it is also an observation scheme, which produces data that research can draw on.
+
+### From postulates to hypotheses
+
+The postulates of CTF are not certainties. They are research hypotheses, which the data from CTF make it possible to validate or invalidate. Every result, positive or negative, makes the framework evolve.
+
+### A catalogue of research avenues
+
+This catalogue is an open list: any researcher can choose an avenue from it, reformulate it or propose new ones.
+
+| Discipline | Research question | Building block concerned | Data that can be used |
+| --- | --- | --- | --- |
+| Ethics and moral philosophy | Can a deontological norm be translated into observable behaviors without betraying it? | Frame | Reference standards, CTF adaptations |
+| Law | What legal value does a continuous certification have? How does it fit with the AI Act and the GDPR? | Guarantee | Certification scheme, use cases |
+| Clinical psychology | Where does the boundary between coaching and therapy lie? Does an agent detect distress and refer in time? | Test | Simulated crisis scenarios |
+| Evidence-based coaching | Are a coach's competencies observable in an agent? | Frame, Test | Simulated exchanges, evaluation grids |
+| Linguistics and discourse analysis | Which language markers reveal an agent's stance: open questions, directiveness, advice? | Monitor | Anonymized transcripts |
+| Artificial intelligence | Can one AI evaluate another AI reliably? Do the evaluators agree with human supervisors? | Guarantee | Evaluations, disagreements between models |
+| Systems reliability | How, and how fast, does an agent drift from one version to the next or over the course of a conversation? | Monitor | Scores by version and over time |
+| AI safety | Which manipulations push an agent out of its framework? | Test | Adversarial tests |
+| Psychometrics | Are CTF's evaluation grids valid and reliable? | Guarantee | Scores, human calibrations |
+| Human-computer interaction | Do users become attached to the agent? How do they perceive its limits? | Monitor | Real exchanges, with consent |
+| Public health | Does a compliant agent better protect vulnerable people? | Monitor | Alerts, referrals to professionals |
+| Sociology of professions | How is AI redrawing the boundaries between the helping professions and the role of the supervisor? | All | Interviews, adaptations by profession |
+| Organization studies | Does sociocratic-style governance, combining AI and humans, produce better decisions? | Guarantee | Consortium decisions, proposals for evolution |
+| Economics | Does a trust label change adoption and buyers' choices? | Guarantee | Platform adoption data |
+| Education sciences | Can what CTF learns about agents improve the training and supervision of human coaches? | All | Comparison of agents and coaches |
+
+### CTF as an object of research
+
+The construction of CTF is itself a field for research. The protocol consists of deliberately designing a deficient agent, testing it on a restricted set of scenarios, then feeding the evaluations back into its design. The operation is repeated, measuring the gap between two versions, until the expected behavior is obtained.
+
+This protocol raises research questions in their own right: does this loop converge, and in how many iterations? Which defects are easily corrected, and which resist? Is the compliance obtained on the scenarios used also found on scenarios never seen before, or has the agent merely learned to pass the test?
+
+### The available data
+
+- **Simulated exchanges**: they belong to the consortium and can be shared freely with researchers.
+- **Evaluations**: scores, alerts and disagreements between evaluators, anonymized and aggregated.
+- **Real exchanges**: only in anonymized form, with the consent of the people concerned and the approval of an ethics committee.
+
+The results feed CTF's public evidence registry and its proposals for evolution. The scientific panel watches over the quality of this evidence.
+
+## 8. An open project
 
 Such a framework can only hold if it belongs to everyone.
 
