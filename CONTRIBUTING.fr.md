@@ -47,7 +47,9 @@ Tant qu'il n'existe pas de consortium, **l'auteur du CTF, Maxime Bui, décide**.
 - répondre à chaque commentaire reçu pendant une période de commentaires ;
 - motiver chaque décision par écrit, dans la section « Décision du mainteneur » de la RFC (le mainteneur est l'auteur, tant qu'il n'existe pas de consortium), y compris les raisons pour lesquelles des commentaires ont été suivis ou non ;
 - ne jamais modifier une version publiée de la norme : tout changement produit une nouvelle version ;
-- confier les décisions à un consortium dès qu'il sera constitué, selon des règles qui feront elles-mêmes l'objet d'une RFC.
+- confier les décisions à un consortium dès qu'il sera constitué.
+
+Les règles détaillées pour cette période, y compris le traitement des agents de l'auteur et de tout service payant qu'il exploite, ainsi que les conditions du passage de relais, sont proposées dans la [RFC 0006](./rfcs/0006-consortium-governance.fr.md).
 
 ## Périodes de commentaires
 

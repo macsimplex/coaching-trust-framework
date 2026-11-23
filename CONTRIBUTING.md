@@ -47,7 +47,9 @@ Until a consortium exists, **the author of CTF, Maxime Bui, decides**. In return
 - answering every comment received during a comment period;
 - explaining every decision in writing, in the "Caretaker decision" section of the RFC (the caretaker is the author, until a consortium exists), including why comments were or were not followed;
 - never changing a published version of the standard: any change produces a new version;
-- handing decisions over to a consortium once it is formed, under rules that will themselves be proposed as an RFC.
+- handing decisions over to a consortium once it is formed.
+
+The detailed rules for this period, including how the author's own agents and any paid service he runs are treated, and the conditions for handing decisions over, are proposed in [RFC 0006](./rfcs/0006-consortium-governance.md).
 
 ## Comment periods
 

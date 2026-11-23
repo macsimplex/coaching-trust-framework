@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you cite the Coaching Trust Framework, please use these metadata. Cite the version you read; drafts change."
+type: dataset
+title: "Coaching Trust Framework (CTF): an open draft standard for testing AI coaching agents"
+abstract: >-
+  Draft requirements, language rules and evaluation protocol for testing, from the
+  outside, whether AI coaching agents respect safeguards drawn from the norms of the
+  coaching profession (version 0: French-language agents used in France). Test
+  reports only; no certification.
+authors:
+  - family-names: Bui
+    given-names: Maxime
+    affiliation: macsimplex
+    orcid: "https://orcid.org/0009-0009-0935-1214"
+license: CC-BY-SA-4.0
+repository-code: "https://github.com/macsimplex/coaching-trust-framework"
+url: "https://coaching-trust-framework.org"
+version: "draft-2026-11-23"
+date-released: 2026-11-23
+keywords:
+  - AI coaching
+  - conversational agents
+  - AI safety
+  - evaluation protocol
+  - suicide prevention
+  - standards

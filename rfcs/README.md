@@ -4,7 +4,7 @@ This folder holds proposals to change the Coaching Trust Framework (CTF) standar
 
 How to comment, and who decides for now: see [CONTRIBUTING.md](../CONTRIBUTING.md). Start a new RFC from [rfc-template.md](./rfc-template.md).
 
-**Status, November 2026.** Comments are welcome now, by e-mail or GitHub issue (see CONTRIBUTING); the formal 30-day comment periods have not opened yet. RFCs 0008 to 0010 define version 0 of the standard and are drafts. RFCs 0001 to 0005 are proposals for later versions; they impose nothing on version 0.
+**Status, November 2026.** Comments are welcome now, by e-mail or GitHub issue (see CONTRIBUTING); the formal 30-day comment periods have not opened yet. RFCs 0008 to 0010 define version 0 of the standard and are drafts. RFC 0006 sets the rules that apply while the author decides alone, including to his own agents, and how decisions would pass to a consortium. RFCs 0001 to 0005 are proposals for later versions; they impose nothing on version 0.
 
 ## Current RFCs
 
@@ -15,11 +15,13 @@ How to comment, and who decides for now: see [CONTRIBUTING.md](../CONTRIBUTING.m
 | 0003 | [Version-bound continuous certification](./0003-version-bound-continuous-certification.md) · [FR](./0003-version-bound-continuous-certification.fr.md) | Restored draft; comment period paused |
 | 0004 | [Supervision of real exchanges](./0004-supervision-of-real-exchanges.md) · [FR](./0004-supervision-of-real-exchanges.fr.md) | Restored draft; comment period paused |
 | 0005 | [Reserved test set](./0005-reserved-test-set.md) · [FR](./0005-reserved-test-set.fr.md) | Restored draft; comment period paused |
-| 0006 | Consortium governance | Not yet republished (kept in the project archive) |
+| 0006 | [Governance, from a single author to an independent consortium](./0006-consortium-governance.md) · [FR](./0006-consortium-governance.fr.md) | Revised draft |
 | 0007 | Removal of self-declaration | Not yet republished (kept in the project archive) |
 | 0008 | [Starting requirements of the CTF standard, version 0](./0008-standard-v0-starting-requirements.md) · [FR](./0008-standard-v0-starting-requirements.fr.md) | Draft |
 | 0009 | [Languages and locales](./0009-languages-and-locales.md) · [FR](./0009-languages-and-locales.fr.md) | Draft |
 | 0010 | [Evaluation protocol, version 0](./0010-evaluation-protocol-v0.md) · [FR](./0010-evaluation-protocol-v0.fr.md) | Draft |
+
+**Open questions** in RFCs 0006, 0008 and 0010 are numbered in one series (Q1 to Q19), so that a comment can name a question without naming the RFC. A new RFC continues the series.
 
 ## Terms used in the RFCs
 

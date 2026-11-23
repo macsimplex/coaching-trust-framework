@@ -1,0 +1,16 @@
+{
+  "title": "Coaching Trust Framework (CTF): an open draft standard for testing AI coaching agents",
+  "upload_type": "publication",
+  "publication_type": "workingpaper",
+  "description": "<p>Draft requirements (RFC 0008), language and locale rules (RFC 0009), evaluation protocol (RFC 0010) and governance (RFC 0006) of the Coaching Trust Framework, an open draft standard for testing, from the outside, whether AI coaching agents respect safeguards drawn from the norms of the coaching profession. Version 0 covers French-language agents used in France. It produces test reports only, not certifications. English is authoritative; French translations are included.</p>",
+  "creators": [
+    { "name": "Bui, Maxime", "affiliation": "macsimplex", "orcid": "0009-0009-0935-1214" }
+  ],
+  "license": "cc-by-sa-4.0",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": ["AI coaching", "conversational agents", "AI safety", "evaluation protocol", "suicide prevention", "standards"],
+  "related_identifiers": [
+    { "identifier": "https://coaching-trust-framework.org", "relation": "isDocumentedBy", "resource_type": "publication-other" }
+  ]
+}

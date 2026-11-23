@@ -66,6 +66,7 @@ a:hover { text-decoration: underline; }
 .toc a { font-size: 14px; color: #cbd5e1; }
 .toc a:hover { color: #4db89a; text-decoration: none; }
 @media (max-width: 640px) { .toc ol { columns: 1; } }
+html:not(.js) .toc { display: none; }
 .vision h2 { scroll-margin-top: 16px; }
 
 .section-cta { margin: 24px 0 8px; text-align: center; }
@@ -201,6 +202,8 @@ body.fr .content [lang="en"], body.fr .hero [lang="en"] { display: none; }
 </div>
 
 <script>
+// The contents box is filled here; without JavaScript it stays hidden.
+document.documentElement.classList.add('js');
 // Table of contents: one entry per section heading (h2), in each language.
 document.querySelectorAll('.vision').forEach(function (vision) {
   var lang = vision.getAttribute('lang');
