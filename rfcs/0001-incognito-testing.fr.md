@@ -4,6 +4,8 @@
 
 *Version anglaise, qui fait foi en cas de divergence : [0001-incognito-testing.md](./0001-incognito-testing.md).*
 
+> **Brouillon restauré, période de commentaires suspendue.** Cette RFC a été restaurée telle quelle depuis le commit `9fff7de`. C'est une proposition pour des versions ultérieures de la norme ; elle n'impose rien à la version 0. Certains de ses liens pointent vers des documents qui n'existent plus, et le mot *certification* y désigne une hypothèse de long terme : voir l'[index des RFC](./README.md).
+
 ## En-tête
 
 - **Numéro :** 0001

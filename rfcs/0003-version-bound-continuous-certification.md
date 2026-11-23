@@ -4,6 +4,8 @@
 
 *French version: [0003-version-bound-continuous-certification.fr.md](./0003-version-bound-continuous-certification.fr.md).*
 
+> **Restored draft, comment period paused.** This RFC was restored verbatim from commit `9fff7de`. It is a proposal for later versions of the standard and imposes nothing on version 0. Some of its links point to documents that no longer exist, and its use of the word *certification* describes a long-term hypothesis: see the [RFC index](./README.md).
+
 ## Header
 
 - **RFC number:** 0003
