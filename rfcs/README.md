@@ -13,6 +13,7 @@ Start a new RFC from [rfc-template.md](./rfc-template.md).
 | 0003 | [Version-bound continuous certification](./0003-version-bound-continuous-certification.md) · [FR](./0003-version-bound-continuous-certification.fr.md) | Open for comments (evidence to be gathered) |
 | 0004 | [Supervision of real exchanges](./0004-supervision-of-real-exchanges.md) · [FR](./0004-supervision-of-real-exchanges.fr.md) | Open for comments (evidence to be gathered) |
 | 0005 | [Reserved test set](./0005-reserved-test-set.md) · [FR](./0005-reserved-test-set.fr.md) | Open for comments (evidence to be gathered) |
+| 0008 | [Starting requirements of the CTF standard, version 0](./0008-standard-v0-starting-requirements.md) | Draft |
 
 ## Note on this restoration
 
